@@ -29,16 +29,16 @@ export function Hero() {
           </h1>
           <div className="mt-6 space-y-6 font-display text-2xl tracking-tight text-blue-900">
             <p>
-            WebBadminton is a platform where we talk about the rules of the game, brands, equipment and much more.
+              WebBadminton is a platform where we talk about the rules of the
+              game, brands, equipment and much more.
             </p>
             <p>
-              Our content is suitable and will be interesting not only for begginers,but also for professional players as well.
-
+              Our content is suitable and will be interesting not only for
+              begginers,but also for professional players as well.
             </p>
           </div>
           <Button href="#" className="mt-10 w-full sm:hidden">
             Stay with us
-          
           </Button>
           <dl className="mt-10 grid grid-cols-2 gap-y-6 gap-x-10 sm:mt-16 sm:gap-y-10 sm:gap-x-16 sm:text-center lg:auto-cols-auto lg:grid-flow-col lg:grid-cols-none lg:justify-start lg:text-left">
             {[

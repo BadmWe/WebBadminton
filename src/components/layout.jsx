@@ -1,4 +1,3 @@
-/* This example requires Tailwind CSS v2.0+ */
 import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
@@ -27,14 +26,6 @@ function classNames(...classes) {
 export function Layout() {
   return (
     <>
-      {/*
-        This example requires updating your template:
-
-        ```
-        <html class="h-full bg-gray-100">
-        <body class="h-full">
-        ```
-      */}
       <div className="min-h-full">
         <div className="bg-gray-800 pb-32">
           <Disclosure as="nav" className="bg-gray-800">
@@ -84,25 +75,7 @@ export function Layout() {
                               leave="transition ease-in duration-75"
                               leaveFrom="transform opacity-100 scale-100"
                               leaveTo="transform opacity-0 scale-95"
-                            >
-                              <Menu.Items className="absolute right-0 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
-                                {userNavigation.map((item) => (
-                                  <Menu.Item key={item.name}>
-                                    {({ active }) => (
-                                      <a
-                                        href={item.href}
-                                        className={classNames(
-                                          active ? 'bg-gray-100' : '',
-                                          'block px-4 py-2 text-sm text-gray-700'
-                                        )}
-                                      >
-                                        {item.name}
-                                      </a>
-                                    )}
-                                  </Menu.Item>
-                                ))}
-                              </Menu.Items>
-                            </Transition>
+                            ></Transition>
                           </Menu>
                         </div>
                       </div>
@@ -189,21 +162,9 @@ export function Layout() {
             )}
           </Disclosure>
           <header className="py-10">
-            <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-              <h1 className="text-3xl font-bold text-blue-600">WebBadminton</h1>
-            </div>
+            <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8"></div>
           </header>
         </div>
-
-        <main className="-mt-32">
-          <div className="">
-            {/* Replace with your content */}
-            <div className="rounded-lg bg-white px-5 py-6 shadow sm:px-6">
-              <div className="h-96 rounded-lg border-4 border-dashed border-gray-200" />
-            </div>
-            {/* /End replace */}
-          </div>
-        </main>
       </div>
     </>
   )
