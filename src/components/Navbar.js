@@ -4,7 +4,7 @@ import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
 
 const navigation = [
   { name: 'WebBadminton', href: '/', current: false },
-  { name: 'For begginers', href: '/beginners', current: false },
+  { name: 'For beginners', href: '/beginners', current: false },
   { name: 'Shop', href: '/store', current: false },
 ]
 const userNavigation = [

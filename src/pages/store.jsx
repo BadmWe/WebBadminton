@@ -1,3 +1,7 @@
+import { LinkIcon } from '@heroicons/react/outline'
+import Image from 'next/image'
+import Link from 'next/link'
+
 const products = [
   {
     id: 1,
@@ -17,7 +21,6 @@ const products = [
       'https://badm-store.ru/image/cache/catalog/products/raketki/yonex/Astrox-100-ZZ-Kurenai-600x600.jpg',
     imageAlt: '.',
   },
-  // More products...
   {
     id: 1,
     name: 'Yonex Astrox 88D Pro',
@@ -73,21 +76,22 @@ export default function Example() {
           <h2 className="text-2xl font-extrabold tracking-tight text-gray-900">
             Our Favorites
           </h2>
-          <a
-            href="#"
-            className="hidden text-sm font-semibold text-indigo-600 hover:text-indigo-500 sm:block"
-          >
-            Browse all favorites<span aria-hidden="true"> &rarr;</span>
-          </a>
+          <Link href="/">
+            <a className="hidden text-sm font-semibold text-indigo-600 hover:text-indigo-500 sm:block">
+              Browse all favorites<span aria-hidden="true"> &rarr;</span>
+            </a>
+          </Link>
         </div>
 
         <div className="mt-6 grid grid-cols-1 gap-y-10 sm:grid-cols-3 sm:gap-y-0 sm:gap-x-6 lg:gap-x-8">
           {products.map((product) => (
             <div key={product.id} className="group relative">
               <div className="sm:aspect-w-2 sm:aspect-h-3 h-96 w-full overflow-hidden rounded-lg group-hover:opacity-75 sm:h-auto">
-                <img
+                <Image
                   src={product.imageSrc}
                   alt={product.imageAlt}
+                  width={600}
+                  height={600}
                   className="h-full w-full object-cover object-center"
                 />
               </div>

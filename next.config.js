@@ -4,6 +4,9 @@ const nextConfig = {
   experimental: {
     newNextLinkBehavior: true,
   },
+  images: {
+    domains: ['badm-store.ru']
+  }
 }
 
 module.exports = nextConfig
