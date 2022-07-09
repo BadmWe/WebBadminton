@@ -1,12 +1,10 @@
 import { Hero } from '@/components/Hero'
-
-import { Table } from '@/components/table'
-
+import { Newsletter } from '@/components/Newsletter'
 export default function Home() {
   return (
     <>
       <Hero />
-      <Table />
+      <Newsletter />
     </>
   )
 }
