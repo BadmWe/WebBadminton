@@ -1,4 +1,6 @@
-export default function Example() {
+import Link from 'next/link'
+
+export default function Beginners() {
   return (
     <div className="overflow-hidden bg-white py-16 px-4 sm:px-6 lg:px-8 xl:py-36">
       <div className="mx-auto max-w-max lg:max-w-7xl">
@@ -235,12 +237,12 @@ export default function Example() {
             </div>
 
             <div className="mt-8 inline-flex rounded-md shadow">
-              <a
+              <Link
                 href="/store"
                 className="flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-5 py-3 text-base font-medium text-white hover:bg-indigo-700"
               >
-                Our Store
-              </a>
+                <a>Our Store</a>
+              </Link>
             </div>
           </div>
         </div>
