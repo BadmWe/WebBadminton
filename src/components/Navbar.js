@@ -21,7 +21,7 @@ const Navbar = () => {
   return (
     <>
       <div className="min-h-full">
-        <div className="bg-gray-800 pb-32">
+        <div className="bg-gray-800">
           <Disclosure as="nav" className="bg-gray-800">
             {({ open }) => (
               <>
@@ -140,9 +140,6 @@ const Navbar = () => {
               </>
             )}
           </Disclosure>
-          <header className="py-10">
-            <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8"></div>
-          </header>
         </div>
       </div>
     </>
