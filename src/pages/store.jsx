@@ -6,7 +6,7 @@ const products = [
   {
     id: 1,
     name: 'Yonex Astrox 100ZZ (Dark Navy)',
-    price: '$200',
+    price: '$289',
     href: '#',
     imageSrc:
       'https://badm-store.ru/image/cache/catalog/products/raketki/yonex/Astrox-100-ZZ-600x600.jpg',
@@ -15,16 +15,16 @@ const products = [
   {
     id: 1,
     name: 'Yonex Astrox 100ZZ (Kurenai)',
-    price: '$200',
+    price: '$289',
     href: '#',
     imageSrc:
       'https://badm-store.ru/image/cache/catalog/products/raketki/yonex/Astrox-100-ZZ-Kurenai-600x600.jpg',
-    imageAlt: '.',
+    imageAlt: '',
   },
   {
     id: 1,
     name: 'Yonex Astrox 88D Pro',
-    price: '$200',
+    price: '$279',
     href: '#',
     imageSrc:
       'https://badm-store.ru/image/cache/catalog/products/raketki/yonex/Astrox-88D-Pro-600x600.jpg',
@@ -33,7 +33,7 @@ const products = [
   {
     id: 1,
     name: 'Yonex Astrox 99 Pro (White Tiger)',
-    price: '$200',
+    price: '$269',
     href: '#',
     imageSrc:
       'https://badm-store.ru/image/cache/catalog/products/raketki/yonex/Astrox-99-Pro-White-600x600.jpg',
@@ -42,7 +42,7 @@ const products = [
   {
     id: 1,
     name: 'Yonex Astrox 88S Pro ',
-    price: '$200',
+    price: '$259',
     href: '#',
     imageSrc:
       'https://badm-store.ru/image/cache/catalog/products/raketki/yonex/Astrox-88S-Pro-600x600.jpg',
@@ -51,7 +51,7 @@ const products = [
   {
     id: 1,
     name: 'Yonex Duora 6 (Shine Pink)',
-    price: '$200',
+    price: '$209',
     href: '#',
     imageSrc:
       'https://badm-store.ru/image/cache/catalog/products/raketki/yonex/Duora-6-Pink-600x600.jpg',
@@ -60,7 +60,7 @@ const products = [
   {
     id: 1,
     name: 'Yonex Arcsaber 11',
-    price: '$200',
+    price: '$199',
     href: '#',
     imageSrc:
       'https://badm-store.ru/image/cache/catalog/products/raketki/yonex/Arcsaber-11-600x600.jpg',
