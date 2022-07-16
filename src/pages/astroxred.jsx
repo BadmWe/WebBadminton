@@ -54,7 +54,7 @@ const product = {
         'Flex: Extra-Stiff',
         'Max string tension: 28 lbs',
         'Balance: Head-Heavy',
-        'Handle size: G4,G5',
+        'Grip: G4,G5',
         'Material: HM-Graphite',
         'Case: Full, with a zipper',
       ],
@@ -91,7 +91,7 @@ const relatedProducts = [
   {
     id: 1,
     name: 'Yonex Astrox 88D Pro',
-    color: 'Yellow',
+    color: 'Camel Gold',
     href: '#',
     imageSrc:
       'https://badm-store.ru/image/cache/catalog/products/raketki/yonex/Astrox-88D-Pro-600x600.jpg',
