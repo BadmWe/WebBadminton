@@ -24,14 +24,14 @@ const navigation = {
   pages: [],
 }
 const product = {
-  name: 'Yonex Astrox 88D Pro',
-  price: '$279',
+  name: 'Yonex Astrox 88S Pro',
+  price: '$259',
   rating: 5,
   images: [
     {
       id: 1,
       name: 'View',
-      src: 'https://badm-store.ru/image/cache/catalog/products/raketki/yonex/Astrox-88D-Pro-600x600.jpg',
+      src: 'https://badm-store.ru/image/cache/catalog/products/raketki/yonex/Astrox-88S-Pro-600x600.jpg',
       alt: '',
     },
     {
@@ -90,14 +90,14 @@ const relatedProducts = [
   },
   {
     id: 1,
-    name: 'Yonex Astrox 88S Pro',
-    color: 'Emerald Blue',
-    href: 'astrox88SPro',
+    name: 'Yonex Astrox 88D Pro',
+    color: 'Camel Gold',
+    href: 'astrox88DPro',
     imageSrc:
-      'https://badm-store.ru/image/cache/catalog/products/raketki/yonex/Astrox-88S-Pro-600x600.jpg',
+      'https://badm-store.ru/image/cache/catalog/products/raketki/yonex/Astrox-88D-Pro-600x600.jpg',
     imageAlt:
       'Front of zip tote bag with white canvas, black canvas straps and handle, and black zipper pulls.',
-    price: '$259',
+    price: '$279',
   },
 
   {
@@ -637,7 +637,9 @@ export default function Example() {
               <form className="mt-6">
                 {/* Colors */}
                 <div>
-                  <h3 className="text-sm text-gray-600">Color: Camel Gold </h3>
+                  <h3 className="text-sm text-gray-600">
+                    Color: Emerald Blue{' '}
+                  </h3>
 
                   <RadioGroup
                     value={selectedColor}

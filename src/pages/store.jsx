@@ -34,7 +34,7 @@ const products = [
     id: 4,
     name: 'Yonex Astrox 99 Pro (White Tiger)',
     price: '$269',
-    href: '4',
+    href: 'astrox99Pro',
     imageSrc:
       'https://badm-store.ru/image/cache/catalog/products/raketki/yonex/Astrox-99-Pro-White-600x600.jpg',
     imageAlt: '.',
@@ -43,7 +43,7 @@ const products = [
     id: 5,
     name: 'Yonex Astrox 88S Pro ',
     price: '$259',
-    href: '5',
+    href: 'astrox88SPro',
     imageSrc:
       'https://badm-store.ru/image/cache/catalog/products/raketki/yonex/Astrox-88S-Pro-600x600.jpg',
     imageAlt: '.',

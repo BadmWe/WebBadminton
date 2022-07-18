@@ -24,14 +24,14 @@ const navigation = {
   pages: [],
 }
 const product = {
-  name: 'Yonex Astrox 88D Pro',
+  name: 'Yonex Astrox 99 Pro (White Tiger)',
   price: '$279',
   rating: 5,
   images: [
     {
       id: 1,
       name: 'View',
-      src: 'https://badm-store.ru/image/cache/catalog/products/raketki/yonex/Astrox-88D-Pro-600x600.jpg',
+      src: 'https://badm-store.ru/image/cache/catalog/products/raketki/yonex/Astrox-99-Pro-White-600x600.jpg',
       alt: '',
     },
     {
@@ -73,12 +73,11 @@ const relatedProducts = [
     href: 'astroxred',
     imageSrc:
       'https://badm-store.ru/image/cache/catalog/products/raketki/yonex/Astrox-100-ZZ-Kurenai-600x600.jpg',
-    imageAlt:
-      'Front of zip tote bag with white canvas, black canvas straps and handle, and black zipper pulls.',
-    price: '$289',
+    imageAlt: '',
+    price: '$269',
   },
   {
-    id: 1,
+    id: 2,
     name: 'Yonex Astrox 100 ZZ (Dark Navy)',
     color: 'Dark Navy',
     href: 'astroxnavy',
@@ -89,10 +88,10 @@ const relatedProducts = [
     price: '$279',
   },
   {
-    id: 1,
+    id: 3,
     name: 'Yonex Astrox 88S Pro',
-    color: 'Emerald Blue',
-    href: 'astrox88SPro',
+    color: 'Emerald Blue ',
+    href: '#',
     imageSrc:
       'https://badm-store.ru/image/cache/catalog/products/raketki/yonex/Astrox-88S-Pro-600x600.jpg',
     imageAlt:
@@ -101,12 +100,12 @@ const relatedProducts = [
   },
 
   {
-    id: 1,
-    name: 'Yonex Astrox 99 Pro (White Tiger)',
-    color: 'White Tiger',
-    href: 'astrox99Pro',
+    id: 4,
+    name: 'Yonex Astrox 88D Pro',
+    color: 'Camel Gold',
+    href: 'astrox88DPro',
     imageSrc:
-      'https://badm-store.ru/image/cache/catalog/products/raketki/yonex/Astrox-99-Pro-White-600x600.jpg',
+      'https://badm-store.ru/image/cache/catalog/products/raketki/yonex/Astrox-88D-Pro-600x600.jpg',
     imageAlt:
       'Front of zip tote bag with white canvas, black canvas straps and handle, and black zipper pulls.',
     price: '$269',
@@ -637,7 +636,7 @@ export default function Example() {
               <form className="mt-6">
                 {/* Colors */}
                 <div>
-                  <h3 className="text-sm text-gray-600">Color: Camel Gold </h3>
+                  <h3 className="text-sm text-gray-600">Color: White Tiger </h3>
 
                   <RadioGroup
                     value={selectedColor}

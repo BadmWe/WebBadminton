@@ -81,7 +81,7 @@ const relatedProducts = [
     id: 1,
     name: 'Yonex Astrox 100 ZZ (Kurenai)',
     color: 'Kurenai',
-    href: '#',
+    href: 'astroxred',
     imageSrc:
       'https://badm-store.ru/image/cache/catalog/products/raketki/yonex/Astrox-100-ZZ-Kurenai-600x600.jpg',
     imageAlt:
@@ -92,7 +92,7 @@ const relatedProducts = [
     id: 1,
     name: 'Yonex Astrox 88D Pro',
     color: 'Camel Gold',
-    href: '#',
+    href: 'astrox88DPro',
     imageSrc:
       'https://badm-store.ru/image/cache/catalog/products/raketki/yonex/Astrox-88D-Pro-600x600.jpg',
     imageAlt:
@@ -102,8 +102,8 @@ const relatedProducts = [
   {
     id: 1,
     name: 'Yonex Astrox 88S Pro',
-    color: 'Blue with Dark and Yellow',
-    href: '#',
+    color: 'Emerald Blue',
+    href: 'astrox88SPro',
     imageSrc:
       'https://badm-store.ru/image/cache/catalog/products/raketki/yonex/Astrox-88S-Pro-600x600.jpg',
     imageAlt:
@@ -115,7 +115,7 @@ const relatedProducts = [
     id: 1,
     name: 'Yonex Astrox 99 Pro (White Tiger)',
     color: 'White Tiger',
-    href: '#',
+    href: 'astrox99Pro',
     imageSrc:
       'https://badm-store.ru/image/cache/catalog/products/raketki/yonex/Astrox-99-Pro-White-600x600.jpg',
     imageAlt:
