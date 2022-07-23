@@ -57,9 +57,9 @@ export default function Example() {
                 <p>
                   Badminton racket handle size Rackets differ not only in
                   weight, but also in the size of the handle. The handle size of
-                  a badminton racket is indicated by the letter "G" and a
-                  number. There are 6 racket sizes: G1 - G6. The smaller the
-                  number, the larger the handle. The handle size is usually
+                  a badminton racket is indicated by the letter &quot;G&quot;
+                  and a number. There are 6 racket sizes: G1 - G6. The smaller
+                  the number, the larger the handle. The handle size is usually
                   listed on the racquet cap in combination with the racquet
                   weight, such as 3UG4. Most racquets are made in G4 and G5
                   handle sizes. If you are not sure what size badminton handle
@@ -109,7 +109,7 @@ export default function Example() {
                 </p>
               </div>
               <p>
-                The stiffness of a badminton racquet's shaft determines the
+                The stiffness of a badminton racket&#39;s shaft determines the
                 amount of control the racquet has during play. Manufacturers of
                 badminton rackets implement four types of racket stiffness:
                 Highly flexible Flexible Medium Stiff When choosing a racket,
@@ -117,11 +117,11 @@ export default function Example() {
                 sports experience and level of training. A stiff racquet has
                 more impact energy potential, provides more control and impact
                 power, but only players with a fast and strong hand can unleash
-                it. If the athlete's hand physical characteristics, playing
+                it. If the athlete&#39;s hand physical characteristics, playing
                 experience, and training level are more of a beginner or
                 intermediate level, a hard and very hard racket will be less
                 effective in hitting hard. A flexible racquet is less demanding
-                on the athlete's technique and fitness, but such a racquet will
+                on the athletes technique and fitness, but such a racquet will
                 generate less power on impact, reducing control. The material
                 from which the badminton racket is made Materials and alloys
                 used to make badminton rackets iron;aluminum;alloy of aluminum
