@@ -24,77 +24,66 @@ const navigation = {
   pages: [],
 }
 const product = {
-  name: 'Yonex Astrox 100ZZ (Kurenai)',
-  price: '$289',
+  name: 'Duora 6 (Shine Pink)',
+  price: '$209',
   rating: 5,
   images: [
     {
       id: 1,
       name: 'View',
-      src: 'https://badm-store.ru/image/cache/catalog/products/raketki/yonex/Astrox-100-ZZ-Kurenai-600x600.jpg',
+      src: 'https://badm-store.ru/image/cache/catalog/products/raketki/yonex/Duora-6-Pink-600x600.jpg',
       alt: '',
     },
     {
-      id: 1,
+      id: 2,
       name: 'Case',
-      src: 'https://badm-store.ru/image/cache/catalog/products/raketki/chexly/Cover-Yonex-Astrox-1100x1100.jpg',
+      src: 'https://badm-store.ru/image/cache/catalog/products/raketki/chexly/Cover-Yonex-Duora-1100x1100.jpg',
       alt: '',
     },
   ],
   colors: [],
   description: `
-    <p>Extra-flex powerful badminton racket Yonex Astrox 100 ZZ!The most powerful and powerful badminton racket from Yonex. The racquets use a new hyper-thin Namd core shank to deliver high power and speed while flexing, and reduce air resistance for maximum hitting speed.The world badminton leaders Viktor Axelsen, Akane Yamaguchi and Chou Tien Chen became the ambassadors of the new badminton racket Yonex Astrox 100 ZZ.</p>
+    <p</p>
   `,
   details: [
     {
       name: 'Features',
       items: [
-        'Weight: 3U (85-89g), 4U (80-84g)',
+        'Weight: 4U (80-84g)',
         'Length: 675mm',
-        'Flex: Extra-Stiff',
-        'Max string tension: 28 lbs',
-        'Balance: Head-Heavy',
+        'Flex: High-Flex ',
+        'Max string tension: 22 lbs',
+        'Balance: Even',
         'Grip: G4,G5',
-        'Material: HM-Graphite',
+        'Material:  	Graphite, Carbon Fiber',
         'Case: Full, with a zipper',
       ],
     },
     {
       name: 'Description',
-      items: [
-        'Yonex Astrox 100 ZZ is a new racket  in the Astrox series, with a rigid shaft and head balance. It is made from lightweight but super strong high modulus graphite. The Black Micro Core material, combined with an advanced tee, allows you to make a series of continuous blows of great force. The shaft, the thinnest in the history of the Japanese brand rackets, has a graphite core, which gives it extra rigidity and reduces air resistance by almost 12%. This racket was chosen by professionals:Viktor Axelsen; Akane Yamaguchi; Hiroyuki Endo.',
-        'Technologies used in the Yonex Astrox 100 ZZ racket:',
-        'Solid Feel Core:',
-        'The core of the rod, which increases rigidity and reduces the vibrations that invariably occur during impact. This is a traditional technology for all Japanese-made Yonex rackets.',
-        'ISOMETRIC:',
-        'The longitudinal and transverse strings are of the same length. This increases the usable area of ​​the playing surface, increases the number of accurate shots and stabilizes the game being played from any part of the court.',
-        'Built-In T-Joint:',
-        'Lightweight built-in tee made of epoxy resin. The technology improves the playing characteristics of the racket, stabilizes the flight of the shuttlecock.',
-        'Rotational Generator System:',
-        'Rational distribution of weight throughout the volume of the racket provides excellent handling. The racket recovers faster after being hit, allowing the player to combine smoothness and high speed. The technology allows you to maximize the benefits of Namd graphite - durable and elastic.',
-      ],
+      items: [],
     },
   ],
 }
 const relatedProducts = [
   {
     id: 1,
-    name: 'Yonex Astrox 100 ZZ (Dark Navy)',
+    name: 'Yonex Astrox 100 ZZ (Kurenai)',
     color: 'Kurenai',
     href: 'astroxred',
     imageSrc:
-      'https://badm-store.ru/image/cache/catalog/products/raketki/yonex/Astrox-100-ZZ-600x600.jpg',
+      'https://badm-store.ru/image/cache/catalog/products/raketki/yonex/Astrox-100-ZZ-Kurenai-600x600.jpg',
     imageAlt:
       'Front of zip tote bag with white canvas, black canvas straps and handle, and black zipper pulls.',
     price: '$289',
   },
   {
     id: 1,
-    name: 'Yonex Astrox 88D Pro',
-    color: 'Camel Gold',
-    href: 'astrox88DPro',
+    name: 'Yonex Astrox 100 ZZ (Dark Navy)',
+    color: 'Dark Navy',
+    href: 'astroxnavy',
     imageSrc:
-      'https://badm-store.ru/image/cache/catalog/products/raketki/yonex/Astrox-88D-Pro-600x600.jpg',
+      'https://badm-store.ru/image/cache/catalog/products/raketki/yonex/Astrox-100-ZZ-600x600.jpg',
     imageAlt:
       'Front of zip tote bag with white canvas, black canvas straps and handle, and black zipper pulls.',
     price: '$279',
@@ -648,7 +637,7 @@ export default function Example() {
               <form className="mt-6">
                 {/* Colors */}
                 <div>
-                  <h3 className="text-sm text-gray-600">Color: Dark Navy </h3>
+                  <h3 className="text-sm text-gray-600">Color: Shine Pink </h3>
 
                   <RadioGroup
                     value={selectedColor}
@@ -797,7 +786,8 @@ export default function Example() {
                       href={product.href}
                       className="relative flex items-center justify-center rounded-md border border-transparent bg-gray-100 py-2 px-8 text-sm font-medium text-gray-900 hover:bg-gray-200"
                     >
-                      Buy now <span className="sr-only">, {product.name}</span>
+                      Buy now
+                      <span className="sr-only">, {product.name}</span>
                     </a>
                   </div>
                 </div>

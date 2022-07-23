@@ -681,7 +681,7 @@ export default function Example() {
                     type="submit"
                     className="flex max-w-xs flex-1 items-center justify-center rounded-md border border-transparent bg-indigo-600 py-3 px-8 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-50 sm:w-full"
                   >
-                    Add to bag
+                    Buy now
                   </button>
                 </div>
               </form>
@@ -785,7 +785,7 @@ export default function Example() {
                       href={product.href}
                       className="relative flex items-center justify-center rounded-md border border-transparent bg-gray-100 py-2 px-8 text-sm font-medium text-gray-900 hover:bg-gray-200"
                     >
-                      Add to bag
+                      Buy now
                       <span className="sr-only">, {product.name}</span>
                     </a>
                   </div>

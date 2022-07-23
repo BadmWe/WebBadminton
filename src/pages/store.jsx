@@ -52,7 +52,7 @@ const products = [
     id: 6,
     name: 'Yonex Duora 6 (Shine Pink)',
     price: '$209',
-    href: '6',
+    href: 'duora6',
     imageSrc:
       'https://badm-store.ru/image/cache/catalog/products/raketki/yonex/Duora-6-Pink-600x600.jpg',
     imageAlt: '.',
@@ -61,7 +61,7 @@ const products = [
     id: 7,
     name: 'Yonex Arcsaber 11',
     price: '$199',
-    href: '7',
+    href: 'Arcsaber11',
     imageSrc:
       'https://badm-store.ru/image/cache/catalog/products/raketki/yonex/Arcsaber-11-600x600.jpg',
     imageAlt: '.',
