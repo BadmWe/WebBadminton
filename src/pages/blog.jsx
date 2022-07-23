@@ -1,36 +1,36 @@
 const posts = [
   {
     title: 'Yonex',
-    href: '#',
+    href: 'yonex',
     category: { name: 'Brand', href: '#' },
     description: '',
-    date: 'July 17, 2022',
-    datetime: '2022-07-17',
+    date: 'July 23, 2022',
+    datetime: '2022-07-23',
     imageUrl:
       'https://www.yonex.com/media/wysiwyg/news/Yonex-News-Holder-Image_1.PNG',
-    readingTime: '6 min',
+    readingTime: '3 min',
   },
   {
     title: 'Li-ning',
-    href: '#',
+    href: 'Li-ning',
     category: { name: 'Brand', href: '#' },
     description: '',
-    date: 'July 17, 2022',
-    datetime: '2022-07-17',
+    date: 'July 23, 2022',
+    datetime: '2022-07-23',
     imageUrl:
       'https://i.pinimg.com/originals/78/9a/e1/789ae113eed49212d27e319bb4d25407.jpg',
     readingTime: '4 min',
   },
   {
     title: 'Victor',
-    href: '#',
+    href: 'Victor',
     category: { name: 'Brand', href: '#' },
     description: '',
     date: 'July 17, 2022',
     datetime: '2022-07-17',
     imageUrl:
       'https://badmintonoceania.org/wp-content/uploads/2016/12/36080120_1_O-e1499248108190-800x400.jpg',
-    readingTime: '11 min',
+    readingTime: '4 min',
   },
 ]
 
