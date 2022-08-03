@@ -8,7 +8,6 @@ import {
   Transition,
 } from '@headlessui/react'
 import {
-  HeartIcon,
   MenuIcon,
   MinusSmIcon,
   PlusSmIcon,

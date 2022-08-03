@@ -8,7 +8,6 @@ import {
   Transition,
 } from '@headlessui/react'
 import {
-  HeartIcon,
   MenuIcon,
   MinusSmIcon,
   PlusSmIcon,
@@ -23,6 +22,7 @@ const navigation = {
   categories: [],
   pages: [],
 }
+
 const product = {
   name: 'Yonex Arcsaber 11',
   price: '$199',

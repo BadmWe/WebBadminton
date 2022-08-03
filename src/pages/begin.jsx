@@ -1,19 +1,3 @@
-/*
-  This example requires Tailwind CSS v2.0+ 
-  
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/typography'),
-    ],
-  }
-  ```
-*/
 export default function Example() {
   return (
     <div className="overflow-hidden bg-gray-50 py-16">
@@ -31,7 +15,7 @@ export default function Example() {
         </div>
         <div className="lg:grid lg:grid-cols-2 lg:items-start lg:gap-8">
           <div className="relative z-10">
-            <div className="prose prose-indigo mx-auto text-gray-500 lg:max-w-none">
+            <div className="prose prose-indigo mx-auto max-w-prose text-base text-gray-500 lg:max-w-none ">
               <p>
                 Badminton rackets weigh between 54 and 94 grams. The weight of a
                 badminton racket is indicated by the Latin letter “U” and a
@@ -69,7 +53,7 @@ export default function Example() {
                   grip on the racket. Often, when buying a new racket, the flu
                   is immediately wound.
                 </p>
-                <div className="relative z-10 mx-auto max-w-prose text-base lg:mx-0 lg:max-w-5xl lg:pr-72">
+                <div className="lg:pr-70 relative z-10 mx-auto max-w-prose text-base lg:mx-0 lg:max-w-5xl">
                   <p className="text-lg text-indigo-600">
                     Badminton racket balance
                   </p>
@@ -127,7 +111,6 @@ export default function Example() {
                 used to make badminton rackets iron;aluminum;alloy of aluminum
                 and graphite; graphite.
               </p>
-
               <p>
                 If you are planning to play all the time or are purchasing a
                 racket for a badminton player who trains on a regular basis, we
@@ -156,12 +139,10 @@ export default function Example() {
                 <p className="text-lg text-indigo-600">
                   Examples of rackets for beginners:
                 </p>
-              </div>
-              <p>Yonex Nanoray 10F</p>
-              <p>Weight:4U; Flex:Highly Flexible; Balance: Head-Light;</p>
-              <p>Yonex Nanoflare Drive (Black/Purple)</p>
-              <p>Weight: 4U; Flex: Highly flexible; Balance: Head-Light;</p>
-              <div className="lg:pr-70 relative z-10 mx-auto max-w-prose text-base lg:mx-0 lg:max-w-5xl">
+                <p>Yonex Nanoray 10F</p>
+                <p>Weight:4U; Flex:Highly Flexible; Balance: Head-Light;</p>
+                <p>Yonex Nanoflare Drive (Black/Purple)</p>
+                <p>Weight: 4U; Flex: Highly flexible; Balance: Head-Light;</p>
                 <p className="text-lg text-indigo-600">
                   Rackets for professional players:
                 </p>

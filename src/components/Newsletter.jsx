@@ -1,6 +1,5 @@
 import Image from 'next/image'
 
-import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 import backgroundImage from '@/images/background-newsletter.jpg'
 
@@ -56,12 +55,12 @@ export function Newsletter() {
                   aria-label="Email address"
                   className="-my-2.5 flex-auto bg-transparent pl-6 pr-2.5 text-base text-slate-900 placeholder:text-slate-400 focus:outline-none"
                 />
-                <Button type="submit">
+                <button type="submit">
                   <span className="sr-only sm:not-sr-only">Sign up today</span>
                   <span className="sm:hidden">
                     <ArrowRightIcon className="h-6 w-6" />
                   </span>
-                </Button>
+                </button>
               </div>
             </form>
           </div>

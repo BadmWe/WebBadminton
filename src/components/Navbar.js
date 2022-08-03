@@ -1,12 +1,11 @@
-import { Fragment } from 'react'
-import { Disclosure, Menu, Transition } from '@headlessui/react'
-import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
+import { Disclosure } from '@headlessui/react'
+import { MenuIcon, XIcon } from '@heroicons/react/outline'
 
 const navigation = [
-  { name: 'WebBadminton', href: '/', current: false },
-  { name: 'For beginners', href: '/begin', current: false },
-  { name: 'Store', href: '/store', current: false },
-  { name: 'Posts', href: '/blog', current: false }
+  { name: 'WebBadminton', href: '/' },
+  { name: 'For beginners', href: '/begin' },
+  { name: 'Store', href: '/store'},
+  { name: 'Posts', href: '/blog' }
 ]
 
 function classNames(...classes) {
@@ -52,23 +51,6 @@ const Navbar = () => {
                           </div>
                         </div>
                       </div>
-                      <div className="hidden md:block">
-                        <div className="ml-4 flex items-center md:ml-6">
-                          {/* Profile dropdown */}
-                          <Menu as="div" className="relative ml-3">
-                            <div></div>
-                            <Transition
-                              as={Fragment}
-                              enter="transition ease-out duration-100"
-                              enterFrom="transform opacity-0 scale-95"
-                              enterTo="transform opacity-100 scale-100"
-                              leave="transition ease-in duration-75"
-                              leaveFrom="transform opacity-100 scale-100"
-                              leaveTo="transform opacity-0 scale-95"
-                            ></Transition>
-                          </Menu>
-                        </div>
-                      </div>
                       <div className="-mr-2 flex md:hidden">
                         {/* Mobile menu button */}
                         <Disclosure.Button className="inline-flex items-center justify-center rounded-md bg-gray-800 p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
@@ -89,7 +71,6 @@ const Navbar = () => {
                     </div>
                   </div>
                 </div>
-
                 <Disclosure.Panel className="border-b border-gray-700 md:hidden">
                   <div className="space-y-1 px-2 py-3 sm:px-3">
                     {navigation.map((item) => (
@@ -109,7 +90,6 @@ const Navbar = () => {
                       </Disclosure.Button>
                     ))}
                   </div>
-
                 </Disclosure.Panel>
               </>
             )}
