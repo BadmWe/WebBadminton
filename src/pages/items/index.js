@@ -6,7 +6,7 @@ const products = [
     id: 1,
     name: 'Yonex Astrox 100ZZ (Dark Navy)',
     price: '$289',
-    href: 'astroxnavy',
+    href: '/items/astroxnavy',
     imageSrc:
       'https://badm-store.ru/image/cache/catalog/products/raketki/yonex/Astrox-100-ZZ-600x600.jpg',
     imageAlt: '.',
@@ -15,7 +15,7 @@ const products = [
     id: 2,
     name: 'Yonex Astrox 100ZZ (Kurenai)',
     price: '$289',
-    href: 'astroxred',
+    href: '/items/astroxred',
     imageSrc:
       'https://badm-store.ru/image/cache/catalog/products/raketki/yonex/Astrox-100-ZZ-Kurenai-600x600.jpg',
     imageAlt: '',
@@ -24,7 +24,7 @@ const products = [
     id: 3,
     name: 'Yonex Astrox 88D Pro',
     price: '$279',
-    href: 'astrox88DPro',
+    href: '/items/astrox88DPro',
     imageSrc:
       'https://badm-store.ru/image/cache/catalog/products/raketki/yonex/Astrox-88D-Pro-600x600.jpg',
     imageAlt: '.',
@@ -33,7 +33,7 @@ const products = [
     id: 4,
     name: 'Yonex Astrox 99 Pro (White Tiger)',
     price: '$269',
-    href: 'astrox99Pro',
+    href: '/items/astrox99Pro',
     imageSrc:
       'https://badm-store.ru/image/cache/catalog/products/raketki/yonex/Astrox-99-Pro-White-600x600.jpg',
     imageAlt: '.',
@@ -42,7 +42,7 @@ const products = [
     id: 5,
     name: 'Yonex Astrox 88S Pro ',
     price: '$259',
-    href: 'astrox88SPro',
+    href: '/items/astrox88SPro',
     imageSrc:
       'https://badm-store.ru/image/cache/catalog/products/raketki/yonex/Astrox-88S-Pro-600x600.jpg',
     imageAlt: '.',
@@ -51,7 +51,7 @@ const products = [
     id: 6,
     name: 'Yonex Duora 6 (Shine Pink)',
     price: '$209',
-    href: 'duora6',
+    href: '/items/duora6',
     imageSrc:
       'https://badm-store.ru/image/cache/catalog/products/raketki/yonex/Duora-6-Pink-600x600.jpg',
     imageAlt: '.',
@@ -60,7 +60,7 @@ const products = [
     id: 7,
     name: 'Yonex Arcsaber 11',
     price: '$199',
-    href: 'Arcsaber11',
+    href: '/items/Arcsaber11',
     imageSrc:
       'https://badm-store.ru/image/cache/catalog/products/raketki/yonex/Arcsaber-11-600x600.jpg',
     imageAlt: '.',
@@ -72,13 +72,10 @@ export default function Example() {
     <div className="bg-white">
       <div className="mx-auto max-w-7xl py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
         <div className="sm:flex sm:items-baseline sm:justify-between">
-          <h2 className="text-2xl font-extrabold tracking-tight text-gray-900">
-            Our Favorites
-          </h2>
           <Link href="/">
-            <a className="hidden text-sm font-semibold text-indigo-600 hover:text-indigo-500 sm:block">
-              Browse all favorites<span aria-hidden="true"> &rarr;</span>
-            </a>
+            <div className="hidden text-sm font-semibold text-indigo-600 hover:text-indigo-500 sm:block">
+              Return Home<span aria-hidden="true"> &rarr;</span>
+            </div>
           </Link>
         </div>
 
@@ -95,10 +92,10 @@ export default function Example() {
                 />
               </div>
               <h3 className="mt-4 text-base font-semibold text-gray-900">
-                <a href={product.href}>
+                <Link href={product.href}>
                   <span className="absolute inset-0" />
                   {product.name}
-                </a>
+                </Link>
               </h3>
               <p className="mt-1 text-sm text-gray-500">{product.price}</p>
             </div>
@@ -110,7 +107,7 @@ export default function Example() {
             href="#"
             className="block text-sm font-semibold text-indigo-600 hover:text-indigo-500"
           >
-            Browse all favorites<span aria-hidden="true"> &rarr;</span>
+            Return Home<span aria-hidden="true"> &rarr;</span>
           </a>
         </div>
       </div>

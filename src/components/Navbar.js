@@ -4,7 +4,7 @@ import { MenuIcon, XIcon } from '@heroicons/react/outline'
 const navigation = [
   { name: 'WebBadminton', href: '/' },
   { name: 'For beginners', href: '/begin' },
-  { name: 'Store', href: '/store'},
+  { name: 'Items', href: '/items'},
   { name: 'Posts', href: '/blog' }
 ]
 
