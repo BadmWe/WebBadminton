@@ -1,7 +1,37 @@
 import Image from 'next/image'
-
+import { Web3Storage } from 'web3.storage'
+import React, { useState } from 'react'
 import { Container } from '@/components/Container'
 import backgroundImage from '@/images/background-newsletter.jpg'
+
+const token = process.env.NEXT_PUBLIC_TOKEN
+function makeStorageClient() {
+  return new Web3Storage({ token })
+}
+
+function makeFileObjects(text) {
+  // You can create File objects from a Blob of binary data
+  // see: https://developer.mozilla.org/en-US/docs/Web/API/Blob
+  // Here we're just storing a JSON object, but you can store images,
+  // audio, or whatever you want!
+  // const obj = { email: 'world' }
+  // const blob = new Blob([JSON.stringify(obj)], { type: 'application/json' })
+  console.log(text)
+  const obj = { email: text }
+  const blob = new Blob([JSON.stringify(obj)], { type: 'application/json' })
+  const files = [
+    //new File(['contents-of-file-1'], 'plain-utf8.txt'),
+    new File([blob], 'email.json'),
+  ]
+  return files
+}
+
+async function storeFiles(files) {
+  const client = makeStorageClient()
+  const cid = await client.put(files)
+  console.log('stored files with cid:', cid)
+  return cid
+}
 
 function ArrowRightIcon(props) {
   return (
@@ -19,6 +49,18 @@ function ArrowRightIcon(props) {
 }
 
 export function Newsletter() {
+  const [input, setInput] = useState('')
+
+  async function sendEmail() {
+    //console.log(input)
+    storeFiles(makeFileObjects(input))
+  }
+
+  const saveEmail = (event) => {
+    event.preventDefault()
+    sendEmail(input)
+  }
+
   return (
     <section id="newsletter" aria-label="Newsletter">
       <Container>
@@ -43,13 +85,15 @@ export function Newsletter() {
                 notified when tickets go on sale.
               </p>
             </div>
-            <form>
+            <form onSubmit={saveEmail}>
               <h3 className="text-lg font-semibold tracking-tight text-blue-900">
                 Sign up to our newsletter <span aria-hidden="true">&darr;</span>
               </h3>
               <div className="mt-5 flex rounded-3xl bg-white py-2.5 pr-2.5 shadow-xl shadow-blue-900/5 focus-within:ring-2 focus-within:ring-blue-900">
                 <input
                   type="email"
+                  value={input}
+                  onChange={(e) => setInput(e.target.value)}
                   required
                   placeholder="Email address"
                   aria-label="Email address"
