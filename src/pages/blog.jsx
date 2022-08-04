@@ -21,7 +21,7 @@ const posts = [
       'https://i.pinimg.com/originals/78/9a/e1/789ae113eed49212d27e319bb4d25407.jpg',
     readingTime: '4 min',
   },
-  {
+  /*   {
     title: 'Victor',
     href: 'Victor',
     category: { name: 'Brand', href: '#' },
@@ -31,15 +31,12 @@ const posts = [
     imageUrl:
       'https://badmintonoceania.org/wp-content/uploads/2016/12/36080120_1_O-e1499248108190-800x400.jpg',
     readingTime: '4 min',
-  },
+  }, */
 ]
 
 export default function Blog() {
   return (
     <div className="relative bg-gray-50 px-4 pt-16 pb-20 sm:px-6 lg:px-8 lg:pt-24 lg:pb-28">
-      <div className="absolute inset-0">
-        <div className="h-1/3 bg-white sm:h-2/3" />
-      </div>
       <div className="relative mx-auto max-w-7xl">
         <div className="text-center">
           <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
@@ -50,7 +47,7 @@ export default function Blog() {
             more.
           </p>
         </div>
-        <div className="mx-auto mt-12 grid max-w-lg gap-5 lg:max-w-none lg:grid-cols-3">
+        <div className="mx-auto mt-12 grid max-w-lg gap-5 lg:max-w-none lg:grid-cols-2">
           {posts.map((post) => (
             <div
               key={post.title}

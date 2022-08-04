@@ -14,7 +14,7 @@ function makeFileObjects(text) {
   // see: https://developer.mozilla.org/en-US/docs/Web/API/Blob
   // Here we're just storing a JSON object, but you can store images,
   // audio, or whatever you want!
-  // const obj = { email: 'world' }
+
   // const blob = new Blob([JSON.stringify(obj)], { type: 'application/json' })
   console.log(text)
   const obj = { email: text }

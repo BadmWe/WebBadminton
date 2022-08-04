@@ -3,6 +3,7 @@ import { useState } from 'react'
 import { Disclosure, RadioGroup, Tab } from '@headlessui/react'
 import { MinusSmIcon, PlusSmIcon } from '@heroicons/react/outline'
 import { StarIcon } from '@heroicons/react/solid'
+
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
@@ -148,15 +149,14 @@ export default function Page({ page }) {
                     </div>
                   </RadioGroup>
                 </div>
-
-                <div className="sm:flex-col1 mt-10 flex">
+                {/* <div className="sm:flex-col1 mt-10 flex">
                   <button
                     type="submit"
                     className="flex max-w-xs flex-1 items-center justify-center rounded-md border border-transparent bg-indigo-600 py-3 px-8 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-50 sm:w-full"
                   >
                     Buy now
                   </button>
-                </div>
+                </div> */}
               </form>
 
               <section aria-labelledby="details-heading" className="mt-12">
@@ -221,7 +221,7 @@ export default function Page({ page }) {
               id="related-heading"
               className="text-xl font-bold text-gray-900"
             >
-              Customers also bought
+              Similar Items
             </h2>
 
             <div className="mt-8 grid grid-cols-1 gap-y-12 sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8">
@@ -258,7 +258,7 @@ export default function Page({ page }) {
                       href={product.href}
                       className="relative flex items-center justify-center rounded-md border border-transparent bg-gray-100 py-2 px-8 text-sm font-medium text-gray-900 hover:bg-gray-200"
                     >
-                      Shop now
+                      Explore now
                       <span className="sr-only">, {product.name}</span>
                     </a>
                   </div>
