@@ -1,9 +1,9 @@
 import { Hero } from '@/components/Hero'
 import { Newsletter } from '@/components/Newsletter'
-import { Head } from 'next/document'
+import Head from 'next/head'
 export default function Home() {
   return (
-    <>
+    <div>
       <Head>
         <title>Web Badminton</title>
         <meta
@@ -21,6 +21,6 @@ export default function Home() {
       </Head>
       <Hero />
       <Newsletter />
-    </>
+    </div>
   )
 }
