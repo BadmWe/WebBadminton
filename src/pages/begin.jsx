@@ -10,12 +10,10 @@ export default function Example() {
             How to choose a badminton racket?
           </p>
         </div>
-        <div className="relative z-10 mx-auto max-w-prose text-base lg:mx-0 lg:max-w-5xl lg:pr-72">
-          <p className="text-lg text-indigo-600">Badminton racket weight</p>
-        </div>
         <div className="lg:grid lg:grid-cols-2 lg:items-start lg:gap-8">
           <div className="relative z-10">
-            <div className="prose prose-indigo mx-auto max-w-prose text-base text-gray-500 lg:max-w-none ">
+            <div className="prose prose-indigo mx-auto max-w-prose text-base text-gray-500 lg:max-w-none">
+              <p className="text-lg text-indigo-600">Badminton racket weight</p>
               <p>
                 Badminton rackets weigh between 54 and 94 grams. The weight of a
                 badminton racket is indicated by the Latin letter “U” and a

@@ -4,12 +4,16 @@ import { Disclosure, RadioGroup, Tab } from '@headlessui/react'
 import { MinusSmIcon, PlusSmIcon } from '@heroicons/react/outline'
 import { StarIcon } from '@heroicons/react/solid'
 
+import Image from 'next/image'
+import { useConnect } from 'wagmi'
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
 export default function Page({ page }) {
   const [selectedColor, setSelectedColor] = useState(page.product.colors[0])
+  const { connect, connectors, error, isLoading, pendingConnector } =
+    useConnect()
   return (
     <div className="bg-white">
       <main className="mx-auto max-w-7xl sm:px-6 sm:pt-16 lg:px-8">
@@ -30,8 +34,10 @@ export default function Page({ page }) {
                         <>
                           <span className="sr-only">{image.name}</span>
                           <span className="absolute inset-0 overflow-hidden rounded-md">
-                            <img
+                            <Image
                               src={image.src}
+                              width={600}
+                              height={600}
                               alt=""
                               className="h-full w-full object-cover object-center"
                             />
@@ -53,9 +59,11 @@ export default function Page({ page }) {
               <Tab.Panels className="aspect-w-1 aspect-h-1 w-full">
                 {page.product.images.map((image) => (
                   <Tab.Panel key={image.id}>
-                    <img
+                    <Image
                       src={image.src}
                       alt={image.alt}
+                      width={600}
+                      height={600}
                       className="h-full w-full object-cover object-center sm:rounded-lg"
                     />
                   </Tab.Panel>
@@ -68,12 +76,10 @@ export default function Page({ page }) {
               <h1 className="text-3xl font-extrabold tracking-tight text-gray-900">
                 {page.product.name}
               </h1>
-
               <div className="mt-3">
                 <h2 className="sr-only">Product information</h2>
                 <p className="text-3xl text-gray-900">{page.product.price}</p>
               </div>
-
               {/* Reviews */}
               <div className="mt-3">
                 <h3 className="sr-only">Reviews</h3>
@@ -97,7 +103,6 @@ export default function Page({ page }) {
                   </p>
                 </div>
               </div>
-
               <div className="mt-6">
                 <h3 className="sr-only">Description</h3>
 
@@ -158,7 +163,6 @@ export default function Page({ page }) {
                   </button>
                 </div> */}
               </form>
-
               <section aria-labelledby="details-heading" className="mt-12">
                 <h2 id="details-heading" className="sr-only">
                   Additional details
@@ -229,9 +233,11 @@ export default function Page({ page }) {
                 <div key={product.id}>
                   <div className="relative">
                     <div className="relative h-72 w-full overflow-hidden rounded-lg">
-                      <img
+                      <Image
                         src={product.imageSrc}
                         alt={product.imageAlt}
+                        width={600}
+                        height={600}
                         className="h-full w-full object-cover object-center"
                       />
                     </div>
