@@ -5,15 +5,30 @@ import { MinusSmIcon, PlusSmIcon } from '@heroicons/react/outline'
 import { StarIcon } from '@heroicons/react/solid'
 
 import Image from 'next/image'
-import { useConnect } from 'wagmi'
+import { useAccount, useConnect } from 'wagmi'
+
+//const Web3 = require('web3')
+
+const contract = require('../../MyERC1155NFT.json')
+
+//const web3 = new Web3()
+
+const contractAddress = '0x18587c47CE8eb3a2EE11bb19B6AbC92d6531d285'
+//const nftContract = new web3.eth.Contract(contract.abi, contractAddress)
+
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
 export default function Page({ page }) {
   const [selectedColor, setSelectedColor] = useState(page.product.colors[0])
-  const { connect, connectors, error, isLoading, pendingConnector } =
-    useConnect()
+
+  const { address, isConnected } = useAccount()
+
+  function Mint() {
+    console.log(12)
+  }
+
   return (
     <div className="bg-white">
       <main className="mx-auto max-w-7xl sm:px-6 sm:pt-16 lg:px-8">
@@ -154,14 +169,17 @@ export default function Page({ page }) {
                     </div>
                   </RadioGroup>
                 </div>
-                {/* <div className="sm:flex-col1 mt-10 flex">
-                  <button
-                    type="submit"
-                    className="flex max-w-xs flex-1 items-center justify-center rounded-md border border-transparent bg-indigo-600 py-3 px-8 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-50 sm:w-full"
-                  >
-                    Buy now
-                  </button>
-                </div> */}
+                {
+                  <div className="sm:flex-col1 mt-10 flex">
+                    <button
+                      type="submit"
+                      onClick={Mint}
+                      className="flex max-w-xs flex-1 items-center justify-center rounded-md border border-transparent bg-indigo-600 py-3 px-8 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-50 sm:w-full"
+                    >
+                      Buy now
+                    </button>
+                  </div>
+                }
               </form>
               <section aria-labelledby="details-heading" className="mt-12">
                 <h2 id="details-heading" className="sr-only">
