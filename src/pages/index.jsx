@@ -1,6 +1,8 @@
+import Head from 'next/head'
+
 import { Hero } from '../components/Hero'
 import { Newsletter } from '../components/Newsletter'
-import Head from 'next/head'
+
 export default function Home() {
   return (
     <div>
