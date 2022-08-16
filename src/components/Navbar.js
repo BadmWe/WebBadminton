@@ -61,21 +61,7 @@ const Navbar = () => {
                   {isConnected ? (
                     <div className="dropdown relative">
                       <button
-                        className="dropdown-toggle flex items-center whitespace-nowrap rounded
-bg-blue-600
-px-6
-py-2.5
-text-xs
-font-medium
-uppercase
-leading-tight text-white
-shadow-md transition duration-150 ease-in-out
-hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700
-focus:shadow-lg
-focus:outline-none
-focus:ring-0 active:bg-blue-800
-active:text-white active:shadow-lg
-"
+                        className="relative inline-flex items-center rounded-md border border-transparent bg-indigo-500 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-800"
                         type="button"
                         id="dropdownMenuButton1"
                         data-bs-toggle="dropdown"
@@ -117,7 +103,6 @@ active:text-white active:shadow-lg
                 text-gray-700
                 hover:bg-gray-100
               "
-                            href="#"
                             onClick={disconnect}
                           >
                             Disconnect
