@@ -9,6 +9,7 @@ import {
   chain,
 } from 'wagmi'
 import { publicProvider } from 'wagmi/providers/public'
+import { MetaMaskConnector } from 'wagmi/connectors/metaMask'
 
 export default function App({ Component, pageProps }) {
   const { chains, provider, webSocketProvider } = configureChains(
@@ -17,6 +18,7 @@ export default function App({ Component, pageProps }) {
   )
   const client = createClient({
     autoConnect: true,
+    connectors: [new MetaMaskConnector({ chains })],
     provider,
     webSocketProvider,
   })
