@@ -14,9 +14,8 @@ function classNames(...classes) {
 }
 
 const Navbar = () => {
-  const { address, connector, isConnected } = useAccount()
-  const { connect, connectors, error, isLoading, pendingConnector } =
-    useConnect()
+  const { address, isConnected } = useAccount()
+  const { connect, connectors, isLoading, pendingConnector } = useConnect()
   const { disconnect } = useDisconnect()
 
   return (

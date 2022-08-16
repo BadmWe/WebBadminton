@@ -1,13 +1,7 @@
 import 'focus-visible'
 import '@/styles/tailwind.css'
 import { Layout } from '@/components/Layout'
-import {
-  WagmiConfig,
-  createClient,
-  configureChains,
-  defaultChains,
-  chain,
-} from 'wagmi'
+import { WagmiConfig, createClient, configureChains, chain } from 'wagmi'
 import { publicProvider } from 'wagmi/providers/public'
 import { MetaMaskConnector } from 'wagmi/connectors/metaMask'
 
