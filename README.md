@@ -8,6 +8,30 @@ Web Badminton - decentralized badminton centered dapp on IPFS and Polygon Blockc
       </a>
 </div>
 
+With Decentralized Storage provider IPFS and blockchain technology, we create a decentralized platform for you to learn about playing Badminton.
+
+We all know that sports are great for your physical health. Badminton also has many psychological benefits
+
+## What it does
+
+Web Badminton Dapp introduces users to the sport of Badminton as well as contains item store to track and ledger the delivery of badminton equipment.
+
+Each real equipment item is ledgered via a digital one with a smart contract logic system in place to determine the demand and track iteam. When delivery is completed the DApp ERC1155 NFTs should be exchanged for the physical items.
+
+A great win for the producers is a potential to save on costs with improved inventory tracking and demand management.
+
+Web Badminton DApp succeeds where off-chain software ledgering system products fail because they may go out of service, need updates, crash with data losses. Web Badminton DApp is a very low cost business systems management product/tool.
+
+While competing software based ledgering products carry monthly and or annual base fees, the only new costs accrued by the business utilizing the DApp are among new contract deployments. A new contract for new batch of items only is needed every few months based on demand and delivery schedule.
+
+In addition, we created Decentralized Newsletter subscription List that we connected to web3.storage.
+
+## How we built it
+
+We built the application using JavaScript, NextJS, React, Tailwind Css and Wagmi library, IPFS, nft.storage and web3.storage. The application is hosted on vercel. The newsletter list data is stored on ipfs with web3.storage.
+
+The contract is built with solidity, hardhat and polygon blockchain mumbai testnet. Meanwhile the Ipfs data is stored using nft.storage.
+
 ## Getting started
 
 To get started with this Dapp, first install the npm dependencies:
