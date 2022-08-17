@@ -3,28 +3,29 @@ import { useState } from 'react'
 import { Disclosure, RadioGroup, Tab } from '@headlessui/react'
 import { MinusSmIcon, PlusSmIcon } from '@heroicons/react/outline'
 import { StarIcon } from '@heroicons/react/solid'
-import { ethers, Signer } from 'ethers'
+import { ethers } from 'ethers'
 import Image from 'next/image'
 import { useAccount, useSigner } from 'wagmi'
 
 const abi = require('../../MyERC1155NFT.json')
 
-const contractAddress = '0x18587c47CE8eb3a2EE11bb19B6AbC92d6531d285'
+const contractAddress = '0xF46FCAb2404b071ac33e5eD2095802Cecf77FB21'
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function Page({ page }) {
+export default function Page({ page, params }) {
+  console.log(params.slug)
   const [selectedColor, setSelectedColor] = useState(page.product.colors[0])
 
-  const { address, isConnected } = useAccount()
+  const { address } = useAccount()
   const { data: signer } = useSigner()
 
   async function Mint() {
     const contract = new ethers.Contract(contractAddress, abi.abi, signer)
-    console.log(contract)
-    await contract.mintRock({ from: address })
+    //change to params.slug
+    await contract['mint' + params.slug]({ from: address })
   }
 
   return (
@@ -306,5 +307,5 @@ export async function getStaticProps({ params }) {
   const page = content.pages.find((page) => page.path === currentPath) || {
     notfound: true,
   }
-  return { props: { page } }
+  return { props: { page, params } }
 }
