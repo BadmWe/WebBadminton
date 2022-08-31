@@ -1,13 +1,14 @@
 import content from '../../frontaid.content.json'
+const abi = require('../../MyERC1155NFT.json')
+
+import Image from 'next/image'
 import { useState } from 'react'
 import { Disclosure, RadioGroup, Tab } from '@headlessui/react'
 import { MinusSmIcon, PlusSmIcon } from '@heroicons/react/outline'
 import { StarIcon } from '@heroicons/react/solid'
 import { ethers } from 'ethers'
-import Image from 'next/image'
-import { useAccount, useSigner } from 'wagmi'
 
-const abi = require('../../MyERC1155NFT.json')
+import { useAccount, useSigner, useNetwork } from 'wagmi'
 
 const contractAddress = '0xF46FCAb2404b071ac33e5eD2095802Cecf77FB21'
 
@@ -16,16 +17,20 @@ function classNames(...classes) {
 }
 
 export default function Page({ page, params }) {
-  console.log(params.slug)
   const [selectedColor, setSelectedColor] = useState(page.product.colors[0])
 
   const { address } = useAccount()
+  const { chain, chains } = useNetwork()
   const { data: signer } = useSigner()
-
+  console.log(chain)
   async function Mint() {
-    const contract = new ethers.Contract(contractAddress, abi.abi, signer)
-    //change to params.slug
-    await contract['mint' + params.slug]({ from: address })
+    if (chain.id === 80001) {
+      const contract = new ethers.Contract(contractAddress, abi.abi, signer)
+      await contract['mint' + params.slug]({ from: address })
+    }
+    if (chain.id === 22) {
+      console.log(123)
+    }
   }
 
   return (
