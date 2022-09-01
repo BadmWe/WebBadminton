@@ -9,5 +9,12 @@ module.exports = {
       url: `https://polygon-mumbai.g.alchemy.com/v2/${process.env.ALCHEMY_API_KEY}`,
       accounts: [process.env.MUMBAI_PRIVATE_KEY],
     },
+    l14: {
+      url: 'https://rpc.l14.lukso.network',
+      accounts: [process.env.MUMBAI_PRIVATE_KEY],
+      chainId: 22,
+      gas: 50000000,
+      gasPrice: 1000000000000,
+    },
   },
 }
