@@ -8,9 +8,9 @@ Web Badminton - decentralized badminton centered dapp on IPFS and Polygon Blockc
       </a>
 </div>
 
-With Decentralized Storage provider IPFS and blockchain technology, we create a decentralized platform for you to learn about playing Badminton.
+With Decentralized Storage provider IPFS and blockchain technology, we build a decentralized platform for you to learn about playing Badminton.
 
-We all know that sports are great for your physical health. Badminton also has many psychological benefits
+We Updated the App to include new Chain: Lukso L14 testnet. The contract on the new chain follows LSP-8 standard. A standard interface for identifiable digital assets, allowing for tokens to be uniquely traded and given metadata using ERC725Y.
 
 ## What it does
 
@@ -46,7 +46,9 @@ Next, run the development server:
 yarn dev
 ```
 
-##
+# Links
+
+[Devpost Page](https://devpost.com/software/web-badminton)
 
 ## Learn more
 
@@ -55,3 +57,5 @@ To learn more about the technologies used in this site template, see the followi
 - [Tailwind CSS](https://tailwindcss.com/docs) - the official Tailwind CSS documentation
 - [Next.js](https://nextjs.org/docs) - the official Next.js documentation
 - [Headless UI](https://headlessui.dev) - the official Headless UI documentation
+- [Web3 Storage](web3.storage/) - ipfs storage
+- [LSP-8-IdentifiableDigitalAsset](https://github.com/lukso-network/LIPs/blob/main/LSPs/LSP-8-IdentifiableDigitalAsset.md) - A standard interface for identifiable digital assets, allowing for tokens to be uniquely traded and given metadata using ERC725Y.
