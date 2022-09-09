@@ -1,6 +1,6 @@
 # Web Badminton
 
-Web Badminton - decentralized badminton centered dapp on IPFS and Polygon Blockchain.
+[Web Badminton](https://webbadminton.com) - decentralized badminton centered dapp on IPFS and Polygon Blockchain.
 
 <div align="left">
       <a href="https://www.youtube.com/watch?v=1oxnYJdtDQg">
@@ -49,6 +49,8 @@ yarn dev
 # Links
 
 [Devpost Page](https://devpost.com/software/web-badminton)
+[DoraHacks Page](https://dorahacks.io/buidl/3416)
+[publish0x web badminton post](https://www.publish0x.com/blockchain-tech/web-badminton-decentralized-badminton-dapp-on-ipfs-and-polyg-xmyyjxg)
 
 ## Learn more
 
