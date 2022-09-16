@@ -4,13 +4,12 @@ export default function Example() {
     <div>
       <Head>
         <title>For begginers</title>
+        <meta name="description" content="How to choose a badminton racket?" />
+        <meta property="og:title" content="WebBadminton:For begginers" />
         {/*
-      <meta
-        name="description"
-        content="A platform where we talk about the rules of badminton, brands, equipment and much more."
-      />
+      
       <link rel="icon" href="/favicon.ico" />
-      <meta property="og:title" content="WebBadminton" />
+     
       <meta
         property="og:description"
         content="A platform where we talk about the rules of badminton, brands, equipment and much more."

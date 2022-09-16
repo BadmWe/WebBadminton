@@ -71,7 +71,7 @@ export default function Page({ page, params }) {
                                 src={image.src}
                                 width={600}
                                 height={600}
-                                alt=""
+                                alt={page.product.name}
                                 className="h-full w-full object-cover object-center"
                               />
                             </span>

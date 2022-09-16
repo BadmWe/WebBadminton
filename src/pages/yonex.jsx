@@ -4,14 +4,16 @@ export default function Example() {
   return (
     <div>
       <Head>
-        <title>Yonex</title>
+        <title>WebBadminton Yonex</title>
+        <meta
+          name="description"
+          content="Yonex is a Japanese sports equipment manufacturing company.Yonex produces equipment and apparel for tennis, badminton, golf, and running."
+        />
+        <meta property="og:title" content="WebBadminton Yonex" />
         {/*
-      <meta
-        name="description"
-        content="A platform where we talk about the rules of badminton, brands, equipment and much more."
-      />
+
       <link rel="icon" href="/favicon.ico" />
-      <meta property="og:title" content="WebBadminton" />
+      
       <meta
         property="og:description"
         content="A platform where we talk about the rules of badminton, brands, equipment and much more."

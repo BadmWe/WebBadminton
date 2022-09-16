@@ -41,13 +41,15 @@ export default function Blog() {
     <div>
       <Head>
         <title>Web Badminton Posts</title>
-        {/*
         <meta
           name="description"
-          content="A platform where we talk about the rules of badminton, brands, equipment and much more."
+          content="Here you can learn something new about brands, rackets and much more."
         />
+        <meta property="og:title" content="WebBadminton Posts" />
+        {/*
+        
         <link rel="icon" href="/favicon.ico" />
-        <meta property="og:title" content="WebBadminton" />
+        
         <meta
           property="og:description"
           content="A platform where we talk about the rules of badminton, brands, equipment and much more."
