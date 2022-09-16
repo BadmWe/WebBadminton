@@ -69,6 +69,25 @@ const products = [
 
 export default function Example() {
   return (
+    <div>
+    <Head>
+      <title>Items</title>
+      {/*
+      <meta
+        name="description"
+        content="A platform where we talk about the rules of badminton, brands, equipment and much more."
+      />
+      <link rel="icon" href="/favicon.ico" />
+      <meta property="og:title" content="WebBadminton" />
+      <meta
+        property="og:description"
+        content="A platform where we talk about the rules of badminton, brands, equipment and much more."
+      />
+      <meta property="og:url" content="https://webbadminton.com/" />
+      <meta property="og:type" content="website" />
+      <meta property="og:image" content="/backgound.jpg" />
+      */}
+    </Head>
     <div className="bg-white">
       <div className="mx-auto max-w-7xl py-16 px-4 sm:px-6 lg:px-8">
       <h1 class="text-center mt-2 text-3xl font-extrabold leading-8 tracking-tight text-gray-900 sm:text-4xl">Items</h1>
@@ -112,6 +131,7 @@ export default function Example() {
           </a>
         </div>
       </div>
+    </div>
     </div>
   )
 }
