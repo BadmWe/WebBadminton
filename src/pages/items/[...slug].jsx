@@ -1,6 +1,6 @@
 import content from '../../frontaid.content.json'
 import { getContractInfo } from '../../utils/contracts'
-
+import Head from 'next/head'
 import Image from 'next/image'
 import { useState } from 'react'
 import { Disclosure, RadioGroup, Tab } from '@headlessui/react'

@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-
+import Head from 'next/head'
 const products = [
   {
     id: 1,
@@ -90,7 +90,7 @@ export default function Example() {
     </Head>
     <div className="bg-white">
       <div className="mx-auto max-w-7xl py-16 px-4 sm:px-6 lg:px-8">
-      <h1 class="text-center mt-2 text-3xl font-extrabold leading-8 tracking-tight text-gray-900 sm:text-4xl">Items</h1>
+      <h1 className="text-center mt-2 text-3xl font-extrabold leading-8 tracking-tight text-gray-900 sm:text-4xl">Items</h1>
         <div className="sm:flex sm:items-baseline sm:justify-between">
           <Link href="/">
             <div className="hidden text-sm font-semibold text-indigo-600 hover:text-indigo-500 sm:block">
