@@ -3,9 +3,9 @@ export default function Example() {
     <div className="overflow-hidden bg-gray-50 py-16">
       <div className="mx-auto max-w-7xl space-y-8 px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-prose text-base lg:max-w-none">
-          <h2 className="tracking-widetext -indigo-600 text-base font-semibold uppercase">
+          <h1 className="tracking-widetext -indigo-600 text-base font-semibold uppercase">
             Rackets
-          </h2>
+          </h1>
           <p className="mt-2 text-3xl font-extrabold leading-8 tracking-tight text-gray-900 sm:text-4xl">
             How to choose a badminton racket?
           </p>
@@ -153,7 +153,7 @@ export default function Example() {
             <div className="mx-auto mt-10 flex max-w-prose text-base lg:max-w-none">
               <div className="rounded-md shadow">
                 <a
-                  href="store"
+                  href="items"
                   className="flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-5 py-3 text-base font-medium text-white hover:bg-indigo-700"
                 >
                   Our store
