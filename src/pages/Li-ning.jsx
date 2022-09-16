@@ -10,9 +10,9 @@ export default function Example() {
             <h2 className="text-base font-semibold uppercase tracking-wide text-indigo-600">
               HIstory
             </h2>
-            <h3 className="mt-2 text-3xl font-extrabold leading-8 tracking-tight text-gray-900 sm:text-4xl">
+            <h1 className="mt-2 text-3xl font-extrabold leading-8 tracking-tight text-gray-900 sm:text-4xl">
               Li-ning
-            </h3>
+            </h1>
           </div>
         </div>
         <div className="mt-8 lg:grid lg:grid-cols-2 lg:gap-8">
