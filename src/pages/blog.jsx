@@ -61,7 +61,7 @@ export default function Blog() {
         <div className="relative mx-auto max-w-7xl">
           <div className="text-center">
             <h1 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-              Posts
+              Web Badminton Posts
             </h1>
             <p className="mx-auto mt-3 max-w-2xl text-xl text-gray-500 sm:mt-4">
               Here you can learn something new about brands, rackets and much
