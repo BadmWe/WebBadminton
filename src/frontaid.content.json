@@ -24,6 +24,7 @@
             "src": "https://badm-store.ru/image/cache/catalog/products/raketki/chexly/Cover-Yonex-Arcsaber-1100x1100.jpg",
             "alt": ""
           }
+ 
         ],
         "colors": [],
         "description": "",
@@ -534,7 +535,7 @@
           }
         ],
         "colors": [],
-        "description": "",
+        "description": "The Astrox 88D Pro is a new version of the Astrox 88D racket, beloved by professionals. It features a counterbalance design for improved balance and control in three key locations: at the end of the handlebar, at the tee, and at the top of the frame. The new isometric rim shape enhances game stability from anywhere on the court. The upper part of the rim has become more flexible - so that the athlete can transfer maximum energy to the shuttlecock and increase the power of the mixes.",
         "details": [
           {
             "name": "Features",
@@ -551,7 +552,12 @@
           },
           {
             "name": "Description",
-            "items": []
+            "items": ["Rotational Generator System",
+          "Rational weight distribution throughout the volume of the racket provides excellent handling. The racket recovers faster after being hit, allowing the player to combine smoothness and high speed. The technology allows you to maximize the benefits of Namd graphite - durable and elastic.",
+        "Namd",
+      "Graphite particles are combined with epoxy resin, due to which the material has acquired even greater strength, rigidity",
+    "Extra Slim Shaft",
+  "The thinnest rod, which significantly increases flexibility, reduces air resistance, increases the impact force."]
           }
         ]
       },
