@@ -10,21 +10,15 @@ export default function Example() {
           content="Yonex is a Japanese sports equipment manufacturing company.Yonex produces equipment and apparel for tennis, badminton, golf, and running."
         />
         <meta property="og:title" content="WebBadminton Yonex" />
-        <meta property="og:image" content="/backgound.jpg" />
+        <meta property="og:image" content="/yonexlog.jpg" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://webbadminton.com/yonex" />
-        {/*
-
-      <link rel="icon" href="/favicon.ico" />
-      
-      <meta
-        property="og:description"
-        content="A platform where we talk about the rules of badminton, brands, equipment and much more."
-      />
-      <meta property="og:url" content="https://webbadminton.com/" />
-      <meta property="og:type" content="website" />
-      <meta property="og:image" content="/backgound.jpg" />
-      */}
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta
+          property="og:description"
+          content="Yonex is a Japanese sports equipment manufacturing company.Yonex produces equipment and apparel for tennis, badminton, golf, and running."
+        />
       </Head>
       <div className="overflow-hidden bg-white">
         <div className="relative mx-auto max-w-7xl py-16 px-4 sm:px-6 lg:px-8">
