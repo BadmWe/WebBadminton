@@ -72,7 +72,7 @@ export default function Example() {
                     <img
                       className="rounded-lg object-cover object-center shadow-lg"
                       src="https://originalclassic.com.my/image/originalclassic/image/data/yonex-01.jpg"
-                      alt=""
+                      alt="Yonex"
                       width={1184}
                       height={1376}
                     />
@@ -81,7 +81,7 @@ export default function Example() {
                     <img
                       className="rounded-lg object-cover object-center shadow-lg"
                       src="https://img.tennis-warehouse.com/watermark/rsg.php?path=/content_images/YonexBRANDOAbout/YonexC1.JPG&nw=780"
-                      alt=""
+                      alt=" Minoru Yoneyama "
                       width={1184}
                       height={1376}
                     />

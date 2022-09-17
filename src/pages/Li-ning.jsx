@@ -7,7 +7,7 @@ export default function Example() {
         <title>Li-ning</title>
         <meta
           name="description"
-          content="History of Li-ning The company was founded in 1989 by Li Ning, a former Chinese Olympic gymnast. "
+          content="History of Li-ning: The company was founded in 1989 by Li Ning, a former Chinese Olympic gymnast. "
         />
         <meta property="og:title" content="WebBadminton Li-ning" />
         <meta property="og:type" content="website" />
@@ -83,7 +83,7 @@ export default function Example() {
                     <img
                       className="rounded-lg object-cover object-center shadow-lg"
                       src="https://m.economictimes.com/thumb/msid-88376513,width-1200,height-900,resizemode-4,imgsize-59134/kidambi-srikanth-becomes-first-indian-man-to-win-silver-at-bwf-world-cships.jpg"
-                      alt=""
+                      alt="Kidambi Srikanth"
                       width={1184}
                       height={1376}
                     />
@@ -99,7 +99,7 @@ export default function Example() {
                     <img
                       className="rounded-lg object-cover object-center shadow-lg"
                       src="https://assets.thehansindia.com/h-upload/2021/03/04/1600x960_1035187-pv-sindhu.jpg"
-                      alt=""
+                      alt="Pusarla Venkata Sindhu"
                       width={1184}
                       height={1376}
                     />

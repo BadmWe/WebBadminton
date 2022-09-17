@@ -240,7 +240,7 @@ export default function Example() {
                     <img
                       className="h-12 w-12 rounded-full bg-indigo-300 sm:h-20 sm:w-20"
                       src="https://vbadminton.ru/sites/default/files/styles/810/public/badminton-1000x500.jpg"
-                      alt=""
+                      alt="admin"
                     />
                   </span>
                   <span className="relative ml-4 font-semibold leading-6 text-indigo-300 sm:ml-24 sm:pl-6">
