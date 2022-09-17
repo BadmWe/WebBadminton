@@ -13,8 +13,6 @@ export default function Example() {
         <meta property="og:image" content="/yonexlog.jpg" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://webbadminton.com/yonex" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
         <meta
           property="og:description"
           content="Yonex is a Japanese sports equipment manufacturing company.Yonex produces equipment and apparel for tennis, badminton, golf, and running."
