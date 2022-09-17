@@ -10,16 +10,16 @@ export default function Example() {
           content="History of Li-ning :The company was founded in 1989 by Li Ning, a former Chinese Olympic gymnast. "
         />
         <meta property="og:title" content="WebBadminton Li-ning" />
-        <meta property="og:url" content="https://webbadminton.com/Li-ning" />
         <meta property="og:type" content="website" />
         <meta
           property="og:image"
-          content="https://i.pinimg.com/originals/78/9a/e1/789ae113eed49212d27e319bb4d25407.jpg"
+          content="/https://i.pinimg.com/originals/78/9a/e1/789ae113eed49212d27e319bb4d25407.jpg"
         />
         <meta
           property="og:description"
           content="The company was founded in 1989 by Li Ning, a former Chinese Olympic gymnast."
         />
+        <link rel="icon" href="/favicon.ico" />
         {/*
      
       <link rel="icon" href="/favicon.ico" />

@@ -12,7 +12,7 @@ export default function Example() {
         <meta property="og:title" content="WebBadminton Yonex" />
         <meta
           property="og:image"
-          content="https://www.yonex.com/media/wysiwyg/news/Yonex-News-Holder-Image_1.PNG"
+          content="/https://www.yonex.com/media/wysiwyg/news/Yonex-News-Holder-Image_1.PNG"
         />
         {/*
 
