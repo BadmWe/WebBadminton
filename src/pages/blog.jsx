@@ -46,6 +46,13 @@ export default function Blog() {
           content="Here you can learn something new about brands, rackets and much more."
         />
         <meta property="og:title" content="WebBadminton Posts" />
+        <meta property="og:url" content="https://webbadminton.com/blog" />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:description"
+          content="Here you can learn something new about brands, rackets and much more."
+        />
+        <meta property="og:image" content="/photos/logolin.jpg" />
         {/*
         
         <link rel="icon" href="/favicon.ico" />

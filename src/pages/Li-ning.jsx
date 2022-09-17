@@ -15,6 +15,7 @@ export default function Example() {
           property="og:image"
           content="https://i.pinimg.com/originals/78/9a/e1/789ae113eed49212d27e319bb4d25407.jpg"
         />
+        <meta property="og:url" content="https://webbadminton.com/Li-ning" />
 
         {/*
      

@@ -4,8 +4,18 @@ export default function Example() {
     <div>
       <Head>
         <title>For begginers</title>
-        <meta name="description" content="How to choose a badminton racket?" />
-        <meta property="og:title" content="WebBadminton:For begginers" />
+        <meta
+          name="description"
+          content="How to choose a badminton racket? In this post, we will tell you how to choose a badminton racket."
+        />
+        <meta property="og:title" content="WebBadminton: For begginers" />
+        <meta
+          property="og:description"
+          content="How to choose a badminton racket? In this post, we will tell you how to choose a badminton racket."
+        />
+        <meta property="og:url" content="https://webbadminton.com/begin" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="/photos/tacket.jpg" />
         {/*
       
       <link rel="icon" href="/favicon.ico" />
