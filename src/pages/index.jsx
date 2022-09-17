@@ -20,7 +20,7 @@ export default function Home() {
         />
         <meta property="og:url" content="https://webbadminton.com/" />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://i.imgur.com/ZZiRfLI.png" />
+        <meta property="og:image" content="https://i.imgur.com/smOS8Qg.png" />
       </Head>
       <Hero />
       <Newsletter />
