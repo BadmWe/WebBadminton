@@ -8,7 +8,7 @@ import { ethers } from 'ethers'
 import { useAccount, useSigner, useNetwork } from 'wagmi'
 
 import content from '../../frontaid.content.json'
-import { getContractInfo } from '@/utils/contracts'
+import { getContractInfo } from '../../utils/contracts'
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')

@@ -2,8 +2,8 @@ import Image from 'next/image'
 import { Web3Storage } from 'web3.storage'
 import React, { useState } from 'react'
 
-import { Container } from '@/components/Container'
-import backgroundImage from '@/images/background-newsletter.webp'
+import { Container } from './Container'
+import backgroundImage from '../images/background-newsletter.webp'
 
 const token = process.env.NEXT_PUBLIC_TOKEN
 function makeStorageClient() {
