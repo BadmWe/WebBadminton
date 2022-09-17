@@ -105,7 +105,7 @@ export default function Example() {
               <div className="sm:aspect-w-2 sm:aspect-h-3 h-96 w-full overflow-hidden rounded-lg group-hover:opacity-75 sm:h-auto">
                 <Image
                   src={product.imageSrc}
-                  alt={product.imageAlt}
+                  alt={product.name}
                   width={600}
                   height={600}
                   className="h-full w-full object-cover object-center"

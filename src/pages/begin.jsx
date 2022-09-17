@@ -14,8 +14,11 @@ export default function Example() {
           content="How to choose a badminton racket? In this post, we will tell you how to choose a badminton racket."
         />
         <meta property="og:url" content="https://webbadminton.com/begin" />
-        <meta property="og:type" content="website" />
-        <meta property="og:image" content="/photos/tacket.jpg" />
+        <meta property="og:type" content="article" />
+        <meta
+          property="og:image"
+          content="https://webbadminton.com/photos/tacket.jpg"
+        />
         {/*
       
       <link rel="icon" href="/favicon.ico" />

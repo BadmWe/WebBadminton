@@ -1,5 +1,3 @@
-import content from '../../frontaid.content.json'
-import { getContractInfo } from '../../utils/contracts'
 import Head from 'next/head'
 import Image from 'next/image'
 import { useState } from 'react'
@@ -7,8 +5,10 @@ import { Disclosure, RadioGroup, Tab } from '@headlessui/react'
 import { MinusSmIcon, PlusSmIcon } from '@heroicons/react/outline'
 import { StarIcon } from '@heroicons/react/solid'
 import { ethers } from 'ethers'
-
 import { useAccount, useSigner, useNetwork } from 'wagmi'
+
+import content from '../../frontaid.content.json'
+import { getContractInfo } from '@/utils/contracts'
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')

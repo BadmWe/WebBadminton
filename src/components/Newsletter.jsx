@@ -1,8 +1,9 @@
 import Image from 'next/image'
 import { Web3Storage } from 'web3.storage'
 import React, { useState } from 'react'
-import { Container } from './Container'
-import backgroundImage from '../images/background-newsletter.jpg'
+
+import { Container } from '@/components/Container'
+import backgroundImage from '@/images/background-newsletter.webp'
 
 const token = process.env.NEXT_PUBLIC_TOKEN
 function makeStorageClient() {
@@ -68,7 +69,7 @@ export function Newsletter() {
           <div className="absolute left-1/2 top-0 translate-x-[-10%] translate-y-[-45%] lg:translate-x-[-32%]">
             <Image
               src={backgroundImage}
-              alt=""
+              alt="Newsletter"
               layout="fixed"
               width={919}
               height={1351}

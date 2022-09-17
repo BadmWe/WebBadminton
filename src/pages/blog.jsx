@@ -52,7 +52,10 @@ export default function Blog() {
           property="og:description"
           content="Here you can learn something new about brands, rackets and much more."
         />
-        <meta property="og:image" content="/photos/logolin.jpg" />
+        <meta
+          property="og:image"
+          content="https://webbadminton.com/photos/logolin.jpg"
+        />
         {/*
         
         <link rel="icon" href="/favicon.ico" />
@@ -87,7 +90,7 @@ export default function Blog() {
                   <img
                     className="h-48 w-full object-cover"
                     src={post.imageUrl}
-                    alt=""
+                    alt={post.title}
                   />
                 </div>
                 <div className="flex flex-1 flex-col justify-between bg-white p-6">

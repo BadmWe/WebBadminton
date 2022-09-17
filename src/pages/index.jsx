@@ -1,7 +1,7 @@
 import Head from 'next/head'
 
-import { Hero } from '../components/Hero'
-import { Newsletter } from '../components/Newsletter'
+import { Hero } from '@/components/Hero'
+import { Newsletter } from '@/components/Newsletter'
 
 export default function Home() {
   return (
@@ -20,7 +20,10 @@ export default function Home() {
         />
         <meta property="og:url" content="https://webbadminton.com/" />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="/photos/logod.jpg" />
+        <meta
+          property="og:image"
+          content="https://webbadminton.com/photos/logod.jpg"
+        />
       </Head>
       <Hero />
       <Newsletter />
