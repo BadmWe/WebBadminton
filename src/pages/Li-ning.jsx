@@ -5,7 +5,10 @@ export default function Example() {
     <div>
       <Head>
         <title>Li-ning</title>
-        <meta name="description" content="History of Li-ning" />
+        <meta
+          name="description"
+          content="History of Li-ning :The company was founded in 1989 by Li Ning, a former Chinese Olympic gymnast. "
+        />
         <meta property="og:title" content="WebBadminton Li-ning" />
         <meta property="og:url" content="https://webbadminton.com/Li-ning" />
         <meta property="og:type" content="website" />
