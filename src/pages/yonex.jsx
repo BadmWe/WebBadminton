@@ -182,6 +182,15 @@ export default function Example() {
                     in the tennis and golf industries as well and is a major
                     sponsor of professional athletes in all three sports.
                   </p>
+                  <div className="rounded-md shadow">
+                    <a
+                      href="Li-ning"
+                      className="flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-5 py-3 text-base font-medium text-white hover:bg-indigo-700"
+                    >
+                      Li-ning
+                    </a>
+                    <div className="ml-4 rounded-md shadow"></div>
+                  </div>
                 </div>
               </div>
             </div>

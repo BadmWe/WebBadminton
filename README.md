@@ -62,4 +62,4 @@ To learn more about the technologies used in this site template, see the followi
 - [Next.js](https://nextjs.org/docs) - the official Next.js documentation
 - [Headless UI](https://headlessui.dev) - the official Headless UI documentation
 - [Web3 Storage](web3.storage/) - ipfs storage
-- [LSP-8-IdentifiableDigitalAsset](https://github.com/lukso-network/LIPs/blob/main/LSPs/LSP-8-IdentifiableDigitalAsset.md) - A standard interface for identifiable digital assets, allowing for tokens to be uniquely traded and given metadata using ERC725Y.
+- [LSP 8 Identifiable Digital Asset](https://github.com/lukso-network/LIPs/blob/main/LSPs/LSP-8-IdentifiableDigitalAsset.md) - A standard interface for identifiable digital assets, allowing for tokens to be uniquely traded and given metadata using ERC725Y.

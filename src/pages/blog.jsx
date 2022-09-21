@@ -4,7 +4,7 @@ const posts = [
   {
     title: 'Yonex',
     href: 'yonex',
-    category: { name: 'Brand', href: '#' },
+    category: { name: 'Brand', href: 'yonex' },
     description: '',
     date: 'July 23, 2022',
     datetime: '2022-07-23',
@@ -15,7 +15,7 @@ const posts = [
   {
     title: 'Li-ning',
     href: 'Li-ning',
-    category: { name: 'Brand', href: '#' },
+    category: { name: 'Brand', href: 'Li-ning' },
     description: '',
     date: 'July 23, 2022',
     datetime: '2022-07-23',
