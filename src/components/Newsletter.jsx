@@ -85,6 +85,13 @@ export function Newsletter() {
                 Get updates on all of our events and be the first to get
                 notified when tickets go on sale.
               </p>
+
+              <a
+                href="items"
+                className=" mt-4 text-lg tracking-tight text-blue-900"
+              >
+                Our store
+              </a>
             </div>
             <form onSubmit={saveEmail}>
               <h3 className="text-lg font-semibold tracking-tight text-blue-900">
