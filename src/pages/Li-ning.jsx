@@ -189,6 +189,7 @@ export default function Example() {
                   and distributor of Li-Ning in India) signed sponsorship deals
                   with Indian badminton players P V Sindhu and Kidambi Srikanth.
                 </p>
+                <div className="mx-auto mt-1 flex max-w-prose text-base lg:max-w-none"></div>
 
                 <div className="rounded-md shadow">
                   <a
@@ -199,7 +200,30 @@ export default function Example() {
                   </a>
                   <div className="ml-4 rounded-md shadow"></div>
                 </div>
+                <div className="rounded-md shadow"></div>
               </div>
+              <div className="mx-auto mt-1 flex max-w-prose text-base lg:max-w-none"></div>
+              <div className="rounded-md shadow">
+                <a
+                  href="begin"
+                  className="flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-5 py-3 text-base font-medium text-white hover:bg-indigo-700"
+                >
+                  How to choose a racket?
+                </a>
+                <div className="ml-4 rounded-md shadow"></div>
+              </div>
+              <div className="rounded-md shadow"></div>
+              <div className="mx-auto mt-1 flex max-w-prose text-base lg:max-w-none"></div>
+              <div className="rounded-md shadow">
+                <a
+                  href="blog"
+                  className="flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-5 py-3 text-base font-medium text-white hover:bg-indigo-700"
+                >
+                  Our blog
+                </a>
+                <div className="ml-4 rounded-md shadow"></div>
+              </div>
+              <div className="rounded-md shadow"></div>
             </div>
           </div>
         </div>
