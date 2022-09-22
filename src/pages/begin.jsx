@@ -5,7 +5,7 @@ export default function Example() {
   return (
     <div>
       <Head>
-        <title>For begginers</title>
+        <title>For begginers: How to choose a badminton racket?</title>
         <meta
           name="description"
           content="How to choose a badminton racket? In this post, we will tell you how to choose a badminton racket."

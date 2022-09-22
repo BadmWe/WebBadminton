@@ -15,13 +15,13 @@
           {
             "id": 1,
             "name": "View",
-            "src": "https://badm-store.ru/image/cache/catalog/products/raketki/yonex/Arcsaber-11-600x600.jpg",
+            "src": "/photos/Arcsaber11.jpg",
             "alt": "Racket"
           },
           {
             "id": 2,
             "name": "Case",
-            "src": "https://badm-store.ru/image/cache/catalog/products/raketki/chexly/Cover-Yonex-Arcsaber-1100x1100.jpg",
+            "src": "/photos/casearc11.jpg",
             "alt": "Front of zip tote bag with white canvas, black canvas straps and handle, and black zipper pulls."
           }
  
@@ -54,7 +54,7 @@
           "name": "Yonex Astrox 100 ZZ (Kurenai)",
           "color": "Kurenai",
           "href": "astroxred",
-          "imageSrc": "https://badm-store.ru/image/cache/catalog/products/raketki/yonex/Astrox-100-ZZ-Kurenai-600x600.jpg",
+          "imageSrc": "/photos/astrox100zzred.jpg",
           "imageAlt": "Racket",
           "price": "$289"
         },
@@ -63,7 +63,7 @@
           "name": "Yonex Astrox 100 ZZ (Dark Navy)",
           "color": "Dark Navy",
           "href": "astroxnavy",
-          "imageSrc": "https://badm-store.ru/image/cache/catalog/products/raketki/yonex/Astrox-100-ZZ-600x600.jpg",
+          "imageSrc": "/photos/astrox100zzdark.jpg",
           "imageAlt": "Racket",
           "price": "$279"
         },
@@ -72,7 +72,7 @@
           "name": "Yonex Astrox 88S Pro",
           "color": "Emerald Blue",
           "href": "astrox88SPro",
-          "imageSrc": "https://badm-store.ru/image/cache/catalog/products/raketki/yonex/Astrox-88S-Pro-600x600.jpg",
+          "imageSrc": "/photos/Astrox88SPro.jpg",
           "imageAlt": "Racket",
           "price": "$259"
         },
@@ -81,7 +81,7 @@
           "name": "Yonex Astrox 99 Pro (White Tiger)",
           "color": "White Tiger",
           "href": "astrox99Pro",
-          "imageSrc": "https://badm-store.ru/image/cache/catalog/products/raketki/yonex/Astrox-99-Pro-White-600x600.jpg",
+          "imageSrc": "/photos/Astrox99Pro.jpg",
           "imageAlt": "Racket",
           "price": "$269"
         }
@@ -97,13 +97,13 @@
           {
             "id": 1,
             "name": "View",
-            "src": "https://badm-store.ru/image/cache/catalog/products/raketki/yonex/Duora-6-Pink-600x600.jpg",
+            "src": "/photos/Duora6Pink.jpg",
             "alt": "Racket"
           },
           {
             "id": 2,
             "name": "Case",
-            "src": "https://badm-store.ru/image/cache/catalog/products/raketki/chexly/Cover-Yonex-Duora-1100x1100.jpg",
+            "src": "/photos/duoracase.jpg",
             "alt": "Front of zip tote bag with white canvas, black canvas straps and handle, and black zipper pulls."
           }
         ],
@@ -135,7 +135,7 @@
           "name": "Yonex Astrox 100 ZZ (Kurenai)",
           "color": "Kurenai",
           "href": "astroxred",
-          "imageSrc": "https://badm-store.ru/image/cache/catalog/products/raketki/yonex/Astrox-100-ZZ-Kurenai-600x600.jpg",
+          "imageSrc": "/photos/astrox100zzred.jpg",
           "imageAlt": "Racket",
           "price": "$289"
         },
@@ -144,7 +144,7 @@
           "name": "Yonex Astrox 100 ZZ (Dark Navy)",
           "color": "Dark Navy",
           "href": "astroxnavy",
-          "imageSrc": "https://badm-store.ru/image/cache/catalog/products/raketki/yonex/Astrox-100-ZZ-600x600.jpg",
+          "imageSrc": "/photos/astrox100zzdark.jpg",
           "imageAlt": "Racket",
           "price": "$279"
         },
@@ -153,7 +153,7 @@
           "name": "Yonex Astrox 88S Pro",
           "color": "Emerald Blue",
           "href": "astrox88SPro",
-          "imageSrc": "https://badm-store.ru/image/cache/catalog/products/raketki/yonex/Astrox-88S-Pro-600x600.jpg",
+          "imageSrc": "/photos/Astrox88SPro.jpg",
           "imageAlt": "Racket",
           "price": "$259"
         },
@@ -162,7 +162,7 @@
           "name": "Yonex Astrox 99 Pro (White Tiger)",
           "color": "White Tiger",
           "href": "astrox99Pro",
-          "imageSrc": "https://badm-store.ru/image/cache/catalog/products/raketki/yonex/Astrox-99-Pro-White-600x600.jpg",
+          "imageSrc": "/photos/Astrox99Pro.jpg",
           "imageAlt": "Racket",
           "price": "$269"
         }
@@ -178,13 +178,13 @@
           {
             "id": 1,
             "name": "View",
-            "src": "https://badm-store.ru/image/cache/catalog/products/raketki/yonex/Astrox-100-ZZ-Kurenai-600x600.jpg",
+            "src": "/photos/astrox100zzred.jpg",
             "alt": "Racket"
           },
           {
             "id": 1,
             "name": "Case",
-            "src": "https://badm-store.ru/image/cache/catalog/products/raketki/chexly/Cover-Yonex-Astrox-1100x1100.jpg",
+            "src": "/photos/astroxcase.jpg",
             "alt": "Front of zip tote bag with white canvas, black canvas straps and handle, and black zipper pulls."
           }
         ],
@@ -226,8 +226,8 @@
           "id": 1,
           "name": "Yonex Astrox 100 ZZ (Dark Navy)",
           "color": "Kurenai",
-          "href": "astroxred",
-          "imageSrc": "https://badm-store.ru/image/cache/catalog/products/raketki/yonex/Astrox-100-ZZ-600x600.jpg",
+          "href": "astroxnavy",
+          "imageSrc": "/photos/astrox100zzdark.jpg",
           "imageAlt": "Racket",
           "price": "$289"
         },
@@ -236,7 +236,7 @@
           "name": "Yonex Astrox 88D Pro",
           "color": "Camel Gold",
           "href": "astrox88DPro",
-          "imageSrc": "https://badm-store.ru/image/cache/catalog/products/raketki/yonex/Astrox-88D-Pro-600x600.jpg",
+          "imageSrc": "/photos/Astrox88DPro.jpg",
           "imageAlt": "Racket",
           "price": "$279"
         },
@@ -245,7 +245,7 @@
           "name": "Yonex Astrox 88S Pro",
           "color": "Emerald Blue",
           "href": "astrox88SPro",
-          "imageSrc": "https://badm-store.ru/image/cache/catalog/products/raketki/yonex/Astrox-88S-Pro-600x600.jpg",
+          "imageSrc": "/photos/Astrox88SPro.jpg",
           "imageAlt": "Racket",
           "price": "$259"
         },
@@ -254,7 +254,7 @@
           "name": "Yonex Astrox 99 Pro (White Tiger)",
           "color": "White Tiger",
           "href": "astrox99Pro",
-          "imageSrc": "https://badm-store.ru/image/cache/catalog/products/raketki/yonex/Astrox-99-Pro-White-600x600.jpg",
+          "imageSrc": "/photos/Astrox99Pro.jpg",
           "imageAlt": "Racket",
           "price": "$269"
         }
@@ -270,13 +270,13 @@
           {
             "id": "1",
             "name": "View",
-            "src": "https://badm-store.ru/image/cache/catalog/products/raketki/yonex/Astrox-100-ZZ-600x600.jpg",
+            "src": "/photos/astrox100zzdark.jpg",
             "alt": "Racket"
           },
           {
             "id": "a",
             "name": "Case",
-            "src": "https://badm-store.ru/image/cache/catalog/products/raketki/chexly/Cover-Yonex-Astrox-1100x1100.jpg",
+            "src": "/photos/astroxcase.jpg",
             "alt": "Front of zip tote bag with white canvas, black canvas straps and handle, and black zipper pulls."
           }
         ],
@@ -319,7 +319,7 @@
           "name": "Yonex Astrox 100 ZZ (Kurenai)",
           "color": "Kurenai",
           "href": "astroxred",
-          "imageSrc": "https://badm-store.ru/image/cache/catalog/products/raketki/yonex/Astrox-100-ZZ-Kurenai-600x600.jpg",
+          "imageSrc": "/photos/astrox100zzred.jpg",
           "imageAlt": "Racket",
           "price": "$289"
         },
@@ -328,7 +328,7 @@
           "name": "Yonex Astrox 88D Pro",
           "color": "Camel Gold",
           "href": "astrox88DPro",
-          "imageSrc": "https://badm-store.ru/image/cache/catalog/products/raketki/yonex/Astrox-88D-Pro-600x600.jpg",
+          "imageSrc": "/photos/Astrox88DPro.jpg",
           "imageAlt": "Racket",
           "price": "$279"
         },
@@ -337,7 +337,7 @@
           "name": "Yonex Astrox 88S Pro",
           "color": "Emerald Blue",
           "href": "astrox88SPro",
-          "imageSrc": "https://badm-store.ru/image/cache/catalog/products/raketki/yonex/Astrox-88S-Pro-600x600.jpg",
+          "imageSrc": "/photos/Astrox88SPro.jpg",
           "imageAlt": "Racket",
           "price": "$259"
         },
@@ -346,7 +346,7 @@
           "name": "Yonex Astrox 99 Pro (White Tiger)",
           "color": "White Tiger",
           "href": "astrox99Pro",
-          "imageSrc": "https://badm-store.ru/image/cache/catalog/products/raketki/yonex/Astrox-99-Pro-White-600x600.jpg",
+          "imageSrc": "/photos/Astrox99Pro.jpg",
           "imageAlt": "Racket",
           "price": "$269"
         }
@@ -362,13 +362,13 @@
           {
             "id": 1,
             "name": "View",
-            "src": "https://badm-store.ru/image/cache/catalog/products/raketki/yonex/Astrox-99-Pro-White-600x600.jpg",
+            "src": "/photos/Astrox99Pro.jpg",
             "alt": "Racket"
           },
           {
             "id": 2,
             "name": "Case",
-            "src": "https://badm-store.ru/image/cache/catalog/products/raketki/chexly/Cover-Yonex-Astrox-1100x1100.jpg",
+            "src": "/photos/astroxcase.jpg",
             "alt": "Front of zip tote bag with white canvas, black canvas straps and handle, and black zipper pulls."
           }
         ],
@@ -400,7 +400,7 @@
           "name": "Yonex Astrox 100 ZZ (Kurenai)",
           "color": "Kurenai",
           "href": "astroxred",
-          "imageSrc": "https://badm-store.ru/image/cache/catalog/products/raketki/yonex/Astrox-100-ZZ-Kurenai-600x600.jpg",
+          "imageSrc": "/photos/astrox100zzred.jpg",
           "imageAlt": "Racket",
           "price": "$269"
         },
@@ -409,7 +409,7 @@
           "name": "Yonex Astrox 100 ZZ (Dark Navy)",
           "color": "Dark Navy",
           "href": "astroxnavy",
-          "imageSrc": "https://badm-store.ru/image/cache/catalog/products/raketki/yonex/Astrox-100-ZZ-600x600.jpg",
+          "imageSrc": "/photos/astrox100zzdark.jpg",
           "imageAlt": "Racket",
           "price": "$279"
         },
@@ -418,7 +418,7 @@
           "name": "Yonex Astrox 88S Pro",
           "color": "Emerald Blue ",
           "href": "#",
-          "imageSrc": "https://badm-store.ru/image/cache/catalog/products/raketki/yonex/Astrox-88S-Pro-600x600.jpg",
+          "imageSrc": "/photos/Astrox88SPro.jpg",
           "imageAlt": "Racket",
           "price": "$259"
         },
@@ -427,7 +427,7 @@
           "name": "Yonex Astrox 88D Pro",
           "color": "Camel Gold",
           "href": "astrox88DPro",
-          "imageSrc": "https://badm-store.ru/image/cache/catalog/products/raketki/yonex/Astrox-88D-Pro-600x600.jpg",
+          "imageSrc": "/photos/Astrox88DPro.jpg",
           "imageAlt": "Racket",
           "price": "$269"
         }
@@ -443,13 +443,13 @@
           {
             "id": 1,
             "name": "View",
-            "src": "https://badm-store.ru/image/cache/catalog/products/raketki/yonex/Astrox-88S-Pro-600x600.jpg",
+            "src": "/photos/Astrox88SPro.jpg",
             "alt": "Racket"
           },
           {
             "id": 2,
             "name": "Case",
-            "src": "https://badm-store.ru/image/cache/catalog/products/raketki/chexly/Cover-Yonex-Astrox-1100x1100.jpg",
+            "src": "/photos/astroxcase.jpg",
             "alt": "Front of zip tote bag with white canvas, black canvas straps and handle, and black zipper pulls."
           }
         ],
@@ -481,7 +481,7 @@
           "name": "Yonex Astrox 100 ZZ (Kurenai)",
           "color": "Kurenai",
           "href": "astroxred",
-          "imageSrc": "https://badm-store.ru/image/cache/catalog/products/raketki/yonex/Astrox-100-ZZ-Kurenai-600x600.jpg",
+          "imageSrc": "/photos/astrox100zzred.jpg",
           "imageAlt": "Racket",
           "price": "$289"
         },
@@ -490,7 +490,7 @@
           "name": "Yonex Astrox 100 ZZ (Dark Navy)",
           "color": "Dark Navy",
           "href": "astroxnavy",
-          "imageSrc": "https://badm-store.ru/image/cache/catalog/products/raketki/yonex/Astrox-100-ZZ-600x600.jpg",
+          "imageSrc": "/photos/astrox100zzdark.jpg",
           "imageAlt": "Racket",
           "price": "$279"
         },
@@ -499,7 +499,7 @@
           "name": "Yonex Astrox 88D Pro",
           "color": "Camel Gold",
           "href": "astrox88DPro",
-          "imageSrc": "https://badm-store.ru/image/cache/catalog/products/raketki/yonex/Astrox-88D-Pro-600x600.jpg",
+          "imageSrc": "/photos/Astrox88DPro.jpg",
           "imageAlt": "Racket",
           "price": "$279"
         },
@@ -508,7 +508,7 @@
           "name": "Yonex Astrox 99 Pro (White Tiger)",
           "color": "White Tiger",
           "href": "astrox99Pro",
-          "imageSrc": "https://badm-store.ru/image/cache/catalog/products/raketki/yonex/Astrox-99-Pro-White-600x600.jpg",
+          "imageSrc": "/photos/Astrox99Pro.jpg",
           "imageAlt": "Racket",
           "price": "$269"
         }
@@ -524,13 +524,13 @@
           {
             "id": 1,
             "name": "View",
-            "src": "https://badm-store.ru/image/cache/catalog/products/raketki/yonex/Astrox-88D-Pro-600x600.jpg",
+            "src": "/photos/Astrox88DPro.jpg",
             "alt": "Racket"
           },
           {
             "id": 2,
             "name": "Case",
-            "src": "https://badm-store.ru/image/cache/catalog/products/raketki/chexly/Cover-Yonex-Astrox-1100x1100.jpg",
+            "src": "/photos/astroxcase.jpg",
             "alt": "Front of zip tote bag with white canvas, black canvas straps and handle, and black zipper pulls."
           }
         ],
@@ -567,7 +567,7 @@
           "name": "Yonex Astrox 100 ZZ (Kurenai)",
           "color": "Kurenai",
           "href": "astroxred",
-          "imageSrc": "https://badm-store.ru/image/cache/catalog/products/raketki/yonex/Astrox-100-ZZ-Kurenai-600x600.jpg",
+          "imageSrc": "/photos/astrox100zzred.jpg",
           "imageAlt": "Racket",
           "price": "$289"
         },
@@ -576,7 +576,7 @@
           "name": "Yonex Astrox 100 ZZ (Dark Navy)",
           "color": "Dark Navy",
           "href": "astroxnavy",
-          "imageSrc": "https://badm-store.ru/image/cache/catalog/products/raketki/yonex/Astrox-100-ZZ-600x600.jpg",
+          "imageSrc": "/photos/astrox100zzdark.jpg",
           "imageAlt": "Racket",
           "price": "$279"
         },
@@ -585,7 +585,7 @@
           "name": "Yonex Astrox 88S Pro",
           "color": "Emerald Blue",
           "href": "astrox88SPro",
-          "imageSrc": "https://badm-store.ru/image/cache/catalog/products/raketki/yonex/Astrox-88S-Pro-600x600.jpg",
+          "imageSrc": "/photos/Astrox88SPro.jpg",
           "imageAlt": "Racket",
           "price": "$259"
         },
@@ -594,7 +594,7 @@
           "name": "Yonex Astrox 99 Pro (White Tiger)",
           "color": "White Tiger",
           "href": "astrox99Pro",
-          "imageSrc": "https://badm-store.ru/image/cache/catalog/products/raketki/yonex/Astrox-99-Pro-White-600x600.jpg",
+          "imageSrc": "/photos/Astrox99Pro.jpg",
           "imageAlt": "Racket",
           "price": "$269"
         }

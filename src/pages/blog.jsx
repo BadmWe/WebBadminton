@@ -8,8 +8,7 @@ const posts = [
     description: '',
     date: 'July 23, 2022',
     datetime: '2022-07-23',
-    imageUrl:
-      'https://www.yonex.com/media/wysiwyg/news/Yonex-News-Holder-Image_1.PNG',
+    imageUrl: '/photos/yonexblog.jpg',
     readingTime: '3 min',
   },
   {
@@ -19,8 +18,7 @@ const posts = [
     description: '',
     date: 'July 23, 2022',
     datetime: '2022-07-23',
-    imageUrl:
-      'https://i.pinimg.com/originals/78/9a/e1/789ae113eed49212d27e319bb4d25407.jpg',
+    imageUrl: '/photos/Li-ningblog.jpg',
     readingTime: '4 min',
   },
   /*   {

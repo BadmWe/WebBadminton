@@ -8,7 +8,7 @@ const products = [
     price: '$289',
     href: '/items/astroxnavy',
     imageSrc:
-      'https://badm-store.ru/image/cache/catalog/products/raketki/yonex/Astrox-100-ZZ-600x600.jpg',
+      '/photos/astrox100zzdark.jpg',
     imageAlt: '.',
   },
   {
@@ -17,7 +17,7 @@ const products = [
     price: '$289',
     href: '/items/astroxred',
     imageSrc:
-      'https://badm-store.ru/image/cache/catalog/products/raketki/yonex/Astrox-100-ZZ-Kurenai-600x600.jpg',
+      '/photos/astrox100zzred.jpg',
     imageAlt: '',
   },
   {
@@ -26,7 +26,7 @@ const products = [
     price: '$279',
     href: '/items/astrox88DPro',
     imageSrc:
-      'https://badm-store.ru/image/cache/catalog/products/raketki/yonex/Astrox-88D-Pro-600x600.jpg',
+      '/photos/Astrox88DPro.jpg',
     imageAlt: '.',
   },
   {
@@ -35,7 +35,7 @@ const products = [
     price: '$269',
     href: '/items/astrox99Pro',
     imageSrc:
-      'https://badm-store.ru/image/cache/catalog/products/raketki/yonex/Astrox-99-Pro-White-600x600.jpg',
+      '/photos/Astrox99Pro.jpg',
     imageAlt: '.',
   },
   {
@@ -44,7 +44,7 @@ const products = [
     price: '$259',
     href: '/items/astrox88SPro',
     imageSrc:
-      'https://badm-store.ru/image/cache/catalog/products/raketki/yonex/Astrox-88S-Pro-600x600.jpg',
+      '/photos/Astrox88SPro.jpg',
     imageAlt: '.',
   },
   {
@@ -53,7 +53,7 @@ const products = [
     price: '$209',
     href: '/items/duora6',
     imageSrc:
-      'https://badm-store.ru/image/cache/catalog/products/raketki/yonex/Duora-6-Pink-600x600.jpg',
+      '/photos/Duora6Pink.jpg',
     imageAlt: '.',
   },
   {
@@ -62,7 +62,7 @@ const products = [
     price: '$199',
     href: '/items/Arcsaber11',
     imageSrc:
-      'https://badm-store.ru/image/cache/catalog/products/raketki/yonex/Arcsaber-11-600x600.jpg',
+      '/photos/Arcsaber11.jpg',
     imageAlt: '.',
   },
 ]
@@ -72,6 +72,18 @@ export default function Example() {
     <div>
       <Head>
         <title>Items</title>
+        <meta
+        name="description"
+        content="Here you can get acquanted with different models of rackets and choose the right one for you."
+      />
+       <meta property="og:title" content="WebBadminton Items" />
+      <meta
+        property="og:description"
+        content="Here you can get acquanted with different models of rackets and choose the right one for you."
+      />
+      <meta property="og:url" content="https://webbadminton.com/items" />
+      <meta property="og:type" content="article" />
+      <meta property="og:image" content="/backgound.jpg" /> 
         {/*
       <meta
         name="description"

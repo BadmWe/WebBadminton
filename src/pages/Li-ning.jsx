@@ -6,17 +6,16 @@ export default function Example() {
   return (
     <div>
       <Head>
-        <title>Li-ning</title>
+        <title>
+          WebBadminton Li-ning: sportswear and sports equipment company
+        </title>
         <meta
           name="description"
           content="History of Li-ning: The company was founded in 1989 by Li Ning, a former Chinese Olympic gymnast. "
         />
         <meta property="og:title" content="WebBadminton Li-ning" />
         <meta property="og:type" content="website" />
-        <meta
-          property="og:image"
-          content="https://i.pinimg.com/originals/78/9a/e1/789ae113eed49212d27e319bb4d25407.jpg"
-        />
+        <meta property="og:image" content="/photos/Li-ningblog.jpg" />
         <meta property="og:url" content="https://webbadminton.com/Li-ning" />
 
         {/*
@@ -85,7 +84,7 @@ export default function Example() {
                   <div className="aspect-w-12 aspect-h-7 lg:aspect-none">
                     <img
                       className="rounded-lg object-cover object-center shadow-lg"
-                      src="https://m.economictimes.com/thumb/msid-88376513,width-1200,height-900,resizemode-4,imgsize-59134/kidambi-srikanth-becomes-first-indian-man-to-win-silver-at-bwf-world-cships.jpg"
+                      src="/photos/kidambi.jpg"
                       alt="Kidambi Srikanth"
                       width={1184}
                       height={1376}
@@ -101,7 +100,7 @@ export default function Example() {
                   <div className="aspect-w-12 aspect-h-7 lg:aspect-none">
                     <img
                       className="rounded-lg object-cover object-center shadow-lg"
-                      src="https://assets.thehansindia.com/h-upload/2021/03/04/1600x960_1035187-pv-sindhu.jpg"
+                      src="/photos/sindhu.jpg"
                       alt="Pusarla Venkata Sindhu"
                       width={1184}
                       height={1376}
