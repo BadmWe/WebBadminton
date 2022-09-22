@@ -92,10 +92,7 @@ export default function Example() {
                 />
               </div>
               <h3 className="mt-4 text-base font-semibold text-gray-900">
-                <Link href={product.href}>
-                  <span className="absolute inset-0" />
-                  {product.name}
-                </Link>
+                <Link href={product.href}>{product.name}</Link>
               </h3>
               <p className="mt-1 text-sm text-gray-500">{product.price}</p>
             </div>

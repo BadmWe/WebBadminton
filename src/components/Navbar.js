@@ -2,6 +2,7 @@ import { Disclosure } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
 import { useAccount, useConnect, useDisconnect } from 'wagmi'
 import { useState, useEffect } from 'react'
+import Link from 'next/link'
 
 const navigation = [
   { name: 'WebBadminton', href: '/' },
@@ -47,22 +48,15 @@ const Navbar = () => {
                       )}
                     </Disclosure.Button>
                   </div>
-                  <div className="flex flex-shrink-0 items-center"></div>
                   <div className="hidden md:ml-6 md:flex md:items-center md:space-x-4">
                     {navigation.map((item) => (
-                      <a
-                        key={item.name}
-                        href={item.href}
-                        className={classNames(
-                          item.current
-                            ? 'bg-gray-900 text-white'
-                            : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                          'rounded-md px-3 py-2 text-sm font-medium'
-                        )}
-                        aria-current={item.current ? 'page' : undefined}
-                      >
-                        {item.name}
-                      </a>
+                      <Link key={item.name} href={item.href}>
+                        <a>
+                          <a className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">
+                            {item.name}
+                          </a>
+                        </a>
+                      </Link>
                     ))}
                   </div>
                 </div>
@@ -149,12 +143,7 @@ const Navbar = () => {
                     key={item.name}
                     as="a"
                     href={item.href}
-                    className={classNames(
-                      item.current
-                        ? 'bg-gray-900 text-white'
-                        : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                      'block rounded-md px-3 py-2 text-base font-medium'
-                    )}
+                    className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
                     aria-current={item.current ? 'page' : undefined}
                   >
                     {item.name}

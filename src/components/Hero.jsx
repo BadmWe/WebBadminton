@@ -1,9 +1,7 @@
-import { Container } from './Container'
-
 export function Hero() {
   return (
     <div className="relative pt-10 pb-20 sm:py-24">
-      <Container className="relative">
+      <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:max-w-4xl lg:px-12">
           <h1 className="font-display text-5xl font-bold tracking-tighter text-blue-600 sm:text-7xl">
             WebBadminton
@@ -19,7 +17,7 @@ export function Hero() {
             </p>
           </div>
         </div>
-      </Container>
+      </div>
     </div>
   )
 }

@@ -8,5 +8,5 @@ export function Layout({ children }) {
       <main>{children}</main>
       <Footer />
     </>
-  );
+  )
 }

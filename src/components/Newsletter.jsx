@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import { Web3Storage } from 'web3.storage'
 import React, { useState } from 'react'
-import { Container } from './Container'
 import backgroundImage from '../images/background-newsletter.jpg'
 
 const token = process.env.NEXT_PUBLIC_TOKEN
@@ -63,7 +62,7 @@ export function Newsletter() {
 
   return (
     <section id="newsletter" aria-label="Newsletter">
-      <Container>
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="relative -mx-4 overflow-hidden bg-indigo-50 py-20 px-4 sm:-mx-6 sm:px-6 md:mx-0 md:rounded-5xl md:px-16 xl:px-24 xl:py-36">
           <div className="absolute left-1/2 top-0 translate-x-[-10%] translate-y-[-45%] lg:translate-x-[-32%]">
             <Image
@@ -109,7 +108,7 @@ export function Newsletter() {
             </form>
           </div>
         </div>
-      </Container>
+      </div>
     </section>
   )
 }
