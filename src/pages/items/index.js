@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-
+import Head from 'next/head'
 const products = [
   {
     id: 1,
@@ -69,8 +69,28 @@ const products = [
 
 export default function Example() {
   return (
+    <div>
+    <Head>
+      <title>Items</title>
+      {/*
+      <meta
+        name="description"
+        content="A platform where we talk about the rules of badminton, brands, equipment and much more."
+      />
+      <link rel="icon" href="/favicon.ico" />
+      <meta property="og:title" content="WebBadminton" />
+      <meta
+        property="og:description"
+        content="A platform where we talk about the rules of badminton, brands, equipment and much more."
+      />
+      <meta property="og:url" content="https://webbadminton.com/" />
+      <meta property="og:type" content="website" />
+      <meta property="og:image" content="/backgound.jpg" />
+      */}
+    </Head>
     <div className="bg-white">
-      <div className="mx-auto max-w-7xl py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl py-16 px-4 sm:px-6 lg:px-8">
+      <h1 className="text-center mt-2 text-3xl font-extrabold leading-8 tracking-tight text-gray-900 sm:text-4xl">Items</h1>
         <div className="sm:flex sm:items-baseline sm:justify-between">
           <Link href="/">
             <div className="hidden text-sm font-semibold text-indigo-600 hover:text-indigo-500 sm:block">
@@ -85,7 +105,7 @@ export default function Example() {
               <div className="sm:aspect-w-2 sm:aspect-h-3 h-96 w-full overflow-hidden rounded-lg group-hover:opacity-75 sm:h-auto">
                 <Image
                   src={product.imageSrc}
-                  alt={product.imageAlt}
+                  alt={product.name}
                   width={600}
                   height={600}
                   className="h-full w-full object-cover object-center"
@@ -108,6 +128,7 @@ export default function Example() {
           </a>
         </div>
       </div>
+    </div>
     </div>
   )
 }

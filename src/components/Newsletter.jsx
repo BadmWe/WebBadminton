@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import { Web3Storage } from 'web3.storage'
 import React, { useState } from 'react'
-import backgroundImage from '../images/background-newsletter.jpg'
+import backgroundImage from '../images/background-newsletter.webp'
 
 const token = process.env.NEXT_PUBLIC_TOKEN
 function makeStorageClient() {
@@ -67,7 +67,7 @@ export function Newsletter() {
           <div className="absolute left-1/2 top-0 translate-x-[-10%] translate-y-[-45%] lg:translate-x-[-32%]">
             <Image
               src={backgroundImage}
-              alt=""
+              alt="Newsletter"
               layout="fixed"
               width={919}
               height={1351}
@@ -83,6 +83,13 @@ export function Newsletter() {
                 Get updates on all of our events and be the first to get
                 notified when tickets go on sale.
               </p>
+
+              <a
+                href="items"
+                className=" mt-4 text-lg tracking-tight text-blue-900"
+              >
+                Our store
+              </a>
             </div>
             <form onSubmit={saveEmail}>
               <h3 className="text-lg font-semibold tracking-tight text-blue-900">

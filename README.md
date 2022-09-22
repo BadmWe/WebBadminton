@@ -1,6 +1,6 @@
 # Web Badminton
 
-Web Badminton - decentralized badminton centered dapp on IPFS and Polygon Blockchain.
+[Web Badminton](https://webbadminton.com) - decentralized badminton centered dapp on IPFS and Polygon Blockchain.
 
 <div align="left">
       <a href="https://www.youtube.com/watch?v=1oxnYJdtDQg">
@@ -50,6 +50,10 @@ yarn dev
 
 [Devpost Page](https://devpost.com/software/web-badminton)
 
+[DoraHacks Page](https://dorahacks.io/buidl/3416)
+
+[publish0x web badminton post](https://www.publish0x.com/blockchain-tech/web-badminton-decentralized-badminton-dapp-on-ipfs-and-polyg-xmyyjxg)
+
 ## Learn more
 
 To learn more about the technologies used in this site template, see the following resources:
@@ -58,4 +62,4 @@ To learn more about the technologies used in this site template, see the followi
 - [Next.js](https://nextjs.org/docs) - the official Next.js documentation
 - [Headless UI](https://headlessui.dev) - the official Headless UI documentation
 - [Web3 Storage](web3.storage/) - ipfs storage
-- [LSP-8-IdentifiableDigitalAsset](https://github.com/lukso-network/LIPs/blob/main/LSPs/LSP-8-IdentifiableDigitalAsset.md) - A standard interface for identifiable digital assets, allowing for tokens to be uniquely traded and given metadata using ERC725Y.
+- [LSP 8 Identifiable Digital Asset](https://github.com/lukso-network/LIPs/blob/main/LSPs/LSP-8-IdentifiableDigitalAsset.md) - A standard interface for identifiable digital assets, allowing for tokens to be uniquely traded and given metadata using ERC725Y.
