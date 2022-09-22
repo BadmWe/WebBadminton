@@ -82,35 +82,35 @@ const Navbar = () => {
                             />
                           </svg>
                         </button>
-                        <ul
+                        <div
                           className="dropdown-menu absolute z-50 float-left m-0 mt-1 min-w-max list-none rounded-lg border-none bg-white bg-clip-padding py-2 text-left text-base shadow-lg"
                           aria-labelledby="dropdownMenuButton1"
                         >
-                          <li>
-                            <div
-                              className="dropdown-item block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-gray-700 hover:bg-gray-100"
-                              onClick={disconnect}
-                            >
-                              Disconnect
-                            </div>
-                          </li>
-                        </ul>
+                          <div
+                            className="dropdown-item block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-gray-700 hover:bg-gray-100"
+                            onClick={disconnect}
+                          >
+                            Disconnect
+                          </div>
+                        </div>
                       </div>
                     ) : (
                       connectors.map((connector) => (
-                        <button
-                          type="button"
-                          disabled={!connector.ready}
-                          key={connector.id}
-                          onClick={() => connect({ connector })}
-                          className="relative inline-flex items-center rounded-md border border-transparent bg-indigo-500 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-800"
-                        >
-                          {'Connect ' + connector.name}
-                          {!connector.ready && ' (unsupported)'}
-                          {isLoading &&
-                            connector.id === pendingConnector?.id &&
-                            ' (connecting)'}
-                        </button>
+                        <div key={connector.id}>
+                          <button
+                            type="button"
+                            disabled={!connector.ready}
+                            key={connector.id}
+                            onClick={() => connect({ connector })}
+                            className="relative inline-flex items-center rounded-md border border-transparent bg-indigo-500 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-800"
+                          >
+                            {'Connect ' + connector.name}
+                            {!connector.ready + '(unsupported)'}
+                            {isLoading &&
+                              connector.id === pendingConnector?.id &&
+                              '(connecting)'}
+                          </button>
+                        </div>
                       ))
                     )}
                   </div>
