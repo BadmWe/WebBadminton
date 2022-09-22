@@ -11,10 +11,6 @@ const navigation = [
   { name: 'Posts', href: '/blog' },
 ]
 
-function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
-}
-
 const Navbar = () => {
   const [mounted, setMounted] = useState(false)
 
@@ -30,7 +26,7 @@ const Navbar = () => {
     mounted && (
       <Disclosure as="nav" className="bg-gray-800">
         {({ open }) => (
-          <>
+          <div>
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
               <div className="flex h-16 justify-between">
                 <div className="flex">
@@ -51,11 +47,9 @@ const Navbar = () => {
                   <div className="hidden md:ml-6 md:flex md:items-center md:space-x-4">
                     {navigation.map((item) => (
                       <Link key={item.name} href={item.href}>
-                        <a>
-                          <a className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">
-                            {item.name}
-                          </a>
-                        </a>
+                        <div className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">
+                          {item.name}
+                        </div>
                       </Link>
                     ))}
                   </div>
@@ -93,24 +87,12 @@ const Navbar = () => {
                           aria-labelledby="dropdownMenuButton1"
                         >
                           <li>
-                            <a
-                              className="
-                dropdown-item
-                block
-                w-full
-                whitespace-nowrap
-                bg-transparent
-                py-2
-                px-4
-                text-sm
-                font-normal
-                text-gray-700
-                hover:bg-gray-100
-              "
+                            <div
+                              className="dropdown-item block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-gray-700 hover:bg-gray-100"
                               onClick={disconnect}
                             >
                               Disconnect
-                            </a>
+                            </div>
                           </li>
                         </ul>
                       </div>
@@ -139,19 +121,19 @@ const Navbar = () => {
             <Disclosure.Panel className="md:hidden">
               <div className="space-y-1 px-2 pt-2 pb-3 sm:px-3">
                 {navigation.map((item) => (
-                  <Disclosure.Button
-                    key={item.name}
-                    as="a"
-                    href={item.href}
-                    className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
-                    aria-current={item.current ? 'page' : undefined}
-                  >
-                    {item.name}
-                  </Disclosure.Button>
+                  <Link key={item.name} href={item.href}>
+                    <Disclosure.Button
+                      key={item.name}
+                      as="a"
+                      className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+                    >
+                      {item.name}
+                    </Disclosure.Button>
+                  </Link>
                 ))}
               </div>
             </Disclosure.Panel>
-          </>
+          </div>
         )}
       </Disclosure>
     )

@@ -5,7 +5,7 @@ import { Newsletter } from '../components/Newsletter'
 
 export default function Home() {
   return (
-    <div>
+    <>
       <Head>
         <title>Web Badminton</title>
         <meta
@@ -27,6 +27,6 @@ export default function Home() {
       </Head>
       <Hero />
       <Newsletter />
-    </div>
+    </>
   )
 }

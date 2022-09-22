@@ -70,9 +70,9 @@ const products = [
 export default function Example() {
   return (
     <div>
-    <Head>
-      <title>Items</title>
-      {/*
+      <Head>
+        <title>Items</title>
+        {/*
       <meta
         name="description"
         content="A platform where we talk about the rules of badminton, brands, equipment and much more."
@@ -87,48 +87,49 @@ export default function Example() {
       <meta property="og:type" content="website" />
       <meta property="og:image" content="/backgound.jpg" />
       */}
-    </Head>
-    <div className="bg-white">
-      <div className="mx-auto max-w-7xl py-16 px-4 sm:px-6 lg:px-8">
-      <h1 className="text-center mt-2 text-3xl font-extrabold leading-8 tracking-tight text-gray-900 sm:text-4xl">Items</h1>
-        <div className="sm:flex sm:items-baseline sm:justify-between">
-          <Link href="/">
-            <div className="hidden text-sm font-semibold text-indigo-600 hover:text-indigo-500 sm:block">
-              Return Home<span aria-hidden="true"> &rarr;</span>
-            </div>
-          </Link>
-        </div>
-
-        <div className="mt-6 grid grid-cols-1 gap-y-10 sm:grid-cols-3 sm:gap-y-0 sm:gap-x-6 lg:gap-x-8">
-          {products.map((product) => (
-            <div key={product.id} className="group relative">
-              <div className="sm:aspect-w-2 sm:aspect-h-3 h-96 w-full overflow-hidden rounded-lg group-hover:opacity-75 sm:h-auto">
-                <Image
-                  src={product.imageSrc}
-                  alt={product.name}
-                  width={600}
-                  height={600}
-                  className="h-full w-full object-cover object-center"
-                />
+      </Head>
+      <div className="bg-white">
+        <div className="mx-auto max-w-7xl py-16 px-4 sm:px-6 lg:px-8">
+          <h1 className="mt-2 text-center text-3xl font-extrabold leading-8 tracking-tight text-gray-900 sm:text-4xl">
+            Items
+          </h1>
+          <div className="sm:flex sm:items-baseline sm:justify-between">
+            <Link href="/">
+              <div className="hidden text-sm font-semibold text-indigo-600 hover:text-indigo-500 sm:block">
+                Return Home<span aria-hidden="true"> &rarr;</span>
               </div>
-              <h3 className="mt-4 text-base font-semibold text-gray-900">
-                <Link href={product.href}>{product.name}</Link>
-              </h3>
-              <p className="mt-1 text-sm text-gray-500">{product.price}</p>
-            </div>
-          ))}
-        </div>
+            </Link>
+          </div>
 
-        <div className="mt-6 sm:hidden">
-          <a
-            href="#"
-            className="block text-sm font-semibold text-indigo-600 hover:text-indigo-500"
-          >
-            Return Home<span aria-hidden="true"> &rarr;</span>
-          </a>
+          <div className="mt-6 grid grid-cols-1 gap-y-10 sm:grid-cols-3 sm:gap-y-0 sm:gap-x-6 lg:gap-x-8">
+            {products.map((product) => (
+              <div key={product.id} className="group relative">
+                <div className="sm:aspect-w-2 sm:aspect-h-3 h-96 w-full overflow-hidden rounded-lg group-hover:opacity-75 sm:h-auto">
+                  <Image
+                    src={product.imageSrc}
+                    alt={product.name}
+                    width={600}
+                    height={600}
+                    className="h-full w-full object-cover object-center"
+                  />
+                </div>
+                <h3 className="mt-4 text-base font-semibold text-gray-900">
+                  <Link href={product.href}>{product.name}</Link>
+                </h3>
+                <p className="mt-1 text-sm text-gray-500">{product.price}</p>
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-6 sm:hidden">
+            <Link href="/">
+              <div className="block text-sm font-semibold text-indigo-600 hover:text-indigo-500">
+                Return Home<span aria-hidden="true"> &rarr;</span>
+              </div>
+            </Link>
+          </div>
         </div>
       </div>
-    </div>
     </div>
   )
 }
