@@ -7,13 +7,13 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Web Badminton</title>
+        <title>Web Badminton: About us</title>
         <meta
           name="description"
           content="A platform where we talk about the rules of badminton, brands, equipment and much more. Our content is suitable and will be interesting for everybody."
         />
         <link rel="icon" href="/favicon.ico" />
-        <meta property="og:title" content="WebBadminton" />
+        <meta property="og:title" content="WebBadminton: About us" />
         <meta
           property="og:description"
           content="A platform where we talk about the rules of badminton, brands, equipment and much more. Our content is suitable and will be interesting for everybody."
