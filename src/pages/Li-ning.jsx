@@ -11,8 +11,7 @@ export default function Example() {
         </title>
         <meta
           name="description"
-          content="History of Li-ning: The company was founded in 1989 by Li Ning, a former Chinese Olympic gymnast.  In January 2010, Li-Ning opened its U.S. headquarters and
-          flagship store in Portland, Oregon."
+          content="History of Li-ning: The company was founded in 1989 by Li Ning, a former Chinese Olympic gymnast. Li-ning is one of the popular badminton products companies."
         />
         <meta property="og:title" content="WebBadminton Li-ning" />
         <meta property="og:type" content="website" />

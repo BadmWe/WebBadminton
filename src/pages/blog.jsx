@@ -41,14 +41,14 @@ export default function Blog() {
         <title>Web Badminton Posts</title>
         <meta
           name="description"
-          content="Here you can learn something new about brands, rackets and much more."
+          content="Here you can learn something new about brands, rackets, players and much more. Stay with us to learn something new about badminton."
         />
         <meta property="og:title" content="WebBadminton Posts" />
         <meta property="og:url" content="https://webbadminton.com/blog" />
         <meta property="og:type" content="website" />
         <meta
           property="og:description"
-          content="Here you can learn something new about brands, rackets and much more."
+          content="Here you can learn something new about brands, rackets, players and much more. Stay with us to learn something new about badminton."
         />
         <meta
           property="og:image"
@@ -74,8 +74,9 @@ export default function Blog() {
               Web Badminton Posts
             </h1>
             <p className="mx-auto mt-3 max-w-2xl text-xl text-gray-500 sm:mt-4">
-              Here you can learn something new about brands, rackets and much
-              more.
+              Here you can learn something new about brands, rackets, players
+              and much more. Stay with us to learn something new about
+              badminton.
             </p>
           </div>
           <div className="mx-auto mt-12 grid max-w-lg gap-5 lg:max-w-none lg:grid-cols-2">

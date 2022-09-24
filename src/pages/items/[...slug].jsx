@@ -34,12 +34,12 @@ export default function Page({ page, params }) {
         <title>{page.product.name}</title>
         <meta
           name="description"
-          content="Here you can get acquainted with different models of rackets and choose the right one for you."
+          content="Here you can get acquainted with different models of rackets and choose the right one for you. Also we have a post how to choose a badminton racket."
         />
         <meta property="og:title" content="WebBadminton Item" />
         <meta
           property="og:description"
-          content="Here you can get acquainted with different models of rackets and choose the right one for you."
+          content="Here you can get acquainted with different models of rackets and choose the right one for you. Also we have a post how to choose a badminton racket."
         />
         <meta
           property="og:url"
