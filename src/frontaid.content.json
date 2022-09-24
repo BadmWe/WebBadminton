@@ -4,8 +4,8 @@
     "title": "Index Page",
     "content": "<p>Some <strong>index</strong> content...</p>"
   },
-  "pages": [
-    {
+  "pages": [ 
+    { 
       "path": "/Arcsaber11",
       "product": {
         "name": "Yonex Arcsaber 11",

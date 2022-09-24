@@ -1,9 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
-  images: {
-    domains: ['badm-store.ru'],
-  },
+  reactStrictMode: true
 }
 
 module.exports = nextConfig

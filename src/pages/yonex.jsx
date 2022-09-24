@@ -137,7 +137,7 @@ export default function Example() {
                   </p>
                   <p>
                     In 1982 Yonex came out with the new oversized tennis racquet
-                    in the REX-series with the R-7 and R-10 racquets. At that
+                    in the REX-series with the R-7 and R-10 rackets. At that
                     time Martina Navratilova played with the R-7 and was very
                     successful. One year later, the new series Rexking was
                     developed with the R-22. Navratilova subsequently used the
@@ -155,7 +155,7 @@ export default function Example() {
                     Finding a growing market, the Yonex Corporation (a wholly
                     owned subsidiary) was established in Torrance, California,
                     US in July 1983. In 1992 Yonex introduced the widebody
-                    badminton racket, the &quot;Isometric 500&quot;, a racquet
+                    badminton racket, the &quot;Isometric 500&quot;, a racket
                     that was much less &quot;tear drop&quot;-shaped than
                     previous ones. The more &quot;square&quot; head gave it a
                     much larger striking surface, which provides a larger

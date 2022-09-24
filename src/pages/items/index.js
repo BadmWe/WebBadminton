@@ -74,31 +74,16 @@ export default function Example() {
         <title>Items</title>
         <meta
         name="description"
-        content="Here you can get acquanted with different models of rackets and choose the right one for you."
+        content="Here you can get acquainted with different models of rackets and choose the right one for you."
       />
        <meta property="og:title" content="WebBadminton Items" />
       <meta
         property="og:description"
-        content="Here you can get acquanted with different models of rackets and choose the right one for you."
+        content="Here you can get acquainted with different models of rackets and choose the right one for you."
       />
       <meta property="og:url" content="https://webbadminton.com/items" />
       <meta property="og:type" content="article" />
-      <meta property="og:image" content="/backgound.jpg" /> 
-        {/*
-      <meta
-        name="description"
-        content="A platform where we talk about the rules of badminton, brands, equipment and much more."
-      />
-      <link rel="icon" href="/favicon.ico" />
-      <meta property="og:title" content="WebBadminton" />
-      <meta
-        property="og:description"
-        content="A platform where we talk about the rules of badminton, brands, equipment and much more."
-      />
-      <meta property="og:url" content="https://webbadminton.com/" />
-      <meta property="og:type" content="website" />
-      <meta property="og:image" content="/backgound.jpg" />
-      */}
+      <meta property="og:image" content="/photos/itemsphoto.jpg" /> 
       </Head>
       <div className="bg-white">
         <div className="mx-auto max-w-7xl py-16 px-4 sm:px-6 lg:px-8">

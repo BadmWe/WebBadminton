@@ -176,16 +176,32 @@ export default function Example() {
                   <p className="text-lg text-indigo-600">
                     Examples of rackets for beginners:
                   </p>
-                  <p>Yonex Nanoray 10F</p>
+                  <p className="text-lg text-indigo-600">
+                    <a href="https://webbadminton.com/items/duora6">
+                      Yonex Duora 6
+                    </a>
+                  </p>
+                  <p>Weight: 4U; Flex:High-Flex ; Balance: Even;</p>
+                  <p className="text-lg text-indigo-600">Yonex Nanoray 10F</p>
                   <p>Weight:4U; Flex:Highly Flexible; Balance: Head-Light;</p>
-                  <p>Yonex Nanoflare Drive (Black/Purple)</p>
+                  <p className="text-lg text-indigo-600">
+                    Yonex Nanoflare Drive (Black/Purple)
+                  </p>
                   <p>Weight: 4U; Flex: Highly flexible; Balance: Head-Light;</p>
                   <p className="text-lg text-indigo-600">
                     Rackets for professional players:
                   </p>
-                  <p>Yonex Astrox 100ZZ</p>
+                  <p className="text-lg text-indigo-600">
+                    <a href="https://webbadminton.com/items/astroxnavy">
+                      Yonex Astrox 100ZZ
+                    </a>
+                  </p>
                   <p>Weight: 4U; Flex: Extra Stiff; Balance: Head-Heavy;</p>
-                  <p>Yonex Arcsaber 11</p>
+                  <p className="text-lg text-indigo-600">
+                    <a href="https://webbadminton.com/items/Arcsaber11">
+                      Yonex Arcsaber 11
+                    </a>
+                  </p>
                   <p>Weight: 3U; Flex: Stiff; Balance: Even;</p>
                 </div>
               </div>
@@ -254,14 +270,16 @@ export default function Example() {
                   <span className="relative rounded-full border-2 border-white sm:absolute sm:top-0 sm:-translate-y-1/2 sm:transform">
                     <img
                       className="h-12 w-12 rounded-full bg-indigo-300 sm:h-20 sm:w-20"
-                      src="https://vbadminton.ru/sites/default/files/styles/810/public/badminton-1000x500.jpg"
+                      src="/photos/forbeginimage.jpg"
                       alt="admin"
                     />
                   </span>
                   <span className="relative ml-4 font-semibold leading-6 text-indigo-300 sm:ml-24 sm:pl-6">
                     <span className="font-semibold text-white sm:inline">
+                      <a href="https://webbadminton.com/"> WebBadminton: </a>
                       How to choose a badminton racket?
-                    </span>{' '}
+                    </span>
+                    {''}
                     <span className="sm:inline"></span>
                   </span>
                 </cite>

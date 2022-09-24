@@ -11,7 +11,9 @@ export default function Example() {
         </title>
         <meta
           name="description"
-          content="History of Li-ning: The company was founded in 1989 by Li Ning, a former Chinese Olympic gymnast. "
+          content="History of Li-ning: The company was founded in 1989 by Li Ning, a former Chinese Olympic gymnast.  As of 2015, Li Ning remains the Chairman of the company's
+          board of directors. In January 2010, Li-Ning opened its U.S. headquarters and
+          flagship store in Portland, Oregon."
         />
         <meta property="og:title" content="WebBadminton Li-ning" />
         <meta property="og:type" content="website" />
@@ -84,7 +86,7 @@ export default function Example() {
                   <div className="aspect-w-12 aspect-h-7 lg:aspect-none">
                     <img
                       className="rounded-lg object-cover object-center shadow-lg"
-                      src="/photos/kidambi.jpg"
+                      src="/photos/kidambi .jpg"
                       alt="Kidambi Srikanth"
                       width={1184}
                       height={1376}
