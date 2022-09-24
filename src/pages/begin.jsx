@@ -8,12 +8,12 @@ export default function Example() {
         <title>For begginers: How to choose a badminton racket?</title>
         <meta
           name="description"
-          content="How to choose a badminton racket? In this post, we will tell you how to choose a badminton racket."
+          content="How to choose a badminton racket? In this post, we will tell you how to choose a badminton racket correctly."
         />
         <meta property="og:title" content="WebBadminton: For begginers" />
         <meta
           property="og:description"
-          content="How to choose a badminton racket? In this post, we will tell you how to choose a badminton racket."
+          content="How to choose a badminton racket? In this post, we will tell you how to choose a badminton racket correctly."
         />
         <meta property="og:url" content="https://webbadminton.com/begin" />
         <meta property="og:type" content="article" />
