@@ -46,7 +46,7 @@ export default function Page({ page, params }) {
           content={`https://webbadminton.com/items/${params.slug}`}
         />
         <meta property="og:type" content="article" />
-        <meta property="og:image" content="/photos/itemsphoto.jpg" />
+        <meta property="og:image" content="/photos/mainstore.jpg" />
       </Head>
       <div className="bg-white">
         <main className="mx-auto max-w-7xl sm:px-6 sm:pt-16 lg:px-8">
