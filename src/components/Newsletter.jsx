@@ -89,6 +89,18 @@ export function Newsletter() {
                   Our store
                 </div>
               </Link>
+              
+              <Link href="https://twitter.com/WebBadminton4u">
+                <div className=" mt-4 text-lg tracking-tight text-blue-900">
+                  Twitter
+                </div>
+              </Link>
+              <Link href="https://www.instagram.com/web_badminton/">
+                <div className=" mt-4 text-lg tracking-tight text-blue-900">
+                  Instagram
+                </div>
+              </Link>
+
             </div>
             <form onSubmit={saveEmail}>
               <h3 className="text-lg font-semibold tracking-tight text-blue-900">
