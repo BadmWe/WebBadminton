@@ -1,6 +1,5 @@
 import { Disclosure } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
-import { useAccount, useConnect, useDisconnect } from 'wagmi'
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
 
@@ -18,9 +17,6 @@ const Navbar = () => {
     setMounted(true)
   }, [])
 
-  const { address, isConnected } = useAccount()
-  const { connect, connectors, isLoading, pendingConnector } = useConnect()
-  const { disconnect } = useDisconnect()
 
   return (
     mounted && (
@@ -56,63 +52,6 @@ const Navbar = () => {
                 </div>
                 <div className="flex items-center">
                   <div className="flex-shrink-0">
-                    {isConnected ? (
-                      <div className="dropdown relative">
-                        <button
-                          className="relative inline-flex items-center rounded-md border border-transparent bg-indigo-500 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-800"
-                          type="button"
-                          id="dropdownMenuButton1"
-                          data-bs-toggle="dropdown"
-                          aria-expanded="false"
-                        >
-                          {address.slice(0, 8)}
-                          <svg
-                            aria-hidden="true"
-                            focusable="false"
-                            data-prefix="fas"
-                            data-icon="caret-down"
-                            className="ml-2 w-2"
-                            role="img"
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 320 512"
-                          >
-                            <path
-                              fill="currentColor"
-                              d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"
-                            />
-                          </svg>
-                        </button>
-                        <div
-                          className="dropdown-menu absolute z-50 float-left m-0 mt-1 min-w-max list-none rounded-lg border-none bg-white bg-clip-padding py-2 text-left text-base shadow-lg"
-                          aria-labelledby="dropdownMenuButton1"
-                        >
-                          <div
-                            className="dropdown-item block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-gray-700 hover:bg-gray-100"
-                            onClick={disconnect}
-                          >
-                            Disconnect
-                          </div>
-                        </div>
-                      </div>
-                    ) : (
-                      connectors.map((connector) => (
-                        <div key={connector.id}>
-                          <button
-                            type="button"
-                            disabled={!connector.ready}
-                            key={connector.id}
-                            onClick={() => connect({ connector })}
-                            className="relative inline-flex items-center rounded-md border border-transparent bg-indigo-500 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-800"
-                          >
-                            {'Connect ' + connector.name}
-                            {!connector.ready + '(unsupported)'}
-                            {isLoading &&
-                              connector.id === pendingConnector?.id &&
-                              '(connecting)'}
-                          </button>
-                        </div>
-                      ))
-                    )}
                   </div>
                 </div>
               </div>

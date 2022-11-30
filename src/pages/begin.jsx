@@ -52,7 +52,7 @@ export default function Example() {
                 </p>
                 <p>
                   Badminton rackets weigh between 54 and 94 grams. The weight of
-                  a badminton racket is indicated by the Latin letter “U” and a
+                  a badminton racket is indicated by the Latin letter U and a
                   number. The marking is usually indicated on the cap. As you
                   can see from the table, the lower the number, the heavier the
                   racket, for example, a 3U racket is heavier than a 4U racket.
