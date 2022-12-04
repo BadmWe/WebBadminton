@@ -21,9 +21,18 @@ export default function Page({ page, params }) {
   const { chain } = useNetwork()
   const { data: signer } = useSigner()
 
-  async function Mint() {
-    const { contractAddress, abi } = getContractInfo(chain)
+  const { contractAddress, abi } = getContractInfo(chain)
 
+  async function getCovalent() {
+    const transactions = `https://api.covalenthq.com/v1/${chain}/tokens/${contractAddress}/nft_transactions/4/?key=${process.env.NEXT_PUBLIC_COVALENT}`
+    const res_transactions = await fetch(transactions).then((x) => x.json())
+    console.log(res_transactions.data)
+    //.items[0].nft_transactions.length
+  }
+
+  getCovalent()
+
+  async function Mint() {
     const contract = new ethers.Contract(contractAddress, abi, signer)
     await contract['mint' + params.slug]({ from: address })
   }
