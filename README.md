@@ -1,6 +1,6 @@
 # Web Badminton
 
-[Web Badminton](https://webbadminton.com) - decentralized badminton centered dapp on IPFS and Polygon Blockchain.
+[Web Badminton](https://webbadminton.com) - decentralized badminton centered dapp on IPFS, Covalent, EVMOS, Polygon Blockchain.
 
 <div align="left">
       <a href="https://www.youtube.com/watch?v=1oxnYJdtDQg">
@@ -9,8 +9,6 @@
 </div>
 
 With Decentralized Storage provider IPFS and blockchain technology, we build a decentralized platform for you to learn about playing Badminton.
-
-We Updated the App to include new Chain: Lukso L14 testnet. The contract on the new chain follows LSP-8 standard. A standard interface for identifiable digital assets, allowing for tokens to be uniquely traded and given metadata using ERC725Y.
 
 ## What it does
 
@@ -30,7 +28,7 @@ In addition, we created Decentralized Newsletter subscription List that we conne
 
 We built the application using JavaScript, NextJS, React, Tailwind Css and Wagmi library, IPFS, nft.storage and web3.storage. The application is hosted on vercel. The newsletter list data is stored on ipfs with web3.storage.
 
-The contract is built with solidity, hardhat and polygon blockchain mumbai testnet. Meanwhile the Ipfs data is stored using nft.storage.
+The contract is built with solidity, hardhat, EVMOS devnet and polygon blockchain mumbai testnet. Meanwhile the Ipfs data is stored using nft.storage.
 
 ## Getting started
 
@@ -46,7 +44,7 @@ Next, run the development server:
 yarn dev
 ```
 
-# Links
+## Links
 
 [Devpost Page](https://devpost.com/software/web-badminton)
 
