@@ -201,7 +201,11 @@ export default function Page({ page, params }) {
                       Buy now
                     </button>
                   </div>
+                  <div className="rounded md-shadow text-indigo-600"> Transactions done:
+                  </div>
+                  
                 </form>
+          
                 <section aria-labelledby="details-heading" className="mt-12">
                   <h2 id="details-heading" className="sr-only">
                     Additional details
