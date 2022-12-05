@@ -336,7 +336,11 @@ export async function getStaticProps({ params }) {
   const page = content.pages.find((page) => page.path === currentPath) || {
     notfound: true,
   }
-  const nTxs = 0
+
+  const nTxsRes = await fetch(
+    `https://webbadminton.com/api/covalent/${page.product.id}`
+  ).then((x) => x.json())
+  const nTxs = nTxsRes.nTransactions
 
   return { props: { page, params, nTxs }, revalidate: 60 }
 }
