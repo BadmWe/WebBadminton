@@ -14,7 +14,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function Page({ page, params }) {
+export default function Page({ page, params, nTxs }) {
   const [selectedColor, setSelectedColor] = useState(page.product.colors[0])
 
   const { address } = useAccount()
@@ -22,15 +22,6 @@ export default function Page({ page, params }) {
   const { data: signer } = useSigner()
 
   const { contractAddress, abi } = getContractInfo(chain)
-
-  async function getCovalent() {
-    const transactions = `https://api.covalenthq.com/v1/${chain}/tokens/${contractAddress}/nft_transactions/4/?key=${process.env.NEXT_PUBLIC_COVALENT}`
-    const res_transactions = await fetch(transactions).then((x) => x.json())
-    console.log(res_transactions.data)
-    //.items[0].nft_transactions.length
-  }
-
-  getCovalent()
 
   async function Mint() {
     const contract = new ethers.Contract(contractAddress, abi, signer)
@@ -212,7 +203,7 @@ export default function Page({ page, params }) {
                   </div>
                   <div className="md-shadow rounded text-indigo-600">
                     {' '}
-                    Transactions done:
+                    Transactions done: {nTxs}
                   </div>
                 </form>
 
@@ -345,5 +336,11 @@ export async function getStaticProps({ params }) {
   const page = content.pages.find((page) => page.path === currentPath) || {
     notfound: true,
   }
-  return { props: { page, params } }
+
+  const nTxsRes = await fetch(
+    `http://localhost:3000/api/covalent/${page.product.id}`
+  ).then((x) => x.json())
+  const nTxs = nTxsRes.nTransactions
+
+  return { props: { page, params, nTxs }, revalidate: 60 }
 }
