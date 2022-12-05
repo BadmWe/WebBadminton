@@ -14,7 +14,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function Page({ page, params, nTxs }) {
+export default function Page({ page, params, nTxsEVMOS, nTxsMUMBAI }) {
   const [selectedColor, setSelectedColor] = useState(page.product.colors[0])
 
   const { address } = useAccount()
@@ -203,7 +203,11 @@ export default function Page({ page, params, nTxs }) {
                   </div>
                   <div className="md-shadow rounded text-indigo-600">
                     {' '}
-                    Transactions done: {nTxs}
+                    EVMOS Transactions done: {nTxsEVMOS}
+                  </div>
+                  <div className="md-shadow rounded text-indigo-600">
+                    {' '}
+                    Mumbai Transactions done: {nTxsMUMBAI}
                   </div>
                 </form>
 
@@ -337,10 +341,15 @@ export async function getStaticProps({ params }) {
     notfound: true,
   }
 
-  const nTxsRes = await fetch(
-    `https://webbadminton.com/api/covalent/${page.product.id}`
+  const nTxsResEVMOS = await fetch(
+    `https://webbadminton.com/api/evmos/${page.product.id}`
   ).then((x) => x.json())
-  const nTxs = nTxsRes.nTransactions
+  const nTxsEVMOS = nTxsResEVMOS.nTransactions
 
-  return { props: { page, params, nTxs }, revalidate: 60 }
+  const nTxsResMUMBAI = await fetch(
+    `https://webbadminton.com/api/mumbai/${page.product.id}`
+  ).then((x) => x.json())
+  const nTxsMUMBAI = nTxsResMUMBAI.nTransactions
+
+  return { props: { page, params, nTxsEVMOS, nTxsMUMBAI }, revalidate: 60 }
 }
