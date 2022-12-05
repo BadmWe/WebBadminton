@@ -338,7 +338,7 @@ export async function getStaticProps({ params }) {
   }
 
   const nTxsRes = await fetch(
-    `http://localhost:3000/api/covalent/${page.product.id}`
+    `https://webbadminton.com/api/covalent/${page.product.id}`
   ).then((x) => x.json())
   const nTxs = nTxsRes.nTransactions
 
