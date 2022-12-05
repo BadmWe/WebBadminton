@@ -8,6 +8,7 @@
     { 
       "path": "/Arcsaber11",
       "product": {
+        "id":0,
         "name": "Yonex Arcsaber 11",
         "price": "$199",
         "rating": 5,
@@ -90,6 +91,7 @@
     {
       "path": "/duora6",
       "product": {
+        "id":6,
         "name": "Duora 6 (Shine Pink)",
         "price": "$209",
         "rating": 5,
@@ -171,6 +173,7 @@
     {
       "path": "/astroxred",
       "product": {
+        "id":5,
         "name": "Yonex Astrox 100ZZ (Kurenai)",
         "price": "$289",
         "rating": 5,
@@ -263,6 +266,7 @@
     {
       "path": "/astroxnavy",
       "product": {
+        "id":4,
         "name": "Yonex Astrox 100ZZ (Dark Navy)",
         "price": "$289",
         "rating": 5,
@@ -355,6 +359,7 @@
     {
       "path": "/astrox99Pro",
       "product": {
+        "id":3,
         "name": "Yonex Astrox 99 Pro (White Tiger)",
         "price": "$279",
         "rating": 5,
@@ -436,6 +441,7 @@
     {
       "path": "/astrox88SPro",
       "product": {
+        "id":2,
         "name": "Yonex Astrox 88S Pro",
         "price": "$259",
         "rating": 5,
@@ -517,6 +523,7 @@
     {
       "path": "/astrox88DPro",
       "product": {
+        "id":1,
         "name": "Yonex Astrox 88D Pro",
         "price": "$279",
         "rating": 5,
