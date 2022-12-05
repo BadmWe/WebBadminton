@@ -5,7 +5,6 @@ async function main() {
 
   console.log('Account balance:', (await deployer.getBalance()).toString())
 
-  // We get the contract to deploy
   const MyERC1155NFT = await hre.ethers.getContractFactory('MyERC1155NFT')
   const contract = await MyERC1155NFT.deploy()
 
