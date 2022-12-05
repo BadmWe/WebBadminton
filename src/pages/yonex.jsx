@@ -76,7 +76,7 @@ export default function Example() {
               <div className="relative mx-auto max-w-prose text-base lg:max-w-none">
                 <figure>
                   <div className="aspect-w-12 aspect-h-7 lg:aspect-none">
-                    <img
+                    <Image
                       className="rounded-lg object-cover object-center shadow-lg"
                       src="/photos/yonexlog.jpg"
                       alt="Yonex"
@@ -85,7 +85,7 @@ export default function Example() {
                     />
                   </div>
                   <div className="aspect-w-12 aspect-h-7 lg:aspect-none">
-                    <img
+                    <Image
                       className="rounded-lg object-cover object-center shadow-lg"
                       src="/photos/min.jpg"
                       alt=" Minoru Yoneyama "

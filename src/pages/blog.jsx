@@ -1,4 +1,6 @@
 import Head from 'next/head'
+import Image from 'next/image'
+
 
 const posts = [
   {
@@ -86,7 +88,7 @@ export default function Blog() {
                 className="flex flex-col overflow-hidden rounded-lg shadow-lg"
               >
                 <div className="flex-shrink-0">
-                  <img
+                  <Image
                     className="h-48 w-full object-cover"
                     src={post.imageUrl}
                     alt={post.title}
