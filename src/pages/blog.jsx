@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
 
-
 const posts = [
   {
     title: 'Yonex',
@@ -92,6 +91,8 @@ export default function Blog() {
                     className="h-48 w-full object-cover"
                     src={post.imageUrl}
                     alt={post.title}
+                    width={400}
+                    height={400}
                   />
                 </div>
                 <div className="flex flex-1 flex-col justify-between bg-white p-6">
