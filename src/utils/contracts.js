@@ -14,6 +14,12 @@ export function getContractInfo(chain) {
       abi: MyERC1155NFT.abi,
     }
 
+  if (chain === 314)
+    return {
+      contractAddress: '0xb7209552CDEE27dC0EBcdB713D4AbD3ce9dcB551',
+      abi: MyERC1155NFT.abi,
+    }
+
   return {
     contractAddress: '0xF46FCAb2404b071ac33e5eD2095802Cecf77FB21',
     abi: MyERC1155NFT.abi,
