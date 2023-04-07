@@ -152,7 +152,7 @@ export default function Page({ page, params, nTxsEVMOS, nTxsMUMBAI }) {
                 <form className="mt-6">
                   {/* Colors */}
                   <div>
-                    <h3 className="text-sm text-gray-600">Color: Camel Gold</h3>
+                    <h3 className="text-sm text-gray-600"></h3>
 
                     <RadioGroup
                       value={selectedColor}
