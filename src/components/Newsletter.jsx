@@ -78,11 +78,10 @@ export function Newsletter() {
           <div className="relative mx-auto grid max-w-2xl grid-cols-1 gap-x-32 gap-y-14 xl:max-w-none xl:grid-cols-2">
             <div>
               <p className="font-display text-4xl font-medium tracking-tighter text-blue-900 sm:text-5xl">
-                Stay up to date
+                
               </p>
               <p className="mt-4 text-lg tracking-tight text-blue-900">
-                Get updates on all of our events and be the first to get
-                notified when tickets go on sale.
+                Get updates on all of our events.
               </p>
               <Link href="/items">
                 <div className=" mt-4 text-lg tracking-tight text-blue-900">

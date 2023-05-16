@@ -270,7 +270,7 @@ export default function Example() {
                   <span className="relative rounded-full border-2 border-white sm:absolute sm:top-0 sm:-translate-y-1/2 sm:transform">
                     <Image
                       className="h-12 w-12 rounded-full bg-indigo-300 sm:h-20 sm:w-20"
-                      src="/photos/forbeginimage.jpg"
+                      src="/photos/racketbegin.jpg"
                       alt="admin"
                     />
                   </span>

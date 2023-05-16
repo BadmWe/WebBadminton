@@ -22,6 +22,16 @@ const posts = [
     imageUrl: '/photos/Li-ningblog.jpg',
     readingTime: '4 min',
   },
+  {
+    title: 'Victor',
+    href: 'victor',
+    category: { name: 'Brand', href: 'victor' },
+    description: '',
+    date: 'May 16, 2023',
+    datetime: '2023-05-16',
+    imageUrl: '/photos/monr.jpg',
+    readingTime: '4 min',
+  },
   /*   {
     title: 'Victor',
     href: 'Victor',
