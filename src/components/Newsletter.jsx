@@ -77,17 +77,28 @@ export function Newsletter() {
           <div className="relative mx-auto grid max-w-2xl grid-cols-1 gap-x-32 gap-y-14 xl:max-w-none xl:grid-cols-2">
             <div>
               <p className="font-display text-4xl font-medium tracking-tighter text-blue-900 sm:text-5xl">
-                Stay up to date
+                
               </p>
               <p className="mt-4 text-lg tracking-tight text-blue-900">
-                Get updates on all of our events and be the first to get
-                notified when tickets go on sale.
+                Get updates on all of our events.
               </p>
               <Link href="/items">
                 <div className=" mt-4 text-lg tracking-tight text-blue-900">
                   Our store
                 </div>
               </Link>
+              
+              <Link href="https://twitter.com/WebBadminton4u">
+                <div className=" mt-4 text-lg tracking-tight text-blue-900">
+                  Twitter
+                </div>
+              </Link>
+              <Link href="https://www.instagram.com/web_badminton/">
+                <div className=" mt-4 text-lg tracking-tight text-blue-900">
+                  Instagram
+                </div>
+              </Link>
+
             </div>
             <form onSubmit={saveEmail}>
               <h3 className="text-lg font-semibold tracking-tight text-blue-900">

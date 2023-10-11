@@ -1,9 +1,11 @@
 import 'focus-visible'
 import '../styles/tailwind.css'
+import '@rainbow-me/rainbowkit/styles.css'
+
 import { Layout } from '../components/Layout'
-import { WagmiConfig, createClient, configureChains, chain } from 'wagmi'
+import { getDefaultWallets, RainbowKitProvider } from '@rainbow-me/rainbowkit'
+import { chain, configureChains, createClient, WagmiConfig } from 'wagmi'
 import { publicProvider } from 'wagmi/providers/public'
-import { MetaMaskConnector } from 'wagmi/connectors/metaMask'
 import { jsonRpcProvider } from 'wagmi/providers/jsonRpc'
 
 export default function App({ Component, pageProps }) {
@@ -28,30 +30,53 @@ export default function App({ Component, pageProps }) {
     testnet: true,
   }
 
+  const EvmosChain = {
+    id: 9000,
+    name: 'EVMOS',
+    network: 'evmos',
+    rpcUrls: {
+      default: 'https://eth.bd.evmos.dev:8545',
+    },
+    testnet: true,
+  }
+
   const { chains, provider, webSocketProvider } = configureChains(
-    [chain.polygonMumbai, LuksoL14Chain],
+    [
+      ...(process.env.NEXT_PUBLIC_DEV === 'true' ? [chain.hardhat] : []),
+      chain.polygonMumbai,
+      LuksoL14Chain,
+      EvmosChain,
+    ],
     [
       publicProvider(),
       jsonRpcProvider({
         rpc: (chain) => {
-          if (chain.id !== LuksoL14Chain.id) return null
+          if (chain.id !== LuksoL14Chain.id && chain.id !== EvmosChain.id)
+            return null
           return { http: chain.rpcUrls.default }
         },
       }),
     ]
   )
-  const client = createClient({
+
+  const { connectors } = getDefaultWallets({
+    appName: 'My RainbowKit App',
+    chains,
+  })
+
+  const wagmiClient = createClient({
     autoConnect: true,
-    connectors: [new MetaMaskConnector({ chains })],
+    connectors,
     provider,
-    webSocketProvider,
   })
 
   return (
-    <WagmiConfig client={client}>
-      <Layout>
-        <Component {...pageProps} />
-      </Layout>
+    <WagmiConfig client={wagmiClient}>
+      <RainbowKitProvider chains={chains}>
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
+      </RainbowKitProvider>
     </WagmiConfig>
   )
 }

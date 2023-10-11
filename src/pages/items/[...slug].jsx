@@ -14,16 +14,16 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function Page({ page, params }) {
+export default function Page({ page, params, nTxsEVMOS, nTxsMUMBAI }) {
   const [selectedColor, setSelectedColor] = useState(page.product.colors[0])
 
   const { address } = useAccount()
   const { chain } = useNetwork()
   const { data: signer } = useSigner()
 
-  async function Mint() {
-    const { contractAddress, abi } = getContractInfo(chain)
+  const { contractAddress, abi } = getContractInfo(chain)
 
+  async function Mint() {
     const contract = new ethers.Contract(contractAddress, abi, signer)
     await contract['mint' + params.slug]({ from: address })
   }
@@ -152,7 +152,7 @@ export default function Page({ page, params }) {
                 <form className="mt-6">
                   {/* Colors */}
                   <div>
-                    <h3 className="text-sm text-gray-600">Color: Camel Gold</h3>
+                    <h3 className="text-sm text-gray-600"></h3>
 
                     <RadioGroup
                       value={selectedColor}
@@ -201,7 +201,16 @@ export default function Page({ page, params }) {
                       Buy now
                     </button>
                   </div>
+                  <div className="md-shadow rounded text-indigo-600">
+                    {' '}
+                    EVMOS Transactions done: {nTxsEVMOS}
+                  </div>
+                  <div className="md-shadow rounded text-indigo-600">
+                    {' '}
+                    Mumbai Transactions done: {nTxsMUMBAI}
+                  </div>
                 </form>
+
                 <section aria-labelledby="details-heading" className="mt-12">
                   <h2 id="details-heading" className="sr-only">
                     Additional details
@@ -331,5 +340,6 @@ export async function getStaticProps({ params }) {
   const page = content.pages.find((page) => page.path === currentPath) || {
     notfound: true,
   }
-  return { props: { page, params } }
+
+  return { props: { page, params }, revalidate: 60 }
 }

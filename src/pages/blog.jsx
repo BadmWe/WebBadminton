@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Image from 'next/image'
 
 const posts = [
   {
@@ -19,6 +20,16 @@ const posts = [
     date: 'July 23, 2022',
     datetime: '2022-07-23',
     imageUrl: '/photos/Li-ningblog.jpg',
+    readingTime: '4 min',
+  },
+  {
+    title: 'Victor',
+    href: 'victor',
+    category: { name: 'Brand', href: 'victor' },
+    description: '',
+    date: 'May 16, 2023',
+    datetime: '2023-05-16',
+    imageUrl: '/photos/monr.jpg',
     readingTime: '4 min',
   },
   /*   {
@@ -86,10 +97,12 @@ export default function Blog() {
                 className="flex flex-col overflow-hidden rounded-lg shadow-lg"
               >
                 <div className="flex-shrink-0">
-                  <img
+                  <Image
                     className="h-48 w-full object-cover"
                     src={post.imageUrl}
                     alt={post.title}
+                    width={400}
+                    height={400}
                   />
                 </div>
                 <div className="flex flex-1 flex-col justify-between bg-white p-6">

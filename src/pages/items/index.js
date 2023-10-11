@@ -4,12 +4,12 @@ import Head from 'next/head'
 const products = [
   {
     id: 1,
+    href: '/items/astroxnavy',
     name: 'Yonex Astrox 100ZZ (Dark Navy)',
     price: '$289',
-    href: '/items/astroxnavy',
     imageSrc:
       '/photos/astrox100zzdark.jpg',
-    imageAlt: '.',
+    imageAlt: 'astrox100zznavy.',
   },
   {
     id: 2,
@@ -18,7 +18,7 @@ const products = [
     href: '/items/astroxred',
     imageSrc:
       '/photos/astrox100zzred.jpg',
-    imageAlt: '',
+    imageAlt: 'astroxred100zz.',
   },
   {
     id: 3,
@@ -27,7 +27,7 @@ const products = [
     href: '/items/astrox88DPro',
     imageSrc:
       '/photos/Astrox88DPro.jpg',
-    imageAlt: '.',
+    imageAlt: 'astrox88dpro.',
   },
   {
     id: 4,
@@ -36,7 +36,7 @@ const products = [
     href: '/items/astrox99Pro',
     imageSrc:
       '/photos/Astrox99Pro.jpg',
-    imageAlt: '.',
+    imageAlt: 'astrox99Pro.',
   },
   {
     id: 5,
@@ -45,7 +45,7 @@ const products = [
     href: '/items/astrox88SPro',
     imageSrc:
       '/photos/Astrox88SPro.jpg',
-    imageAlt: '.',
+    imageAlt: '.astrox88sPro.',
   },
   {
     id: 6,
@@ -54,7 +54,7 @@ const products = [
     href: '/items/duora6',
     imageSrc:
       '/photos/Duora6Pink.jpg',
-    imageAlt: '.',
+    imageAlt: 'Duora6pink.',
   },
   {
     id: 7,
@@ -63,7 +63,7 @@ const products = [
     href: '/items/Arcsaber11',
     imageSrc:
       '/photos/Arcsaber11.jpg',
-    imageAlt: '.',
+    imageAlt: 'arcsaber11.',
   },
 ]
 
@@ -92,7 +92,7 @@ export default function Example() {
           </h1>
           <div className="sm:flex sm:items-baseline sm:justify-between">
             <Link href="/">
-              <div className="hidden text-sm font-semibold text-indigo-600 hover:text-indigo-500 sm:block">
+              <div className="hidden text-sm font-semibold text-indigo-600 hover:text-indigo-600 sm:block">
                 Return Home<span aria-hidden="true"> &rarr;</span>
               </div>
             </Link>
@@ -120,7 +120,7 @@ export default function Example() {
 
           <div className="mt-6 sm:hidden">
             <Link href="/">
-              <div className="block text-sm font-semibold text-indigo-600 hover:text-indigo-500">
+              <div className="block text-sm font-semibold text-indigo-800 hover:text-indigo-800">
                 Return Home<span aria-hidden="true"> &rarr;</span>
               </div>
             </Link>
