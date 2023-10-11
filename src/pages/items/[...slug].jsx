@@ -5,6 +5,7 @@ import { Disclosure, RadioGroup, Tab } from '@headlessui/react'
 import { MinusSmIcon, PlusSmIcon } from '@heroicons/react/outline'
 import { StarIcon } from '@heroicons/react/solid'
 
+import contractJson from '../../WebBadminton.json'
 import content from '../../frontaid.content.json'
 
 function classNames(...classes) {
@@ -14,9 +15,12 @@ function classNames(...classes) {
 export default function Page({ page, params }) {
   const [selectedColor, setSelectedColor] = useState(page.product.colors[0])
 
+  const contractABI = contractJson.abi;
+
   async function Mint() {
-    // const contract = new ethers.Contract(contractAddress, abi, signer)
-    // await contract['mint' + params.slug]({ from: address })
+    const tronweb = window.tronWeb;
+    const contract = await tronweb.contract(contractABI, 'TFzWpp1x4vW7auiy4DNRJQzybrKKh33AuH');
+    await contract['mint' + params.slug]().send();
   }
 
   return (
