@@ -271,6 +271,8 @@ export default function Example() {
                     <Image
                       className="h-12 w-12 rounded-full bg-indigo-300 sm:h-20 sm:w-20"
                       src="/photos/racketbegin.jpg"
+                      width={400}
+                      height={400}
                       alt="admin"
                     />
                   </span>

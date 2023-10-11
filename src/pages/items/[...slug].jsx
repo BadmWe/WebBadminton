@@ -4,28 +4,19 @@ import { useState } from 'react'
 import { Disclosure, RadioGroup, Tab } from '@headlessui/react'
 import { MinusSmIcon, PlusSmIcon } from '@heroicons/react/outline'
 import { StarIcon } from '@heroicons/react/solid'
-import { ethers } from 'ethers'
-import { useAccount, useSigner, useNetwork } from 'wagmi'
 
 import content from '../../frontaid.content.json'
-import { getContractInfo } from '../../utils/contracts'
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function Page({ page, params, nTxsEVMOS, nTxsMUMBAI }) {
+export default function Page({ page, params }) {
   const [selectedColor, setSelectedColor] = useState(page.product.colors[0])
 
-  const { address } = useAccount()
-  const { chain } = useNetwork()
-  const { data: signer } = useSigner()
-
-  const { contractAddress, abi } = getContractInfo(chain)
-
   async function Mint() {
-    const contract = new ethers.Contract(contractAddress, abi, signer)
-    await contract['mint' + params.slug]({ from: address })
+    // const contract = new ethers.Contract(contractAddress, abi, signer)
+    // await contract['mint' + params.slug]({ from: address })
   }
 
   return (
@@ -200,14 +191,6 @@ export default function Page({ page, params, nTxsEVMOS, nTxsMUMBAI }) {
                     >
                       Buy now
                     </button>
-                  </div>
-                  <div className="md-shadow rounded text-indigo-600">
-                    {' '}
-                    EVMOS Transactions done: {nTxsEVMOS}
-                  </div>
-                  <div className="md-shadow rounded text-indigo-600">
-                    {' '}
-                    Mumbai Transactions done: {nTxsMUMBAI}
                   </div>
                 </form>
 

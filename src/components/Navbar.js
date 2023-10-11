@@ -1,6 +1,5 @@
 import { Disclosure } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
-import { ConnectButton } from '@rainbow-me/rainbowkit'
 import Link from 'next/link'
 
 const navigation = [
@@ -37,11 +36,6 @@ const Navbar = () => {
                       </div>
                     </Link>
                   ))}
-                </div>
-              </div>
-              <div className="flex items-center">
-                <div className="flex-shrink-0">
-                  <ConnectButton />
                 </div>
               </div>
             </div>
