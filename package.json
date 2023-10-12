@@ -7,7 +7,8 @@
     "build": "next build",
     "postbuild": "next-sitemap",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prettier": "prettier --write \"**/*.{js,jsx}\""
   },
   "browserslist": "defaults, not ie <= 11",
   "dependencies": {
@@ -29,7 +30,7 @@
     "@types/react": "^18.0.17",
     "eslint": "8.17.0",
     "eslint-config-next": "12.1.6",
-    "prettier": "^2.7.1",
+    "prettier": "^3.0.3",
     "prettier-plugin-tailwindcss": "^0.1.11"
   }
 }
