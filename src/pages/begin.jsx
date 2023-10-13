@@ -1,5 +1,5 @@
-import Head from 'next/head'
-import Image from 'next/image'
+import Head from "next/head";
+import Image from "next/image";
 
 export default function Example() {
   return (
@@ -281,7 +281,7 @@ export default function Example() {
                       <a href="https://webbadminton.com/"> WebBadminton: </a>
                       How to choose a badminton racket?
                     </span>
-                    {''}
+                    {""}
                     <span className="sm:inline"></span>
                   </span>
                 </cite>
@@ -291,5 +291,5 @@ export default function Example() {
         </div>
       </div>
     </div>
-  )
+  );
 }

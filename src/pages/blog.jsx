@@ -1,36 +1,36 @@
-import Head from 'next/head'
-import Image from 'next/image'
+import Head from "next/head";
+import Image from "next/image";
 
 const posts = [
   {
-    title: 'Yonex',
-    href: 'yonex',
-    category: { name: 'Brand', href: 'yonex' },
-    description: '',
-    date: 'July 23, 2022',
-    datetime: '2022-07-23',
-    imageUrl: '/photos/yonexblog.jpg',
-    readingTime: '3 min',
+    title: "Yonex",
+    href: "yonex",
+    category: { name: "Brand", href: "yonex" },
+    description: "",
+    date: "July 23, 2022",
+    datetime: "2022-07-23",
+    imageUrl: "/photos/yonexblog.jpg",
+    readingTime: "3 min",
   },
   {
-    title: 'Li-ning',
-    href: 'Li-ning',
-    category: { name: 'Brand', href: 'Li-ning' },
-    description: '',
-    date: 'July 23, 2022',
-    datetime: '2022-07-23',
-    imageUrl: '/photos/Li-ningblog.jpg',
-    readingTime: '4 min',
+    title: "Li-ning",
+    href: "Li-ning",
+    category: { name: "Brand", href: "Li-ning" },
+    description: "",
+    date: "July 23, 2022",
+    datetime: "2022-07-23",
+    imageUrl: "/photos/Li-ningblog.jpg",
+    readingTime: "4 min",
   },
   {
-    title: 'Victor',
-    href: 'victor',
-    category: { name: 'Brand', href: 'victor' },
-    description: '',
-    date: 'May 16, 2023',
-    datetime: '2023-05-16',
-    imageUrl: '/photos/monr.jpg',
-    readingTime: '4 min',
+    title: "Victor",
+    href: "victor",
+    category: { name: "Brand", href: "victor" },
+    description: "",
+    date: "May 16, 2023",
+    datetime: "2023-05-16",
+    imageUrl: "/photos/monr.jpg",
+    readingTime: "4 min",
   },
   /*   {
     title: 'Victor',
@@ -43,7 +43,7 @@ const posts = [
       'https://badmintonoceania.org/wp-content/uploads/2016/12/36080120_1_O-e1499248108190-800x400.jpg',
     readingTime: '4 min',
   }, */
-]
+];
 
 export default function Blog() {
   return (
@@ -132,5 +132,5 @@ export default function Blog() {
         </div>
       </div>
     </div>
-  )
+  );
 }

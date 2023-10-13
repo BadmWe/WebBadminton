@@ -1,5 +1,5 @@
-import Navbar from './Navbar'
-import Footer from './Footer'
+import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 export function Layout({ children }) {
   return (
@@ -8,5 +8,5 @@ export function Layout({ children }) {
       {children}
       <Footer />
     </>
-  )
+  );
 }

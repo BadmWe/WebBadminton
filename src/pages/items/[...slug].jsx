@@ -1,26 +1,29 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { useState } from 'react'
-import { Disclosure, RadioGroup, Tab } from '@headlessui/react'
-import { MinusSmIcon, PlusSmIcon } from '@heroicons/react/outline'
-import { StarIcon } from '@heroicons/react/solid'
+import Head from "next/head";
+import Image from "next/image";
+import { useState } from "react";
+import { Disclosure, RadioGroup, Tab } from "@headlessui/react";
+import { MinusSmIcon, PlusSmIcon } from "@heroicons/react/outline";
+import { StarIcon } from "@heroicons/react/solid";
 
-import contractJson from '../../WebBadminton.json'
-import content from '../../frontaid.content.json'
+import contractJson from "../../WebBadminton.json";
+import content from "../../frontaid.content.json";
 
 function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
+  return classes.filter(Boolean).join(" ");
 }
 
 export default function Page({ page, params }) {
-  const [selectedColor, setSelectedColor] = useState(page.product.colors[0])
+  const [selectedColor, setSelectedColor] = useState(page.product.colors[0]);
 
   const contractABI = contractJson.abi;
 
   async function Mint() {
     const tronweb = window.tronWeb;
-    const contract = await tronweb.contract(contractABI, 'TFzWpp1x4vW7auiy4DNRJQzybrKKh33AuH');
-    await contract['mint' + params.slug]().send();
+    const contract = await tronweb.contract(
+      contractABI,
+      "TFzWpp1x4vW7auiy4DNRJQzybrKKh33AuH",
+    );
+    await contract["mint" + params.slug]().send();
   }
 
   return (
@@ -73,9 +76,9 @@ export default function Page({ page, params }) {
                             <span
                               className={classNames(
                                 selected
-                                  ? 'ring-indigo-500'
-                                  : 'ring-transparent',
-                                'pointer-events-none absolute inset-0 rounded-md ring-2 ring-offset-2'
+                                  ? "ring-indigo-500"
+                                  : "ring-transparent",
+                                "pointer-events-none absolute inset-0 rounded-md ring-2 ring-offset-2",
                               )}
                               aria-hidden="true"
                             />
@@ -120,9 +123,9 @@ export default function Page({ page, params }) {
                           key={rating}
                           className={classNames(
                             page.product.rating > rating
-                              ? 'text-indigo-500'
-                              : 'text-gray-300',
-                            'h-5 w-5 flex-shrink-0'
+                              ? "text-indigo-500"
+                              : "text-gray-300",
+                            "h-5 w-5 flex-shrink-0",
                           )}
                           aria-hidden="true"
                         />
@@ -165,9 +168,9 @@ export default function Page({ page, params }) {
                             className={({ active, checked }) =>
                               classNames(
                                 color.selectedColor,
-                                active && checked ? 'ring ring-offset-1' : '',
-                                !active && checked ? 'ring-2' : '',
-                                'relative -m-0.5 flex cursor-pointer items-center justify-center rounded-full p-0.5 focus:outline-none'
+                                active && checked ? "ring ring-offset-1" : "",
+                                !active && checked ? "ring-2" : "",
+                                "relative -m-0.5 flex cursor-pointer items-center justify-center rounded-full p-0.5 focus:outline-none",
                               )
                             }
                           >
@@ -178,7 +181,7 @@ export default function Page({ page, params }) {
                               aria-hidden="true"
                               className={classNames(
                                 color.bgColor,
-                                'h-8 w-8 rounded-full border border-black border-opacity-10'
+                                "h-8 w-8 rounded-full border border-black border-opacity-10",
                               )}
                             />
                           </RadioGroup.Option>
@@ -212,8 +215,8 @@ export default function Page({ page, params }) {
                               <Disclosure.Button className="group relative flex w-full items-center justify-between py-6 text-left">
                                 <span
                                   className={classNames(
-                                    open ? 'text-indigo-600' : 'text-gray-900',
-                                    'text-sm font-medium'
+                                    open ? "text-indigo-600" : "text-gray-900",
+                                    "text-sm font-medium",
                                   )}
                                 >
                                   {detail.name}
@@ -311,22 +314,22 @@ export default function Page({ page, params }) {
         </main>
       </div>
     </div>
-  )
+  );
 }
 
 export async function getStaticPaths() {
   const paths = content.pages.map((page) => {
-    const slug = page.path.split('/').slice(1)
-    return { params: { slug } }
-  })
-  return { paths, fallback: false }
+    const slug = page.path.split("/").slice(1);
+    return { params: { slug } };
+  });
+  return { paths, fallback: false };
 }
 
 export async function getStaticProps({ params }) {
-  const currentPath = `/${params.slug.join('/')}`
+  const currentPath = `/${params.slug.join("/")}`;
   const page = content.pages.find((page) => page.path === currentPath) || {
     notfound: true,
-  }
+  };
 
-  return { props: { page, params }, revalidate: 60 }
+  return { props: { page, params }, revalidate: 60 };
 }

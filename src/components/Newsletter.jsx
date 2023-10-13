@@ -1,11 +1,11 @@
-import Image from 'next/image'
-import { Web3Storage } from 'web3.storage'
-import React, { useState } from 'react'
-import Link from 'next/link'
+import Image from "next/image";
+import { Web3Storage } from "web3.storage";
+import React, { useState } from "react";
+import Link from "next/link";
 
-const token = process.env.NEXT_PUBLIC_TOKEN
+const token = process.env.NEXT_PUBLIC_TOKEN;
 function makeStorageClient() {
-  return new Web3Storage({ token })
+  return new Web3Storage({ token });
 }
 
 function makeFileObjects(text) {
@@ -15,21 +15,21 @@ function makeFileObjects(text) {
   // audio, or whatever you want!
 
   // const blob = new Blob([JSON.stringify(obj)], { type: 'application/json' })
-  console.log(text)
-  const obj = { email: text }
-  const blob = new Blob([JSON.stringify(obj)], { type: 'application/json' })
+  console.log(text);
+  const obj = { email: text };
+  const blob = new Blob([JSON.stringify(obj)], { type: "application/json" });
   const files = [
     //new File(['contents-of-file-1'], 'plain-utf8.txt'),
-    new File([blob], 'email.json'),
-  ]
-  return files
+    new File([blob], "email.json"),
+  ];
+  return files;
 }
 
 async function storeFiles(files) {
-  const client = makeStorageClient()
-  const cid = await client.put(files)
-  console.log('stored files with cid:', cid)
-  return cid
+  const client = makeStorageClient();
+  const cid = await client.put(files);
+  console.log("stored files with cid:", cid);
+  return cid;
 }
 
 function ArrowRightIcon(props) {
@@ -44,21 +44,21 @@ function ArrowRightIcon(props) {
         strokeLinejoin="round"
       />
     </svg>
-  )
+  );
 }
 
 export function Newsletter() {
-  const [input, setInput] = useState('')
+  const [input, setInput] = useState("");
 
   async function sendEmail() {
     //console.log(input)
-    storeFiles(makeFileObjects(input))
+    storeFiles(makeFileObjects(input));
   }
 
   const saveEmail = (event) => {
-    event.preventDefault()
-    sendEmail(input)
-  }
+    event.preventDefault();
+    sendEmail(input);
+  };
 
   return (
     <section id="newsletter" aria-label="Newsletter">
@@ -66,7 +66,7 @@ export function Newsletter() {
         <div className="relative -mx-4 overflow-hidden bg-indigo-50 py-20 px-4 sm:-mx-6 sm:px-6 md:mx-0 md:rounded-5xl md:px-16 xl:px-24 xl:py-36">
           <div className="absolute left-1/2 top-0 translate-x-[-10%] translate-y-[-45%] lg:translate-x-[-32%]">
             <Image
-              src='/background-newsletter.jpg'
+              src="/background-newsletter.jpg"
               alt="Newsletter"
               layout="fixed"
               width={919}
@@ -76,9 +76,7 @@ export function Newsletter() {
           </div>
           <div className="relative mx-auto grid max-w-2xl grid-cols-1 gap-x-32 gap-y-14 xl:max-w-none xl:grid-cols-2">
             <div>
-              <p className="font-display text-4xl font-medium tracking-tighter text-blue-900 sm:text-5xl">
-                
-              </p>
+              <p className="font-display text-4xl font-medium tracking-tighter text-blue-900 sm:text-5xl"></p>
               <p className="mt-4 text-lg tracking-tight text-blue-900">
                 Get updates on all of our events.
               </p>
@@ -87,7 +85,7 @@ export function Newsletter() {
                   Our store
                 </div>
               </Link>
-              
+
               <Link href="https://twitter.com/WebBadminton4u">
                 <div className=" mt-4 text-lg tracking-tight text-blue-900">
                   Twitter
@@ -98,7 +96,6 @@ export function Newsletter() {
                   Instagram
                 </div>
               </Link>
-
             </div>
             <form onSubmit={saveEmail}>
               <h3 className="text-lg font-semibold tracking-tight text-blue-900">
@@ -126,5 +123,5 @@ export function Newsletter() {
         </div>
       </div>
     </section>
-  )
+  );
 }

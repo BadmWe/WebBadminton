@@ -1,6 +1,6 @@
-import { CameraIcon } from '@heroicons/react/solid'
-import Head from 'next/head'
-import Image from 'next/image'
+import { CameraIcon } from "@heroicons/react/solid";
+import Head from "next/head";
+import Image from "next/image";
 
 export default function Example() {
   return (
@@ -223,5 +223,5 @@ export default function Example() {
         </div>
       </div>
     </div>
-  )
+  );
 }

@@ -1,72 +1,65 @@
-import Image from 'next/image'
-import Link from 'next/link'
-import Head from 'next/head'
+import Image from "next/image";
+import Link from "next/link";
+import Head from "next/head";
 
 const products = [
   {
     id: 1,
-    href: '/items/astroxnavy',
-    name: 'Yonex Astrox 100ZZ (Dark Navy)',
-    price: '$289',
-    imageSrc:
-      '/photos/astrox100zzdark.jpg',
-    imageAlt: 'astrox100zznavy.',
+    href: "/items/astroxnavy",
+    name: "Yonex Astrox 100ZZ (Dark Navy)",
+    price: "$289",
+    imageSrc: "/photos/astrox100zzdark.jpg",
+    imageAlt: "astrox100zznavy.",
   },
   {
     id: 2,
-    name: 'Yonex Astrox 100ZZ (Kurenai)',
-    price: '$289',
-    href: '/items/astroxred',
-    imageSrc:
-      '/photos/astrox100zzred.jpg',
-    imageAlt: 'astroxred100zz.',
+    name: "Yonex Astrox 100ZZ (Kurenai)",
+    price: "$289",
+    href: "/items/astroxred",
+    imageSrc: "/photos/astrox100zzred.jpg",
+    imageAlt: "astroxred100zz.",
   },
   {
     id: 3,
-    name: 'Yonex Astrox 88D Pro',
-    price: '$279',
-    href: '/items/astrox88DPro',
-    imageSrc:
-      '/photos/Astrox88DPro.jpg',
-    imageAlt: 'astrox88dpro.',
+    name: "Yonex Astrox 88D Pro",
+    price: "$279",
+    href: "/items/astrox88DPro",
+    imageSrc: "/photos/Astrox88DPro.jpg",
+    imageAlt: "astrox88dpro.",
   },
   {
     id: 4,
-    name: 'Yonex Astrox 99 Pro (White Tiger)',
-    price: '$269',
-    href: '/items/astrox99Pro',
-    imageSrc:
-      '/photos/Astrox99Pro.jpg',
-    imageAlt: 'astrox99Pro.',
+    name: "Yonex Astrox 99 Pro (White Tiger)",
+    price: "$269",
+    href: "/items/astrox99Pro",
+    imageSrc: "/photos/Astrox99Pro.jpg",
+    imageAlt: "astrox99Pro.",
   },
   {
     id: 5,
-    name: 'Yonex Astrox 88S Pro ',
-    price: '$259',
-    href: '/items/astrox88SPro',
-    imageSrc:
-      '/photos/Astrox88SPro.jpg',
-    imageAlt: '.astrox88sPro.',
+    name: "Yonex Astrox 88S Pro ",
+    price: "$259",
+    href: "/items/astrox88SPro",
+    imageSrc: "/photos/Astrox88SPro.jpg",
+    imageAlt: ".astrox88sPro.",
   },
   {
     id: 6,
-    name: 'Yonex Duora 6 (Shine Pink)',
-    price: '$209',
-    href: '/items/duora6',
-    imageSrc:
-      '/photos/Duora6Pink.jpg',
-    imageAlt: 'Duora6pink.',
+    name: "Yonex Duora 6 (Shine Pink)",
+    price: "$209",
+    href: "/items/duora6",
+    imageSrc: "/photos/Duora6Pink.jpg",
+    imageAlt: "Duora6pink.",
   },
   {
     id: 7,
-    name: 'Yonex Arcsaber 11',
-    price: '$199',
-    href: '/items/Arcsaber11',
-    imageSrc:
-      '/photos/Arcsaber11.jpg',
-    imageAlt: 'arcsaber11.',
+    name: "Yonex Arcsaber 11",
+    price: "$199",
+    href: "/items/Arcsaber11",
+    imageSrc: "/photos/Arcsaber11.jpg",
+    imageAlt: "arcsaber11.",
   },
-]
+];
 
 export default function Example() {
   return (
@@ -74,17 +67,17 @@ export default function Example() {
       <Head>
         <title>Items</title>
         <meta
-        name="description"
-        content="Here you can get acquainted with different models of rackets and choose the right one for you. Also we have a post how to choose a badminton racket."
-      />
-       <meta property="og:title" content="WebBadminton Items" />
-      <meta
-        property="og:description"
-        content="Here you can get acquainted with different models of rackets and choose the right one for you. Also we have a post how to choose a badminton racket."
-      />
-      <meta property="og:url" content="https://webbadminton.com/items" />
-      <meta property="og:type" content="article" />
-      <meta property="og:image" content="/photos/mainstore.jpg" /> 
+          name="description"
+          content="Here you can get acquainted with different models of rackets and choose the right one for you. Also we have a post how to choose a badminton racket."
+        />
+        <meta property="og:title" content="WebBadminton Items" />
+        <meta
+          property="og:description"
+          content="Here you can get acquainted with different models of rackets and choose the right one for you. Also we have a post how to choose a badminton racket."
+        />
+        <meta property="og:url" content="https://webbadminton.com/items" />
+        <meta property="og:type" content="article" />
+        <meta property="og:image" content="/photos/mainstore.jpg" />
       </Head>
       <div className="bg-white">
         <div className="mx-auto max-w-7xl py-16 px-4 sm:px-6 lg:px-8">
@@ -129,5 +122,5 @@ export default function Example() {
         </div>
       </div>
     </div>
-  )
+  );
 }

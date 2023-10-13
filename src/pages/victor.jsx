@@ -1,6 +1,6 @@
-import { CameraIcon } from '@heroicons/react/solid'
-import Head from 'next/head'
-import Image from 'next/image'
+import { CameraIcon } from "@heroicons/react/solid";
+import Head from "next/head";
+import Image from "next/image";
 
 export default function Example() {
   return (
@@ -98,7 +98,10 @@ export default function Example() {
                       className="h-5 w-5 flex-none text-gray-400"
                       aria-hidden="true"
                     />
-                    <span className="ml-2"> The Victor Gold Champion shuttlecock </span>
+                    <span className="ml-2">
+                      {" "}
+                      The Victor Gold Champion shuttlecock{" "}
+                    </span>
                   </figcaption>
                 </figure>
               </div>
@@ -107,32 +110,52 @@ export default function Example() {
               <div className="mx-auto max-w-prose text-base lg:max-w-none">
                 <div className="lg:pr-50 relative z-10 mx-auto max-w-prose text-base lg:mx-0 lg:max-w-5xl">
                   <p className="text-lg text-indigo-600">
-                  Victor is one of the leading badminton brands in the world, known for producing high-quality badminton equipment including rackets, shuttles, bags, shoes, and clothing.
+                    Victor is one of the leading badminton brands in the world,
+                    known for producing high-quality badminton equipment
+                    including rackets, shuttles, bags, shoes, and clothing.
                   </p>
                 </div>
                 <p className="text-lg text-gray-500">
-                Founded in Taiwan in 1968, Victor has been dedicated to developing and manufacturing badminton products that meet the needs of players of all levels.
+                  Founded in Taiwan in 1968, Victor has been dedicated to
+                  developing and manufacturing badminton products that meet the
+                  needs of players of all levels.
                 </p>
 
                 <div className="prose prose-indigo mx-auto mt-5 text-gray-500 lg:col-start-1 lg:row-start-1 lg:max-w-none">
                   <p>
-                  One of the key features of Victor badminton rackets is their technology. Victor has patented several technologies such as the Nano-Fortify, which increases the durability and stiffness of the racket, and the Sword, which enhances the aerodynamics of the racket frame. These technologies ensure that Victor rackets are not only durable but also offer excellent performance on the court.
+                    One of the key features of Victor badminton rackets is their
+                    technology. Victor has patented several technologies such as
+                    the Nano-Fortify, which increases the durability and
+                    stiffness of the racket, and the Sword, which enhances the
+                    aerodynamics of the racket frame. These technologies ensure
+                    that Victor rackets are not only durable but also offer
+                    excellent performance on the court.
                   </p>
                   <p>
-Victor also produces high-quality shuttlecocks that are used in professional badminton tournaments around the world. The Victor Gold Champion shuttlecock is one of the most popular shuttlecocks used in tournaments due to its durability and consistency.
+                    Victor also produces high-quality shuttlecocks that are used
+                    in professional badminton tournaments around the world. The
+                    Victor Gold Champion shuttlecock is one of the most popular
+                    shuttlecocks used in tournaments due to its durability and
+                    consistency.
                   </p>
                   <p>
-                  In addition to rackets and shuttles, Victor also produces a range of badminton bags, shoes, and clothing. These products are designed with the needs of badminton players in mind, offering comfort, durability, and style.
-
+                    In addition to rackets and shuttles, Victor also produces a
+                    range of badminton bags, shoes, and clothing. These products
+                    are designed with the needs of badminton players in mind,
+                    offering comfort, durability, and style.
                   </p>
                   <ul role="list">
                     <div className="lg:pr-50 relative z-10 mx-auto max-w-prose text-base lg:mx-0 lg:max-w-5xl">
-                      <p className="text-lg text-indigo-600">
-                      </p>
+                      <p className="text-lg text-indigo-600"></p>
                     </div>
                   </ul>
                   <p>
-                  Overall, Victor is a trusted brand in the badminton world and is known for producing products that are high-quality, reliable, and innovative. Whether you are a professional player or a beginner, Victor has the equipment you need to improve your game and enjoy the sport of badminton to the fullest.
+                    Overall, Victor is a trusted brand in the badminton world
+                    and is known for producing products that are high-quality,
+                    reliable, and innovative. Whether you are a professional
+                    player or a beginner, Victor has the equipment you need to
+                    improve your game and enjoy the sport of badminton to the
+                    fullest.
                   </p>
                   <div className="mx-auto mt-1 flex max-w-prose text-base lg:max-w-none"></div>
                   <div className="rounded-md shadow">
@@ -173,5 +196,5 @@ Victor also produces high-quality shuttlecocks that are used in professional bad
         </div>
       </div>
     </div>
-  )
+  );
 }

@@ -1,13 +1,13 @@
-import { Disclosure } from '@headlessui/react'
-import { MenuIcon, XIcon } from '@heroicons/react/outline'
-import Link from 'next/link'
+import { Disclosure } from "@headlessui/react";
+import { MenuIcon, XIcon } from "@heroicons/react/outline";
+import Link from "next/link";
 
 const navigation = [
-  { name: 'WebBadminton', href: '/' },
-  { name: 'For beginners', href: '/begin' },
-  { name: 'Items', href: '/items' },
-  { name: 'Posts', href: '/blog' },
-]
+  { name: "WebBadminton", href: "/" },
+  { name: "For beginners", href: "/begin" },
+  { name: "Items", href: "/items" },
+  { name: "Posts", href: "/blog" },
+];
 
 const Navbar = () => {
   return (
@@ -59,7 +59,7 @@ const Navbar = () => {
         </div>
       )}
     </Disclosure>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

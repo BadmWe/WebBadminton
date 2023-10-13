@@ -1,14 +1,14 @@
 const people = [
-  { units: '2U', weight: '90-94 grams' },
-  { units: '3U', weight: '85-89 grams' },
-  { units: '4U', weight: '80-84 grams' },
-  { units: '5U', weight: '75-79 grams' },
-  { units: '6U', weight: '70-74 grams' },
-  { units: '7U', weight: '67-69 grams' },
-  { units: '8U', weight: '62-68 grams' },
-  { units: '9U', weight: '58-61 grams' },
-  { units: '10U', weight: '54-57 grams' },
-]
+  { units: "2U", weight: "90-94 grams" },
+  { units: "3U", weight: "85-89 grams" },
+  { units: "4U", weight: "80-84 grams" },
+  { units: "5U", weight: "75-79 grams" },
+  { units: "6U", weight: "70-74 grams" },
+  { units: "7U", weight: "67-69 grams" },
+  { units: "8U", weight: "62-68 grams" },
+  { units: "9U", weight: "58-61 grams" },
+  { units: "10U", weight: "54-57 grams" },
+];
 
 export function Table() {
   return (
@@ -68,5 +68,5 @@ export function Table() {
         </div>
       </div>
     </div>
-  )
+  );
 }
