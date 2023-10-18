@@ -11,15 +11,12 @@ Mina.setActiveInstance(Local);
 
 const deployerAccount = Local.testAccounts[0].privateKey;
 
-console.log(
-  "deployerAccount.toPublicKey :" + deployerAccount.toPublicKey().toBase58()
-);
-// ----------------------------------------------------
+console.log("deployerAccount: " + deployerAccount.toPublicKey().toBase58());
 
 const zkAppPrivateKey = PrivateKey.random();
 const zkAppAddress = zkAppPrivateKey.toPublicKey();
 
-console.log("zkAppAddress:" + zkAppAddress.toBase58());
+console.log("zkAppAddress: " + zkAppAddress.toBase58());
 
 let verificationKey: any;
 
@@ -43,11 +40,9 @@ await deploy_txn.sign([deployerAccount]).send();
 
 console.log("deployed");
 
-// ----------------------------------------------------
-
 console.log("minting...");
 
-const mintAmount = UInt64.from(10);
+const mintAmount = UInt64.from(1);
 
 const mintSignature = Signature.create(
   zkAppPrivateKey,
@@ -56,7 +51,7 @@ const mintSignature = Signature.create(
 
 const mint_txn = await Mina.transaction(deployerAccount.toPublicKey(), () => {
   AccountUpdate.fundNewAccount(deployerAccount.toPublicKey());
-  contract.mint(zkAppAddress, mintAmount, mintSignature);
+  contract.mint(zkAppAddress, mintSignature);
 });
 
 await mint_txn.prove();
@@ -68,11 +63,16 @@ console.log(
   "totalAmountInCirculation: " + contract.totalAmountInCirculation.get()
 );
 
+console.log(
+  "zkapp tokens:",
+  Mina.getBalance(zkAppAddress, contract.token.id).value.toBigInt()
+);
+
 // ----------------------------------------------------
 
 console.log("sending...");
 
-const sendAmount = UInt64.from(3);
+const sendAmount = UInt64.from(1);
 
 const send_txn = await Mina.transaction(deployerAccount.toPublicKey(), () => {
   AccountUpdate.fundNewAccount(deployerAccount.toPublicKey());
@@ -82,12 +82,6 @@ await send_txn.prove();
 await send_txn.sign([deployerAccount, zkAppPrivateKey]).send();
 
 console.log("sent");
-
-console.log(
-  contract.totalAmountInCirculation.get() +
-    " " +
-    Mina.getAccount(zkAppAddress).tokenSymbol
-);
 
 // ----------------------------------------------------
 

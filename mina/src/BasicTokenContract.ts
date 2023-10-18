@@ -32,14 +32,11 @@ export class BasicTokenContract extends SmartContract {
     this.totalAmountInCirculation.set(UInt64.zero);
   }
 
-  @method mint(
-    receiverAddress: PublicKey,
-    amount: UInt64,
-    adminSignature: Signature
-  ) {
+  @method mint(receiverAddress: PublicKey, adminSignature: Signature) {
     let totalAmountInCirculation = this.totalAmountInCirculation.get();
     this.totalAmountInCirculation.assertEquals(totalAmountInCirculation);
 
+    let amount = UInt64.one;
     let newTotalAmountInCirculation = totalAmountInCirculation.add(amount);
 
     adminSignature
