@@ -1,5 +1,15 @@
 import { BasicTokenContract } from "./BasicTokenContract.js";
-import { Mina, PrivateKey, AccountUpdate, UInt64, Signature } from "o1js";
+import {
+  Mina,
+  PrivateKey,
+  AccountUpdate,
+  UInt64,
+  Signature,
+  MerkleMap,
+  MerkleWitness,
+  MerkleTree,
+  Field,
+} from "o1js";
 
 const proofsEnabled = false;
 
@@ -97,3 +107,55 @@ console.log(
   "zkapp tokens:",
   Mina.getBalance(zkAppAddress, contract.token.id).value.toBigInt()
 );
+
+// create a new tree
+const height = 20;
+const tree = new MerkleTree(height);
+class MerkleWitness20 extends MerkleWitness(height) {}
+
+console.log(tree.getRoot());
+
+// init root the smart contract
+const root_txn = await Mina.transaction(deployerAccount.toPublicKey(), () => {
+  // get the root of the new tree to use as the initial tree root
+  contract.initState(tree.getRoot());
+});
+
+await root_txn.prove();
+
+await root_txn.sign([deployerAccount, zkAppPrivateKey]).send();
+
+console.log("tree root: " + contract.treeRoot.get());
+
+// ----------------------------------------------------
+
+const incrementIndex = 522n;
+const incrementAmount = Field(9);
+
+// get the witness for the current tree
+const witness = new MerkleWitness20(tree.getWitness(incrementIndex));
+
+// update the leaf locally
+tree.setLeaf(incrementIndex, incrementAmount);
+
+// update the smart contract
+const txn1 = await Mina.transaction(deployerAccount.toPublicKey(), () => {
+  contract.update(
+    witness,
+    Field(0), // leafs in new trees start at a state of 0
+    incrementAmount
+  );
+});
+
+await txn1.prove();
+await txn1.sign([deployerAccount, zkAppPrivateKey]).send();
+
+// compare the root of the smart contract tree to our local tree
+console.log(
+  `BasicMerkleTree: local tree root hash after send1: ${tree.getRoot()}`
+);
+console.log(
+  `BasicMerkleTree: smart contract root hash after send1: ${contract.treeRoot.get()}`
+);
+
+console.log("--------------------------------------");
