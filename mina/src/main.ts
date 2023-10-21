@@ -129,7 +129,7 @@ console.log("tree root: " + contract.treeRoot.get());
 
 // ----------------------------------------------------
 
-const incrementIndex = 522n;
+const incrementIndex = 1n;
 const incrementAmount = Field(9);
 
 // get the witness for the current tree
@@ -137,6 +137,12 @@ const witness = new MerkleWitness20(tree.getWitness(incrementIndex));
 
 // update the leaf locally
 tree.setLeaf(incrementIndex, incrementAmount);
+
+console.log("should it return leafCount?");
+
+console.log(tree.getNode(0, 1n).value);
+console.log(tree.getNode(0, 1n).value[0]);
+console.log(tree.getNode(0, 1n).value[1]);
 
 // update the smart contract
 const txn1 = await Mina.transaction(deployerAccount.toPublicKey(), () => {
