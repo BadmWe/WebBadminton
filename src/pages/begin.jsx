@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 
-export default function Example() {
+export default function BeginnersPage() {
   return (
     <div>
       <Head>
@@ -21,18 +21,6 @@ export default function Example() {
           property="og:image"
           content="https://webbadminton.com/photos/tacket.jpg"
         />
-        {/*
-      
-      <link rel="icon" href="/favicon.ico" />
-     
-      <meta
-        property="og:description"
-        content="A platform where we talk about the rules of badminton, brands, equipment and much more."
-      />
-      <meta property="og:url" content="https://webbadminton.com/" />
-      <meta property="og:type" content="website" />
-      <meta property="og:image" content="/backgound.jpg" />
-      */}
       </Head>
       <div className="overflow-hidden bg-gray-50 py-16">
         <div className="mx-auto max-w-7xl space-y-8 px-4 sm:px-6 lg:px-8">

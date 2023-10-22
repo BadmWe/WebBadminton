@@ -61,7 +61,7 @@ const products = [
   },
 ];
 
-export default function Example() {
+export default function ItemsIndex() {
   return (
     <div>
       <Head>

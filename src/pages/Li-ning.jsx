@@ -2,7 +2,7 @@ import { CameraIcon } from "@heroicons/react/solid";
 import Head from "next/head";
 import Image from "next/image";
 
-export default function Example() {
+export default function LiningPage() {
   return (
     <div>
       <Head>
@@ -17,19 +17,6 @@ export default function Example() {
         <meta property="og:type" content="website" />
         <meta property="og:image" content="/photos/Li-ningblog.jpg" />
         <meta property="og:url" content="https://webbadminton.com/Li-ning" />
-
-        {/*
-     
-      <link rel="icon" href="/favicon.ico" />
-      
-      <meta
-        property="og:description"
-        content="A platform where we talk about the rules of badminton, brands, equipment and much more."
-      />
-      <meta property="og:url" content="https://webbadminton.com/" />
-      <meta property="og:type" content="website" />
-      <meta property="og:image" content="/backgound.jpg" />
-      */}
       </Head>
       <div className="overflow-hidden bg-white">
         <div className="relative mx-auto max-w-7xl py-16 px-4 sm:px-6 lg:px-8">

@@ -32,17 +32,6 @@ const posts = [
     imageUrl: "/photos/monr.jpg",
     readingTime: "4 min",
   },
-  /*   {
-    title: 'Victor',
-    href: 'Victor',
-    category: { name: 'Brand', href: '#' },
-    description: '',
-    date: 'July 17, 2022',
-    datetime: '2022-07-17',
-    imageUrl:
-      'https://badmintonoceania.org/wp-content/uploads/2016/12/36080120_1_O-e1499248108190-800x400.jpg',
-    readingTime: '4 min',
-  }, */
 ];
 
 export default function Blog() {
@@ -65,18 +54,6 @@ export default function Blog() {
           property="og:image"
           content="https://webbadminton.com/photos/logolin.jpg"
         />
-        {/*
-        
-        <link rel="icon" href="/favicon.ico" />
-        
-        <meta
-          property="og:description"
-          content="A platform where we talk about the rules of badminton, brands, equipment and much more."
-        />
-        <meta property="og:url" content="https://webbadminton.com/" />
-        <meta property="og:type" content="website" />
-        <meta property="og:image" content="/backgound.jpg" />
-        */}
       </Head>
       <div className="relative bg-gray-50 px-4 pt-16 pb-20 sm:px-6 lg:px-8 lg:pt-24 lg:pb-28">
         <div className="relative mx-auto max-w-7xl">

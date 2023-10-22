@@ -2,7 +2,7 @@ import { CameraIcon } from "@heroicons/react/solid";
 import Head from "next/head";
 import Image from "next/image";
 
-export default function Example() {
+export default function YonexPage() {
   return (
     <div>
       <Head>
