@@ -1,6 +1,6 @@
 # Web Badminton
 
-[Web Badminton](https://webbadminton.com) - decentralized badminton centered dapp on IPFS, Covalent, EVMOS, Polygon Blockchain.
+Web Badminton - decentralized badminton centered dapp on IPFS and Mina.
 
 <div align="left">
       <a href="https://www.youtube.com/watch?v=1oxnYJdtDQg">
@@ -28,7 +28,7 @@ In addition, we created Decentralized Newsletter subscription List that we conne
 
 We built the application using JavaScript, NextJS, React, Tailwind Css and Wagmi library, IPFS, nft.storage and web3.storage. The application is hosted on vercel. The newsletter list data is stored on ipfs with web3.storage.
 
-The contract is built with solidity, hardhat, EVMOS devnet and polygon blockchain mumbai testnet. Meanwhile the Ipfs data is stored using nft.storage.
+The contract is built with Mina. Meanwhile the Ipfs data is stored using nft.storage.
 
 ## Getting started
 
@@ -60,4 +60,3 @@ To learn more about the technologies used in this site template, see the followi
 - [Next.js](https://nextjs.org/docs) - the official Next.js documentation
 - [Headless UI](https://headlessui.dev) - the official Headless UI documentation
 - [Web3 Storage](web3.storage/) - ipfs storage
-- [LSP 8 Identifiable Digital Asset](https://github.com/lukso-network/LIPs/blob/main/LSPs/LSP-8-IdentifiableDigitalAsset.md) - A standard interface for identifiable digital assets, allowing for tokens to be uniquely traded and given metadata using ERC725Y.

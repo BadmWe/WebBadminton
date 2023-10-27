@@ -44,15 +44,10 @@ export default function Blog() {
           content="Here you can learn something new about brands, rackets, players and much more. Stay with us to learn something new about badminton."
         />
         <meta property="og:title" content="WebBadminton Posts" />
-        <meta property="og:url" content="https://webbadminton.com/blog" />
         <meta property="og:type" content="website" />
         <meta
           property="og:description"
           content="Here you can learn something new about brands, rackets, players and much more. Stay with us to learn something new about badminton."
-        />
-        <meta
-          property="og:image"
-          content="https://webbadminton.com/photos/logolin.jpg"
         />
       </Head>
       <div className="relative bg-gray-50 px-4 pt-16 pb-20 sm:px-6 lg:px-8 lg:pt-24 lg:pb-28">

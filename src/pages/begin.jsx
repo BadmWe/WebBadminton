@@ -15,12 +15,7 @@ export default function BeginnersPage() {
           property="og:description"
           content="How to choose a badminton racket? In this post, we will tell you how to choose a badminton racket correctly."
         />
-        <meta property="og:url" content="https://webbadminton.com/begin" />
         <meta property="og:type" content="article" />
-        <meta
-          property="og:image"
-          content="https://webbadminton.com/photos/tacket.jpg"
-        />
       </Head>
       <div className="overflow-hidden bg-gray-50 py-16">
         <div className="mx-auto max-w-7xl space-y-8 px-4 sm:px-6 lg:px-8">

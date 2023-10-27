@@ -75,9 +75,7 @@ export default function ItemsIndex() {
           property="og:description"
           content="Here you can get acquainted with different models of rackets and choose the right one for you. Also we have a post how to choose a badminton racket."
         />
-        <meta property="og:url" content="https://webbadminton.com/items" />
         <meta property="og:type" content="article" />
-        <meta property="og:image" content="/photos/mainstore.jpg" />
       </Head>
       <div className="bg-white">
         <div className="mx-auto max-w-7xl py-16 px-4 sm:px-6 lg:px-8">

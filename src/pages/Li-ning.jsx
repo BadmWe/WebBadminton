@@ -15,8 +15,6 @@ export default function LiningPage() {
         />
         <meta property="og:title" content="WebBadminton Li-ning" />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="/photos/Li-ningblog.jpg" />
-        <meta property="og:url" content="https://webbadminton.com/Li-ning" />
       </Head>
       <div className="overflow-hidden bg-white">
         <div className="relative mx-auto max-w-7xl py-16 px-4 sm:px-6 lg:px-8">

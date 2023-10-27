@@ -18,12 +18,7 @@ export default function Home() {
           property="og:description"
           content="A platform where we talk about the rules of badminton, brands, equipment and much more. Our content is suitable and will be interesting for everybody."
         />
-        <meta property="og:url" content="https://webbadminton.com/" />
         <meta property="og:type" content="website" />
-        <meta
-          property="og:image"
-          content="https://webbadminton.com/photos/logod.jpg"
-        />
       </Head>
       <Hero />
       <Newsletter />

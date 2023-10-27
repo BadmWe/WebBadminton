@@ -14,12 +14,7 @@ export default function VictorPage() {
           content="Yonex is a Japanese sports equipment manufacturing company.Yonex produces equipment and apparel for tennis, badminton, golf, and running."
         />
         <meta property="og:title" content="WebBadminton Victor" />
-        <meta
-          property="og:image"
-          content="https://webbadminton.com/photos/monr.jpg"
-        />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://webbadminton.com/victor" />
         <meta
           property="og:description"
           content="Yonex is a Japanese sports equipment manufacturing company.Yonex produces equipment and apparel for tennis, badminton, golf, and running."
