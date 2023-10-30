@@ -84,12 +84,13 @@
     "@babel/helper-validator-identifier" "^7.18.6"
     to-fast-properties "^2.0.0"
 
-"@erc725/smart-contracts@^3.1.2":
-  version "3.1.2"
-  resolved "https://registry.yarnpkg.com/@erc725/smart-contracts/-/smart-contracts-3.1.2.tgz#7158db178c9787b7ec5c74c8f7d0152e9e11f17f"
-  integrity sha512-PvRYl6keiPyqKDEj8hku6FbNBQd0B7YJt6+O6TFIDgEQx0rJvSR5KYf5AoTeihPLOv8zMQPCXfGYvwkma41wug==
+"@erc725/smart-contracts@^5.2.0":
+  version "5.2.0"
+  resolved "https://registry.yarnpkg.com/@erc725/smart-contracts/-/smart-contracts-5.2.0.tgz#96ae61b8b7be5c67a5330d54276665aa9939c55c"
+  integrity sha512-ML7eXO2l6GO847CKGTbSO7MxpfVpmZvVPA/4KutYwVkaZmPxB05WC2flPxUilUz7ws0S7xgyt50sPHLA1ffojA==
   dependencies:
-    "@openzeppelin/contracts" "^4.6.0"
+    "@openzeppelin/contracts" "^4.9.3"
+    "@openzeppelin/contracts-upgradeable" "^4.9.3"
     solidity-bytes-utils "0.8.0"
 
 "@ethereumjs/block@^3.5.0", "@ethereumjs/block@^3.6.2", "@ethereumjs/block@^3.6.3":
@@ -503,13 +504,14 @@
     "@ethersproject/properties" "^5.7.0"
     "@ethersproject/strings" "^5.7.0"
 
-"@lukso/lsp-smart-contracts@^0.6.2":
-  version "0.6.2"
-  resolved "https://registry.yarnpkg.com/@lukso/lsp-smart-contracts/-/lsp-smart-contracts-0.6.2.tgz#f19730c4fd8f4c1927e93d1dcb1d2ed275f2fc85"
-  integrity sha512-yEeYJxzpFWI//gl2SFX0fhhRp1Z7jAT/4HWYgaQcROBdjolCTMgRMmGBuSmdPaKBtbYz9qTOAx14LWcMJ5BbFQ==
+"@lukso/lsp-smart-contracts@^0.11.1":
+  version "0.11.1"
+  resolved "https://registry.yarnpkg.com/@lukso/lsp-smart-contracts/-/lsp-smart-contracts-0.11.1.tgz#f09dc108264c8de9848816f5131170205563560d"
+  integrity sha512-qGmTVjGR6tA+h7o4AAJBuGphcJTfXcVdCpx7yeHvLWW3+3a+KYsCORKKnutAfMwdbIL0W944PVhzq7xx+vVLPg==
   dependencies:
-    "@erc725/smart-contracts" "^3.1.2"
-    "@openzeppelin/contracts" "^4.6.0"
+    "@erc725/smart-contracts" "^5.2.0"
+    "@openzeppelin/contracts" "^4.9.2"
+    "@openzeppelin/contracts-upgradeable" "^4.9.2"
     solidity-bytes-utils "0.8.0"
 
 "@metamask/eth-sig-util@4.0.1", "@metamask/eth-sig-util@^4.0.0":
@@ -604,10 +606,15 @@
     table "^6.8.0"
     undici "^5.4.0"
 
-"@openzeppelin/contracts@^4.6.0", "@openzeppelin/contracts@^4.7.3":
-  version "4.7.3"
-  resolved "https://registry.yarnpkg.com/@openzeppelin/contracts/-/contracts-4.7.3.tgz#939534757a81f8d69cc854c7692805684ff3111e"
-  integrity sha512-dGRS0agJzu8ybo44pCIf3xBaPQN/65AIXNgK8+4gzKd5kbvlqyxryUYVLJv7fK98Seyd2hDZzVEHSWAh0Bt1Yw==
+"@openzeppelin/contracts-upgradeable@^4.9.2", "@openzeppelin/contracts-upgradeable@^4.9.3":
+  version "4.9.3"
+  resolved "https://registry.yarnpkg.com/@openzeppelin/contracts-upgradeable/-/contracts-upgradeable-4.9.3.tgz#ff17a80fb945f5102571f8efecb5ce5915cc4811"
+  integrity sha512-jjaHAVRMrE4UuZNfDwjlLGDxTHWIOwTJS2ldnc278a0gevfXfPr8hxKEVBGFBE96kl2G3VHDZhUimw/+G3TG2A==
+
+"@openzeppelin/contracts@^4.7.3", "@openzeppelin/contracts@^4.9.2", "@openzeppelin/contracts@^4.9.3":
+  version "4.9.3"
+  resolved "https://registry.yarnpkg.com/@openzeppelin/contracts/-/contracts-4.9.3.tgz#00d7a8cf35a475b160b3f0293a6403c511099364"
+  integrity sha512-He3LieZ1pP2TNt5JbkPA4PNT9WC3gOTOlDcFGJW4Le4QKqwmiNJCRt44APfxMxvq7OugU/cqYuPcSBzOw38DAg==
 
 "@scure/base@~1.1.0":
   version "1.1.1"
