@@ -12,7 +12,7 @@ With Decentralized Storage provider IPFS and Mina, we build a decentralized plat
 
 ## What it does
 
-Web Badminton Dapp introduces users to the sport of Badminton as well as contains item store to track and ledger the delivery of badminton equipment.
+Web Badminton Dapp introduces users to the sport of Badminton as well as contains an item store to track and ledger the delivery of badminton equipment.
 
 Each real equipment item is ledgered via a digital one with a smart contract logic system in place to determine the demand and track iteam. When delivery is completed the DApp ERC1155 NFTs should be exchanged for the physical items.
 
