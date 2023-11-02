@@ -8,7 +8,7 @@ Web Badminton - decentralized badminton centered dapp on IPFS and Mina.
       </a>
 </div>
 
-With Decentralized Storage provider IPFS and blockchain technology, we build a decentralized platform for you to learn about playing Badminton.
+With Decentralized Storage provider IPFS and Mina, we build a decentralized platform for you to learn about playing Badminton.
 
 ## What it does
 
