@@ -70,7 +70,7 @@ export default function Page({ page, params }) {
                                 selected
                                   ? "ring-indigo-500"
                                   : "ring-transparent",
-                                "pointer-events-none absolute inset-0 rounded-md ring-2 ring-offset-2"
+                                "pointer-events-none absolute inset-0 rounded-md ring-2 ring-offset-2",
                               )}
                               aria-hidden="true"
                             />
@@ -117,7 +117,7 @@ export default function Page({ page, params }) {
                             page.product.rating > rating
                               ? "text-indigo-500"
                               : "text-gray-300",
-                            "h-5 w-5 flex-shrink-0"
+                            "h-5 w-5 flex-shrink-0",
                           )}
                           aria-hidden="true"
                         />
@@ -162,7 +162,7 @@ export default function Page({ page, params }) {
                                 color.selectedColor,
                                 active && checked ? "ring ring-offset-1" : "",
                                 !active && checked ? "ring-2" : "",
-                                "relative -m-0.5 flex cursor-pointer items-center justify-center rounded-full p-0.5 focus:outline-none"
+                                "relative -m-0.5 flex cursor-pointer items-center justify-center rounded-full p-0.5 focus:outline-none",
                               )
                             }
                           >
@@ -173,7 +173,7 @@ export default function Page({ page, params }) {
                               aria-hidden="true"
                               className={classNames(
                                 color.bgColor,
-                                "h-8 w-8 rounded-full border border-black border-opacity-10"
+                                "h-8 w-8 rounded-full border border-black border-opacity-10",
                               )}
                             />
                           </RadioGroup.Option>
@@ -208,7 +208,7 @@ export default function Page({ page, params }) {
                                 <span
                                   className={classNames(
                                     open ? "text-indigo-600" : "text-gray-900",
-                                    "text-sm font-medium"
+                                    "text-sm font-medium",
                                   )}
                                 >
                                   {detail.name}

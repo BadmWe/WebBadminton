@@ -9,8 +9,7 @@ export function Hero() {
           <div className="mt-6 space-y-6 font-display text-2xl tracking-tight text-blue-900">
             <p>
               WebBadminton is a platform where we talk about the rules of the
-              game,<a href="https://webbadminton.com/blog"> brands, </a>
-              equipment and much more.
+              game, brands, equipment and much more.
             </p>
             <p>
               Our content is suitable and will be interesting not only for
