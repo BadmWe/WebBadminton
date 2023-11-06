@@ -1744,6 +1744,11 @@ buffer-from@^1.0.0:
   resolved "https://registry.yarnpkg.com/buffer-from/-/buffer-from-1.1.2.tgz#2b146a6fd72e80b4f55d255f35ed59a3a9a41bd5"
   integrity sha512-E+XQCRwSbaaiChtv6k6Dwgc+bx+Bs6vuKJHHl5kox/BaKbhiXzqQOwK4cO22yElGp2OCmjwVhT3HmxgyPGnJfQ==
 
+cachedir@^2.4.0:
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/cachedir/-/cachedir-2.4.0.tgz#7fef9cf7367233d7c88068fe6e34ed0d355a610d"
+  integrity sha512-9EtFOZR8g22CL7BWjJ9BUx1+A/djkofnyW3aOXZORNW2kxoUpx2h+uN2cOqwPmFhnpVmxg+KW2OjOSgChTEvsQ==
+
 callsites@^3.0.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/callsites/-/callsites-3.1.0.tgz#b3630abd8943432f54b3f0519238e33cd7df2f73"
@@ -3254,12 +3259,13 @@ nwsapi@^2.2.0:
   resolved "https://registry.yarnpkg.com/nwsapi/-/nwsapi-2.2.7.tgz#738e0707d3128cb750dddcfe90e4610482df0f30"
   integrity sha512-ub5E4+FBPKwAZx0UwIQOjYWGHTEq5sPqHQNRN8Z9e4A7u3Tj1weLJsL59yH9vmvqEtBHaOmT6cYQKIZOxp35FQ==
 
-o1js@^0.13.1:
-  version "0.13.1"
-  resolved "https://registry.yarnpkg.com/o1js/-/o1js-0.13.1.tgz#8575a1a5eb4abeb493f9d60e9f29dd876f9520bc"
-  integrity sha512-7QHHRRLmmyR8e+YmIFcgatS2q1on+SDD9h4NIK8JR/82eim7w8bQyBZqAwfCU2PmaQtqlZhkLoL4PmZRnxDzQQ==
+o1js@^0.14.0:
+  version "0.14.0"
+  resolved "https://registry.yarnpkg.com/o1js/-/o1js-0.14.0.tgz#815778d46ccefabe1879420741da0e2c8d102868"
+  integrity sha512-Yio5b80PiwyU6eDg9FKIMC6igATRvoNlCijg07cxbn+q5zHv0LvlU+hi2+ZYrZBho6AIJVMQ22cBznFfYy7mrQ==
   dependencies:
     blakejs "1.2.1"
+    cachedir "^2.4.0"
     detect-gpu "^5.0.5"
     isomorphic-fetch "^3.0.0"
     js-sha256 "^0.9.0"

@@ -20,7 +20,7 @@
     "lint": "npx eslint src/* --fix"
   },
   "dependencies": {
-    "o1js": "^0.13.1"
+    "o1js": "^0.14.0"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.16.4",
