@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "deployAliases": {
+    "webbadminton": {
+      "url": "https://proxy.berkeley.minaexplorer.com/graphql",
+      "keyPath": "keys/webbadminton.json",
+      "feepayerKeyPath": "keys/deployer.json",
+      "feepayerAlias": "deployer",
+      "fee": "0.1",
+      "smartContract": "BasicTokenContract"
+    }
+  }
+}

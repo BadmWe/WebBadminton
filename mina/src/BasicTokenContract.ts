@@ -16,6 +16,7 @@ class MerkleWitness20 extends MerkleWitness(20) {}
 
 export class BasicTokenContract extends SmartContract {
   @state(UInt64) totalAmountInCirculation = State<UInt64>();
+  @state(UInt64) maxSupply = State<UInt64>();
   @state(Field) treeRoot = State<Field>();
 
   deploy(args?: DeployArgs) {
@@ -35,6 +36,7 @@ export class BasicTokenContract extends SmartContract {
   @method init() {
     super.init();
     this.totalAmountInCirculation.set(UInt64.zero);
+    this.maxSupply.set(UInt64.from(20));
   }
 
   @method initState(initialRoot: Field) {
@@ -46,8 +48,7 @@ export class BasicTokenContract extends SmartContract {
     numberBefore: Field,
     incrementAmount: Field
   ) {
-    const initialRoot = this.treeRoot.get();
-    this.treeRoot.assertEquals(initialRoot);
+    const initialRoot = this.treeRoot.getAndAssertEquals();
 
     incrementAmount.assertLessThan(Field(10));
 
@@ -65,8 +66,12 @@ export class BasicTokenContract extends SmartContract {
   }
 
   @method mint(receiverAddress: PublicKey, adminSignature: Signature) {
-    let totalAmountInCirculation = this.totalAmountInCirculation.get();
-    this.totalAmountInCirculation.assertEquals(totalAmountInCirculation);
+    let totalAmountInCirculation =
+      this.totalAmountInCirculation.getAndAssertEquals();
+
+    totalAmountInCirculation.assertLessThanOrEqual(
+      this.maxSupply.getAndAssertEquals()
+    );
 
     let amount = UInt64.one;
     let newTotalAmountInCirculation = totalAmountInCirculation.add(amount);

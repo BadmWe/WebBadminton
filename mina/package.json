@@ -17,9 +17,11 @@
     "coverage": "node --experimental-vm-modules node_modules/jest/bin/jest.js --coverage",
     "format": "prettier --write --ignore-unknown **/*",
     "test": "tsc && node build/src/main.js",
+    "testToken": "tsc && node build/src/BasicTokenContract.test.js",
     "lint": "npx eslint src/* --fix"
   },
   "dependencies": {
+    "dotenv": "^16.3.1",
     "o1js": "^0.13.1"
   },
   "devDependencies": {
