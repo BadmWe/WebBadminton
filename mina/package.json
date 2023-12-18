@@ -22,7 +22,7 @@
   },
   "dependencies": {
     "dotenv": "^16.3.1",
-    "o1js": "^0.13.1"
+    "o1js": "^0.15.0"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.16.4",
